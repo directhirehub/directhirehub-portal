@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "title": "Customer Support Executive (Voice Process)",
+    "company": "Genpact",
+    "city": "Gurgaon",
+    "state": "Haryana",
+    "type": "FULL_TIME",
+    "salary_min": 280000,
+    "salary_max": 380000,
+    "date_posted": "2026-10-23",
+    "valid_through": "2026-11-06T23:59:59+05:30",
+    "description": "Walk-in drive for freshers and experienced candidates for International Voice Operations. Excellent English communication required. Day shifts with rotational offs.",
+    "venue": "DLF Cyber City, Building 10, Tower B, Sector 24, Gurgaon",
+    "metro": "Belvedere Towers (Rapid Metro)",
+    "timing": "10:00 AM - 1:00 PM",
+    "checklist": [
+      "2 printed copies of updated resume",
+      "Original Aadhaar card + photocopy",
+      "PAN card",
+      "10th & 12th passing marksheets"
+    ]
+  }
+]
