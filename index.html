@@ -3,29 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-  <title>Direct Hire Hub - Your Career, Our Mission</title>
+  <title>Direct Hire Hub - Your Career, Our Mission | Verified Walk-in Drives Across India</title>
   <meta name="description" content="Verified walk-in drives, corporate MNCs, certified staffing partners & employee reviews across India. 100% free with zero registration fee.">
+  <meta name="keywords" content="walk-in drives today, direct hire hub, naukri walk-in, fresher jobs India, MNC walk-in interviews, Gurgaon jobs, Noida walk-in, Bangalore IT jobs, work from home jobs">
+  <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://directhirehub.in/">
-    <link rel="icon" type="image/png" href="/20261021_072011.png">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" href="/20261021_072011.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Direct Hire Hub",
+    "url": "https://directhirehub.in/",
+    "description": "Independent informational job and walk-in drive aggregator across India."
+  }
+  </script>
+  
+    <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap');
-    body { font-family: 'Plus Jakarta Sans', sans-serif; -webkit-tap-highlight-color: transparent; }
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap');
+    body { font-family: 'Plus Jakarta Sans', sans-serif; -webkit-tap-highlight-color: transparent; scroll-behavior: smooth; }
     .company-logo-img { width: 44px; height: 44px; object-fit: contain; padding: 4px; border-radius: 12px; background: #ffffff; border: 1px solid #e2e8f0; }
+    .naukri-shadow { box-shadow: 0 6px 24px rgba(15, 23, 42, 0.05); }
+    .pill-shadow { box-shadow: 0 10px 30px -5px rgba(37, 99, 235, 0.14), 0 4px 12px -2px rgba(15, 23, 42, 0.05); }
   </style>
 </head>
 <body class="bg-[#f8fafc] text-slate-900 flex flex-col min-h-screen antialiased overflow-x-hidden pb-16">
-  <!-- TOP HEADER (NAUKRI PATTERN) -->
-  <header class="bg-white border-b border-slate-200 sticky top-0 z-40 w-full shadow-xs">
-    <div class="max-w-7xl mx-auto px-3 sm:px-4 h-16 flex items-center justify-between gap-2">
+
+    <!-- TOP ADAPTIVE HEADER -->
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-40 w-full">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 h-16 sm:h-20 flex items-center justify-between gap-2">
       
-      <!-- Logo + Tagline -->
-      <div class="flex items-center gap-4">
-        <a href="/" class="flex flex-col items-start select-none">
+      <div class="flex items-center gap-4 lg:gap-8">
+        <!-- Brand Logo with Original Tie Icon -->
+        <a href="/" class="flex flex-col items-start sm:items-center justify-center select-none py-1">
           <div class="flex items-center text-lg sm:text-2xl font-black text-[#2563eb] tracking-tight leading-none">
             <span>Direct</span>
-            <span class="mx-0.5 flex items-center">
+            <span class="mx-1 flex items-center">
               <span class="relative inline-flex items-center justify-center font-black">
                 H
                 <svg class="absolute w-[11px] sm:w-[13px] h-[15px] sm:h-[17px] text-[#0f172a] -top-[1px]" viewBox="0 0 24 24" fill="currentColor">
@@ -37,39 +52,44 @@
             </span>
             <span>Hub</span>
           </div>
-          <span class="text-[6.5px] sm:text-[8px] font-extrabold tracking-[0.14em] text-[#0f172a] uppercase mt-0.5">
-            YOUR CAREER, OUR MISSION
-          </span>
+          <div class="flex items-center gap-1.5 sm:gap-2 mt-1 w-full justify-center">
+            <span class="h-[1px] sm:h-[1.5px] w-4 sm:w-7 bg-[#2563eb]"></span>
+            <span class="text-[7px] sm:text-[9px] font-extrabold tracking-[0.14em] sm:tracking-[0.18em] text-[#0f172a] uppercase whitespace-nowrap">
+              YOUR CAREER, OUR MISSION
+            </span>
+            <span class="h-[1px] sm:h-[1.5px] w-4 sm:w-7 bg-[#2563eb]"></span>
+          </div>
         </a>
 
-        <!-- Jobs & Companies Navigation Tabs -->
-        <nav class="hidden md:flex items-center gap-1.5 text-xs sm:text-sm font-bold">
-          <a href="/" class="px-3 py-1.5 rounded-lg text-[#2563eb] bg-blue-50">Jobs</a>
-          <a href="/companies" class="px-3 py-1.5 rounded-lg text-slate-600 hover:text-[#2563eb] hover:bg-slate-50">Companies</a>
+        <!-- Naukri Style Desktop & Mobile Nav -->
+        <nav class="flex items-center gap-1.5 sm:gap-5 text-xs sm:text-sm font-bold text-slate-600">
+          <a href="#openings" class="px-3 py-1 rounded-full bg-blue-50 text-[#2563eb]">Jobs</a>
+          <a href="#featured-companies" class="hover:text-[#2563eb] px-1.5 py-1 transition">Companies</a>
+          <a href="#interview-prep" class="hidden md:inline-flex items-center gap-1 hover:text-[#2563eb] px-1.5 py-1 relative">
+            Services <span class="w-1.5 h-1.5 rounded-full bg-[#ff5722] absolute top-1 right-0"></span>
+          </a>
+          <a href="#safety" class="hidden lg:inline-block hover:text-[#2563eb] px-1.5 py-1">Safety Guide</a>
         </nav>
       </div>
 
-      <!-- Center: Search Pill Capsule -->
-      <div class="hidden lg:flex items-center w-72 bg-slate-50 border border-slate-200 rounded-full px-3 py-1.5">
-        <input type="text" id="headerSearchInput" onkeyup="syncSearch(this.value)" placeholder="Search jobs here" class="w-full text-xs text-slate-700 bg-transparent focus:outline-none" />
-        <button onclick="filterJobs()" class="w-6 h-6 rounded-full bg-[#2563eb] text-white flex items-center justify-center shrink-0">
-          <i class="fa-solid fa-magnifying-glass text-[10px]"></i>
-        </button>
-      </div>
-
-      <!-- Right: Login, Register & Employer Dropdown -->
-      <div class="flex items-center gap-2">
-        <button onclick="openModal('loginModal')" class="px-3 py-1.5 rounded-full border border-slate-300 text-slate-700 hover:border-[#2563eb] text-xs font-bold">
+            <!-- Right Header Actions -->
+      <div class="flex items-center gap-1.5 sm:gap-2.5">
+        <span class="hidden xl:inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-blue-50 text-[#2563eb] border border-blue-200">
+          <span class="w-2 h-2 rounded-full bg-[#2563eb] animate-ping"></span> 100 Live Drives
+        </span>
+        <button onclick="scrollToOpenings()" class="px-3 sm:px-5 py-1.5 rounded-full text-xs font-bold text-[#2563eb] border border-[#2563eb] hover:bg-blue-50 transition">
           Login
         </button>
-        <button onclick="openModal('registerModal')" class="px-3 py-1.5 rounded-full bg-[#ea580c] hover:bg-[#c2410c] text-white text-xs font-bold shadow-xs">
+        <button onclick="scrollToOpenings()" class="px-3 sm:px-5 py-1.5 rounded-full text-xs font-bold text-white bg-[#ff5722] hover:bg-[#f4511e] shadow-2xs transition">
           Register
         </button>
+        <button onclick="toggleSidebar(true)" aria-label="Open Navigation" class="p-2 sm:p-2.5 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-700 hover:text-[#2563eb] focus:outline-none">
+          <i class="fa-solid fa-bars-staggered text-base sm:text-lg"></i>
+        </button>
       </div>
-
     </div>
   </header>
-    
+
     <!-- RIGHT SLIDING DRAWER -->
   <div id="drawerOverlay" onclick="toggleSidebar(false)" class="fixed inset-0 bg-slate-900/50 z-50 opacity-0 pointer-events-none transition-opacity duration-300"></div>
 
@@ -114,60 +134,260 @@
         </div>
       </div>
     </div>
-            </aside>
+  </aside>
 
-    <!-- HERO SECTION WITH DEEP MULTI-DIMENSIONAL SELECTORS -->
-  <section class="bg-gradient-to-b from-blue-50/50 via-slate-50 to-[#f8fafc] pt-6 sm:pt-10 pb-8 sm:pb-12 px-3 sm:px-4 border-b border-slate-200/60 text-center">
+    <!-- HERO SECTION WITH NAUKRI PILL SEARCH -->
+  <section class="bg-gradient-to-b from-blue-50/50 via-white to-[#f8fafc] pt-6 sm:pt-10 pb-8 sm:pb-10 px-3 sm:px-4 border-b border-slate-200/60 text-center">
     <div class="max-w-6xl mx-auto">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] sm:text-xs font-bold bg-white border border-[#2563eb]/20 text-[#2563eb] shadow-sm mb-4">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] sm:text-xs font-bold bg-white border border-[#2563eb]/20 text-[#2563eb] shadow-sm mb-3">
         <span class="w-2 h-2 rounded-full bg-[#2563eb]"></span> LIVE • 100+ Verified drives with real employee reviews
       </div>
       <h1 class="text-2xl sm:text-5xl font-extrabold text-[#0f172a] tracking-tight leading-tight">
-        Verified Walk-in Drives &amp; Direct Jobs <span class="text-[#2563eb]">Across India</span>
+        Find your dream job now
       </h1>
-      <p class="text-xs sm:text-base text-slate-600 mt-3 sm:mt-4 max-w-2xl mx-auto font-medium">
-        Filter by High CTC, Top MNCs, Staffing Giants, Environment, and Real Employer Reviews.
+      <p class="text-xs sm:text-base text-slate-600 mt-2.5 max-w-2xl mx-auto font-medium">
+        5 lakh+ jobs &amp; verified walk-in drives across India for you to explore
       </p>
 
-      <div class="mt-6 sm:mt-8 bg-white p-2.5 sm:p-3 rounded-2xl border border-slate-200/80 shadow-md max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-2">
-        <div class="relative flex items-center md:col-span-2">
+      <!-- Naukri Rounded Pill Search Bar (With Original Filter IDs Preserved) -->
+      <div class="mt-6 sm:mt-8 bg-white p-2.5 sm:p-3 rounded-3xl lg:rounded-full border border-slate-200/90 pill-shadow max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-2 items-center">
+        <div class="relative flex items-center sm:col-span-2 lg:col-span-4 lg:border-r border-slate-200">
           <i class="fa-solid fa-magnifying-glass absolute left-3.5 text-slate-400 text-sm"></i>
-          <input type="text" id="searchInput" onkeyup="filterJobs()" placeholder="Role, company or review" class="w-full pl-10 pr-3 py-2 text-xs sm:text-sm text-slate-800 rounded-xl focus:outline-none" />
+          <input type="text" id="searchInput" onkeyup="filterJobs()" placeholder="Enter skills / designations / companies" class="w-full pl-10 pr-3 py-2 text-xs sm:text-sm text-slate-800 rounded-xl focus:outline-none bg-transparent" />
         </div>
         
-        <select id="sectorFilter" onchange="filterJobs()" class="bg-slate-50 border border-slate-200 text-xs sm:text-sm font-semibold text-slate-600 p-2 rounded-xl focus:outline-none cursor-pointer">
-          <option value="">All Sectors</option>
-          <option value="it">IT &amp; Software</option>
-          <option value="voice">BPO &amp; Customer Care</option>
-          <option value="bfsi">Banking &amp; Finance</option>
-          <option value="logistics">Logistics &amp; Ops</option>
-        </select>
+        <div class="lg:col-span-2 lg:border-r border-slate-200">
+          <select id="sectorFilter" onchange="filterJobs()" class="w-full bg-slate-50 lg:bg-transparent border lg:border-0 border-slate-200 text-xs sm:text-sm font-semibold text-slate-600 p-2 rounded-xl focus:outline-none cursor-pointer">
+            <option value="">All Sectors</option>
+            <option value="it">IT &amp; Software</option>
+            <option value="voice">BPO &amp; Customer Care</option>
+            <option value="bfsi">Banking &amp; Finance</option>
+            <option value="logistics">Logistics &amp; Ops</option>
+          </select>
+        </div>
 
-        <select id="salaryFilter" onchange="filterJobs()" class="bg-slate-50 border border-slate-200 text-xs sm:text-sm font-semibold text-slate-600 p-2 rounded-xl focus:outline-none cursor-pointer">
-          <option value="">All Salary Brackets</option>
-          <option value="high">High CTC (₹8+ LPA)</option>
-          <option value="mid">Mid Tier (₹4 - ₹8 LPA)</option>
-          <option value="entry">Entry Level (Up to ₹4 LPA)</option>
-        </select>
+        <div class="lg:col-span-2 lg:border-r border-slate-200">
+          <select id="salaryFilter" onchange="filterJobs()" class="w-full bg-slate-50 lg:bg-transparent border lg:border-0 border-slate-200 text-xs sm:text-sm font-semibold text-slate-600 p-2 rounded-xl focus:outline-none cursor-pointer">
+            <option value="">All Salary Brackets</option>
+            <option value="high">High CTC (₹8+ LPA)</option>
+            <option value="mid">Mid Tier (₹4 - ₹8 LPA)</option>
+            <option value="entry">Entry Level (Up to ₹4 LPA)</option>
+          </select>
+        </div>
 
-        <select id="envFilter" onchange="filterJobs()" class="bg-slate-50 border border-slate-200 text-xs sm:text-sm font-semibold text-slate-600 p-2 rounded-xl focus:outline-none cursor-pointer">
-          <option value="">All Environments</option>
-          <option value="wfh">Work From Home (Remote)</option>
-          <option value="onsite">On-Site Office</option>
-          <option value="hybrid">Hybrid Mode</option>
-        </select>
+        <div class="lg:col-span-2">
+          <select id="envFilter" onchange="filterJobs()" class="w-full bg-slate-50 lg:bg-transparent border lg:border-0 border-slate-200 text-xs sm:text-sm font-semibold text-slate-600 p-2 rounded-xl focus:outline-none cursor-pointer">
+            <option value="">All Environments</option>
+            <option value="wfh">Work From Home (Remote)</option>
+            <option value="onsite">On-Site Office</option>
+            <option value="hybrid">Hybrid Mode</option>
+          </select>
+        </div>
+
+        <div class="sm:col-span-2 lg:col-span-2">
+          <button onclick="filterJobs(); scrollToOpenings();" class="w-full bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-bold text-xs sm:text-sm py-2.5 px-6 rounded-full transition shadow-sm">
+            Search
+          </button>
+        </div>
       </div>
 
-      <div class="flex flex-wrap items-center justify-center gap-1.5 sm:gap-2 mt-4 text-[11px] sm:text-xs font-semibold text-slate-600">
-        <button onclick="quickFilterTier('high')" class="px-3 py-1 rounded-full bg-white border border-slate-200 hover:border-[#2563eb]">💎 High CTC Drives</button>
-        <button onclick="quickFilterEnvironment('wfh')" class="px-3 py-1 rounded-full bg-white border border-slate-200 hover:border-[#2563eb]">🏠 Remote (WFH)</button>
-        <button onclick="quickFilterSector('voice')" class="px-3 py-1 rounded-full bg-white border border-slate-200 hover:border-[#2563eb]">🎧 Walk-in BPO</button>
-        <button onclick="quickFilterReset()" class="px-3 py-1 rounded-full bg-white border border-slate-200 hover:border-[#2563eb]">All 100 Openings</button>
+            <!-- Naukri 11 Category Chips -->
+      <div class="mt-6 sm:mt-8 max-w-4xl mx-auto space-y-2.5">
+        <div class="flex flex-wrap items-center justify-center gap-2 text-[11px] sm:text-xs font-bold text-slate-700">
+          <button onclick="quickFilterEnvironment('wfh'); scrollToOpenings();" class="px-3.5 py-2 rounded-full bg-white border border-slate-200 hover:border-[#2563eb] transition flex items-center gap-2 shadow-2xs">
+            <i class="fa-solid fa-house-laptop text-slate-500"></i> Remote <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
+          </button>
+          <button onclick="quickFilterTier('high'); scrollToOpenings();" class="px-3.5 py-2 rounded-full bg-white border border-slate-200 hover:border-[#2563eb] transition flex items-center gap-2 shadow-2xs">
+            <i class="fa-regular fa-building text-slate-500"></i> MNC <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
+          </button>
+          <button onclick="quickFilterSector('it'); scrollToOpenings();" class="px-3.5 py-2 rounded-full bg-white border border-slate-200 hover:border-[#2563eb] transition flex items-center gap-2 shadow-2xs">
+            <i class="fa-solid fa-chart-simple text-slate-500"></i> Data Science <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
+          </button>
+          <button onclick="quickFilterSector('voice'); scrollToOpenings();" class="px-3.5 py-2 rounded-full bg-white border border-slate-200 hover:border-[#2563eb] transition flex items-center gap-2 shadow-2xs">
+            <i class="fa-solid fa-headset text-slate-500"></i> Walk-in BPO <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
+          </button>
+          <button onclick="quickFilterSector('it'); scrollToOpenings();" class="px-3.5 py-2 rounded-full bg-white border border-slate-200 hover:border-[#2563eb] transition flex items-center gap-2 shadow-2xs">
+            <i class="fa-solid fa-code text-slate-500"></i> Software &amp; IT <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
+          </button>
+          <button onclick="quickFilterSector('bfsi'); scrollToOpenings();" class="px-3.5 py-2 rounded-full bg-white border border-slate-200 hover:border-[#2563eb] transition flex items-center gap-2 shadow-2xs">
+            <i class="fa-solid fa-users text-slate-500"></i> Banking &amp; HR <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
+          </button>
+        </div>
+        <div class="flex flex-wrap items-center justify-center gap-2 text-[11px] sm:text-xs font-bold text-slate-700">
+          <button onclick="quickFilterSector('bfsi'); scrollToOpenings();" class="px-3.5 py-2 rounded-full bg-white border border-slate-200 hover:border-[#2563eb] transition flex items-center gap-2 shadow-2xs">
+            <i class="fa-solid fa-magnifying-glass-chart text-slate-500"></i> Analytics <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
+          </button>
+          <button onclick="quickFilterSector('it'); scrollToOpenings();" class="px-3.5 py-2 rounded-full bg-white border border-slate-200 hover:border-[#2563eb] transition flex items-center gap-2 shadow-2xs">
+            <i class="fa-solid fa-gears text-slate-500"></i> Engineering <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
+          </button>
+          <button onclick="quickFilterSector('logistics'); scrollToOpenings();" class="px-3.5 py-2 rounded-full bg-white border border-slate-200 hover:border-[#2563eb] transition flex items-center gap-2 shadow-2xs">
+            <i class="fa-solid fa-arrow-trend-up text-slate-500"></i> Operations <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
+          </button>
+          <button onclick="quickFilterTier('entry'); scrollToOpenings();" class="px-3.5 py-2 rounded-full bg-white border border-slate-200 hover:border-[#2563eb] transition flex items-center gap-2 shadow-2xs">
+            <i class="fa-solid fa-graduation-cap text-slate-500"></i> Fresher <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
+          </button>
+          <button onclick="quickFilterReset(); scrollToOpenings();" class="px-3.5 py-2 rounded-full bg-blue-50 border border-blue-200 text-[#2563eb] hover:border-[#2563eb] transition flex items-center gap-2 shadow-2xs">
+            <i class="fa-solid fa-gem"></i> All 100 Openings <i class="fa-solid fa-chevron-right text-[9px]"></i>
+          </button>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- 728x90 TOP BANNER AD -->
+    <!-- TOP COMPANIES HIRING NOW -->
+  <section class="max-w-7xl mx-auto px-3 sm:px-6 pt-6 pb-3 w-full">
+    <h2 class="text-base sm:text-xl font-extrabold text-[#0f172a] text-center mb-4 sm:mb-5">Top companies hiring now</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
+      <div onclick="quickFilterTier('high'); scrollToOpenings();" class="bg-white rounded-2xl border border-slate-200 p-3.5 sm:p-4 hover:shadow-md transition cursor-pointer">
+        <h3 class="text-xs sm:text-sm font-extrabold text-slate-900 flex items-center justify-between">MNCs <i class="fa-solid fa-chevron-right text-[10px] text-slate-400"></i></h3>
+        <p class="text-[11px] text-slate-500 mt-0.5">2.2K+ are actively hiring</p>
+        <div class="flex items-center gap-1.5 mt-3">
+          <span class="w-7 h-7 rounded-lg bg-red-600 text-white font-black text-[10px] flex items-center justify-center">AMZ</span>
+          <span class="w-7 h-7 rounded-lg bg-blue-600 text-white font-black text-[10px] flex items-center justify-center">TCS</span>
+          <span class="w-7 h-7 rounded-lg bg-emerald-600 text-white font-black text-[10px] flex items-center justify-center">DEL</span>
+          <span class="w-7 h-7 rounded-lg bg-sky-600 text-white font-black text-[10px] flex items-center justify-center">MS</span>
+        </div>
+      </div>
+      <div onclick="quickFilterSector('it'); scrollToOpenings();" class="bg-white rounded-2xl border border-slate-200 p-3.5 sm:p-4 hover:shadow-md transition cursor-pointer">
+        <h3 class="text-xs sm:text-sm font-extrabold text-slate-900 flex items-center justify-between">Product <i class="fa-solid fa-chevron-right text-[10px] text-slate-400"></i></h3>
+        <p class="text-[11px] text-slate-500 mt-0.5">1.2K+ are actively hiring</p>
+        <div class="flex items-center gap-1.5 mt-3">
+          <span class="w-7 h-7 rounded-lg bg-amber-500 text-white font-black text-[10px] flex items-center justify-center">GO</span>
+          <span class="w-7 h-7 rounded-lg bg-slate-900 text-white font-black text-[10px] flex items-center justify-center">FK</span>
+          <span class="w-7 h-7 rounded-lg bg-indigo-600 text-white font-black text-[10px] flex items-center justify-center">INF</span>
+          <span class="w-7 h-7 rounded-lg bg-rose-500 text-white font-black text-[10px] flex items-center justify-center">AC</span>
+        </div>
+      </div>
+      <div onclick="quickFilterSector('bfsi'); scrollToOpenings();" class="bg-white rounded-2xl border border-slate-200 p-3.5 sm:p-4 hover:shadow-md transition cursor-pointer">
+        <h3 class="text-xs sm:text-sm font-extrabold text-slate-900 flex items-center justify-between">Banking &amp; Finance <i class="fa-solid fa-chevron-right text-[10px] text-slate-400"></i></h3>
+        <p class="text-[11px] text-slate-500 mt-0.5">428 are actively hiring</p>
+        <div class="flex items-center gap-1.5 mt-3">
+          <span class="w-7 h-7 rounded-lg bg-blue-900 text-white font-black text-[10px] flex items-center justify-center">JPM</span>
+          <span class="w-7 h-7 rounded-lg bg-teal-700 text-white font-black text-[10px] flex items-center justify-center">TL</span>
+          <span class="w-7 h-7 rounded-lg bg-sky-700 text-white font-black text-[10px] flex items-center justify-center">DI</span>
+          <span class="w-7 h-7 rounded-lg bg-slate-800 text-white font-black text-[10px] flex items-center justify-center">TW</span>
+        </div>
+      </div>
+      <div onclick="quickFilterSector('voice'); scrollToOpenings();" class="bg-white rounded-2xl border border-slate-200 p-3.5 sm:p-4 hover:shadow-md transition cursor-pointer">
+        <h3 class="text-xs sm:text-sm font-extrabold text-slate-900 flex items-center justify-between">Hospitality &amp; BPO <i class="fa-solid fa-chevron-right text-[10px] text-slate-400"></i></h3>
+        <p class="text-[11px] text-slate-500 mt-0.5">540+ are actively hiring</p>
+        <div class="flex items-center gap-1.5 mt-3">
+          <span class="w-7 h-7 rounded-lg bg-cyan-600 text-white font-black text-[10px] flex items-center justify-center">GP</span>
+          <span class="w-7 h-7 rounded-lg bg-purple-700 text-white font-black text-[10px] flex items-center justify-center">TP</span>
+          <span class="w-7 h-7 rounded-lg bg-orange-500 text-white font-black text-[10px] flex items-center justify-center">VXI</span>
+          <span class="w-7 h-7 rounded-lg bg-emerald-700 text-white font-black text-[10px] flex items-center justify-center">CNX</span>
+        </div>
+      </div>
+      <div onclick="quickFilterSector('logistics'); scrollToOpenings();" class="bg-white rounded-2xl border border-slate-200 p-3.5 sm:p-4 hover:shadow-md transition cursor-pointer col-span-2 sm:col-span-1">
+        <h3 class="text-xs sm:text-sm font-extrabold text-slate-900 flex items-center justify-between">Fintech &amp; Ops <i class="fa-solid fa-chevron-right text-[10px] text-slate-400"></i></h3>
+        <p class="text-[11px] text-slate-500 mt-0.5">186 are actively hiring</p>
+        <div class="flex items-center gap-1.5 mt-3">
+          <span class="w-7 h-7 rounded-lg bg-blue-600 text-white font-black text-[10px] flex items-center justify-center">RND</span>
+          <span class="w-7 h-7 rounded-lg bg-indigo-900 text-white font-black text-[10px] flex items-center justify-center">HCL</span>
+          <span class="w-7 h-7 rounded-lg bg-amber-600 text-white font-black text-[10px] flex items-center justify-center">ZS</span>
+          <span class="w-7 h-7 rounded-lg bg-emerald-800 text-white font-black text-[10px] flex items-center justify-center">SE</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- FEATURED COMPANIES ACTIVELY HIRING -->
+  <section id="featured-companies" class="max-w-7xl mx-auto px-3 sm:px-6 py-5 sm:py-7 w-full">
+    <h2 class="text-base sm:text-xl font-extrabold text-[#0f172a] text-center mb-5">Featured companies actively hiring</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3.5 sm:gap-4">
+      <div class="bg-white rounded-2xl border border-slate-200 p-4 text-center flex flex-col justify-between hover:shadow-md transition">
+        <div>
+          <img src="https://logo.clearbit.com/amazon.com" onerror="this.src='https://ui-avatars.com/api/?name=Amazon&background=2563eb&color=fff'" alt="Amazon" class="company-logo-img mx-auto mb-3" />
+          <div class="bg-orange-50/70 rounded-xl py-2 px-2 mb-2.5">
+            <h3 class="font-extrabold text-xs sm:text-sm text-slate-900">Amazon India</h3>
+            <p class="text-[11px] font-bold text-slate-600 mt-0.5"><i class="fa-solid fa-star text-amber-400"></i> 4.2 <span class="text-slate-400 font-normal">| 28k+ reviews</span></p>
+          </div>
+          <p class="text-[11px] text-slate-500 line-clamp-2">World-class cloud, tech &amp; operations employer.</p>
+        </div>
+        <button onclick="quickFilterCompany('Amazon'); scrollToOpenings();" class="mt-4 mx-auto px-5 py-1.5 rounded-full bg-blue-50 hover:bg-blue-100 text-[#2563eb] font-bold text-xs transition">View jobs</button>
+      </div>
+
+      <div class="bg-white rounded-2xl border border-slate-200 p-4 text-center flex flex-col justify-between hover:shadow-md transition">
+        <div>
+          <img src="https://logo.clearbit.com/deloitte.com" onerror="this.src='https://ui-avatars.com/api/?name=Deloitte&background=059669&color=fff'" alt="Deloitte" class="company-logo-img mx-auto mb-3" />
+          <div class="bg-orange-50/70 rounded-xl py-2 px-2 mb-2.5">
+            <h3 class="font-extrabold text-xs sm:text-sm text-slate-900">Deloitte US-India</h3>
+            <p class="text-[11px] font-bold text-slate-600 mt-0.5"><i class="fa-solid fa-star text-amber-400"></i> 4.1 <span class="text-slate-400 font-normal">| 35k+ reviews</span></p>
+          </div>
+          <p class="text-[11px] text-slate-500 line-clamp-2">Where purpose meets global financial &amp; tech advisory.</p>
+        </div>
+        <button onclick="quickFilterCompany('Deloitte'); scrollToOpenings();" class="mt-4 mx-auto px-5 py-1.5 rounded-full bg-blue-50 hover:bg-blue-100 text-[#2563eb] font-bold text-xs transition">View jobs</button>
+      </div>
+
+      <div class="bg-white rounded-2xl border border-slate-200 p-4 text-center flex flex-col justify-between hover:shadow-md transition">
+        <div>
+          <img src="https://logo.clearbit.com/accenture.com" onerror="this.src='https://ui-avatars.com/api/?name=Accenture&background=7c3aed&color=fff'" alt="Accenture" class="company-logo-img mx-auto mb-3" />
+          <div class="bg-orange-50/70 rounded-xl py-2 px-2 mb-2.5">
+            <h3 class="font-extrabold text-xs sm:text-sm text-slate-900">Accenture</h3>
+            <p class="text-[11px] font-bold text-slate-600 mt-0.5"><i class="fa-solid fa-star text-amber-400"></i> 4.1 <span class="text-slate-400 font-normal">| 82k+ reviews</span></p>
+          </div>
+          <p class="text-[11px] text-slate-500 line-clamp-2">Trusted global digital solutions &amp; cloud engineering.</p>
+        </div>
+        <button onclick="quickFilterCompany('Accenture'); scrollToOpenings();" class="mt-4 mx-auto px-5 py-1.5 rounded-full bg-blue-50 hover:bg-blue-100 text-[#2563eb] font-bold text-xs transition">View jobs</button>
+      </div>
+
+      <div class="bg-white rounded-2xl border border-slate-200 p-4 text-center flex flex-col justify-between hover:shadow-md transition">
+        <div>
+          <img src="https://logo.clearbit.com/tcs.com" onerror="this.src='https://ui-avatars.com/api/?name=TCS&background=2563eb&color=fff'" alt="TCS" class="company-logo-img mx-auto mb-3" />
+          <div class="bg-orange-50/70 rounded-xl py-2 px-2 mb-2.5">
+            <h3 class="font-extrabold text-xs sm:text-sm text-slate-900">TCS Digital</h3>
+            <p class="text-[11px] font-bold text-slate-600 mt-0.5"><i class="fa-solid fa-star text-amber-400"></i> 4.0 <span class="text-slate-400 font-normal">| 95k+ reviews</span></p>
+          </div>
+          <p class="text-[11px] text-slate-500 line-clamp-2">Building on belief through AI &amp; enterprise innovation.</p>
+        </div>
+        <button onclick="quickFilterCompany('TCS'); scrollToOpenings();" class="mt-4 mx-auto px-5 py-1.5 rounded-full bg-blue-50 hover:bg-blue-100 text-[#2563eb] font-bold text-xs transition">View jobs</button>
+      </div>
+
+      <div class="bg-white rounded-2xl border border-slate-200 p-4 text-center flex flex-col justify-between hover:shadow-md transition col-span-2 sm:col-span-1">
+        <div>
+          <img src="https://logo.clearbit.com/genpact.com" onerror="this.src='https://ui-avatars.com/api/?name=Genpact&background=0284c7&color=fff'" alt="Genpact" class="company-logo-img mx-auto mb-3" />
+          <div class="bg-orange-50/70 rounded-xl py-2 px-2 mb-2.5">
+            <h3 class="font-extrabold text-xs sm:text-sm text-slate-900">Genpact</h3>
+            <p class="text-[11px] font-bold text-slate-600 mt-0.5"><i class="fa-solid fa-star text-amber-400"></i> 4.1 <span class="text-slate-400 font-normal">| 38k+ reviews</span></p>
+          </div>
+          <p class="text-[11px] text-slate-500 line-clamp-2">Transformation happens here across voice &amp; finance.</p>
+        </div>
+        <button onclick="quickFilterCompany('Genpact'); scrollToOpenings();" class="mt-4 mx-auto px-5 py-1.5 rounded-full bg-blue-50 hover:bg-blue-100 text-[#2563eb] font-bold text-xs transition">View jobs</button>
+      </div>
+    </div>
+
+    <div class="text-center mt-5">
+      <button onclick="quickFilterReset(); scrollToOpenings();" class="px-6 py-2 rounded-full border border-[#2563eb] text-[#2563eb] font-bold text-xs sm:text-sm hover:bg-blue-50 transition">
+        View all companies
+      </button>
+    </div>
+  </section>
+
+    <!-- NAUKRI PROMO BANNERS -->
+  <section class="max-w-7xl mx-auto px-3 sm:px-6 py-2 space-y-3.5 w-full">
+    <div onclick="quickFilterSector('it'); scrollToOpenings();" class="cursor-pointer rounded-2xl bg-gradient-to-r from-[#050b14] via-[#0f172a] to-[#1e3a8a] text-white p-5 sm:p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-sm">
+      <div>
+        <span class="text-[10px] font-extrabold uppercase tracking-wider bg-white/10 px-2.5 py-1 rounded-md">EPAM &amp; Enterprise Partners</span>
+        <h3 class="text-base sm:text-xl font-black mt-2 leading-snug">Hiring: Sr. Java React, Cloud &amp; Backend Engineers across India</h3>
+        <button class="mt-3 px-4 py-1.5 rounded-full border border-white/60 text-xs font-bold hover:bg-white hover:text-slate-900 transition">View jobs</button>
+      </div>
+      <i class="fa-solid fa-laptop-code text-4xl text-cyan-400/80 hidden sm:block"></i>
+    </div>
+
+    <div onclick="quickFilterTier('entry'); scrollToOpenings();" class="cursor-pointer rounded-2xl bg-gradient-to-r from-[#2a1205] via-[#451a03] to-[#1c0a00] text-white p-5 sm:p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border border-amber-500/30 shadow-sm">
+      <div>
+        <p class="text-[10px] font-extrabold tracking-widest uppercase text-amber-400">INDIA'S BIGGEST FRESHER WALK-IN ARCHIVE</p>
+        <h3 class="text-base sm:text-xl font-black mt-1 leading-snug">Get direct walk-in entry to verified MNCs with zero consultancy fee</h3>
+        <button class="mt-3 px-5 py-1.5 rounded-full bg-white text-slate-900 text-xs font-extrabold hover:bg-amber-100 transition">Know more</button>
+      </div>
+      <div class="flex items-center gap-2 border border-amber-400/40 bg-amber-500/10 px-3.5 py-2 rounded-xl shrink-0">
+        <i class="fa-solid fa-award text-2xl text-amber-400"></i>
+        <span class="text-xs font-black text-white tracking-tight">ENGINEERS RING OF HONOUR 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 728x90 TOP BANNER AD (ORIGINAL UNTOUCHED) -->
   <div class="max-w-7xl mx-auto px-4 my-3 hidden md:flex justify-center items-center">
     <script>
       atOptions = {
@@ -182,7 +402,7 @@
   </div>
 
     <!-- DYNAMIC 100-CARD CONTAINER (10-10 BATCH LOADED) -->
-  <main id="openings" class="max-w-7xl mx-auto px-3 sm:px-4 py-6 sm:py-10 w-full flex-grow">
+  <main id="openings" class="max-w-7xl mx-auto px-3 sm:px-6 py-6 sm:py-10 w-full flex-grow">
     
     <div class="flex items-center justify-between mb-5">
       <div>
@@ -206,7 +426,236 @@
     </div>
   </main>
 
-    <!-- DEDICATED FULL-SCREEN JOB DETAILS VIEW WITH REVIEWS -->
+    <!-- DISCOVER JOBS ACROSS POPULAR ROLES -->
+  <section class="max-w-7xl mx-auto px-3 sm:px-6 py-5 sm:py-7 w-full">
+    <div class="bg-[#fff8f4] border border-orange-100 rounded-3xl p-5 sm:p-8 flex flex-col lg:flex-row items-center justify-between gap-6">
+      <div class="max-w-sm text-left">
+        <div class="w-14 h-14 rounded-2xl bg-white border border-orange-200 flex items-center justify-center text-2xl text-[#ff5722] mb-3 shadow-2xs">
+          <i class="fa-solid fa-magnifying-glass-location"></i>
+        </div>
+        <h2 class="text-xl sm:text-2xl font-black text-[#0f172a] leading-tight">Discover jobs across popular roles</h2>
+        <p class="text-xs sm:text-sm text-slate-600 mt-1.5 font-medium">Select a role and we'll show you relevant jobs for it!</p>
+      </div>
+
+      <div class="bg-white rounded-2xl border border-slate-200 p-4 sm:p-6 w-full lg:w-[62%] shadow-2xs">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div onclick="quickFilterCompany('Software'); scrollToOpenings();" class="p-3.5 rounded-xl border border-slate-200 hover:border-[#2563eb] cursor-pointer transition">
+            <h4 class="text-xs sm:text-sm font-bold text-slate-900">Full Stack Developer</h4>
+            <p class="text-[11px] text-slate-500 mt-0.5">18.4K+ Jobs <i class="fa-solid fa-chevron-right text-[9px] ml-0.5"></i></p>
+          </div>
+          <div onclick="quickFilterCompany('Cloud'); scrollToOpenings();" class="p-3.5 rounded-xl border border-slate-200 hover:border-[#2563eb] cursor-pointer transition">
+            <h4 class="text-xs sm:text-sm font-bold text-slate-900">Mobile / App Developer</h4>
+            <p class="text-[11px] text-slate-500 mt-0.5">2.8K+ Jobs <i class="fa-solid fa-chevron-right text-[9px] ml-0.5"></i></p>
+          </div>
+          <div onclick="quickFilterSector('it'); scrollToOpenings();" class="p-3.5 rounded-xl border border-slate-200 hover:border-[#2563eb] cursor-pointer transition">
+            <h4 class="text-xs sm:text-sm font-bold text-slate-900">Front End Developer</h4>
+            <p class="text-[11px] text-slate-500 mt-0.5">5.3K+ Jobs <i class="fa-solid fa-chevron-right text-[9px] ml-0.5"></i></p>
+          </div>
+          <div onclick="quickFilterSector('it'); scrollToOpenings();" class="p-3.5 rounded-xl border border-slate-200 hover:border-[#2563eb] cursor-pointer transition">
+            <h4 class="text-xs sm:text-sm font-bold text-slate-900">DevOps Engineer</h4>
+            <p class="text-[11px] text-slate-500 mt-0.5">2.7K+ Jobs <i class="fa-solid fa-chevron-right text-[9px] ml-0.5"></i></p>
+          </div>
+          <div onclick="quickFilterSector('voice'); scrollToOpenings();" class="p-3.5 rounded-xl border border-slate-200 hover:border-[#2563eb] cursor-pointer transition">
+            <h4 class="text-xs sm:text-sm font-bold text-slate-900">Customer Support Lead</h4>
+            <p class="text-[11px] text-slate-500 mt-0.5">1.4K+ Jobs <i class="fa-solid fa-chevron-right text-[9px] ml-0.5"></i></p>
+          </div>
+          <div onclick="quickFilterSector('bfsi'); scrollToOpenings();" class="p-3.5 rounded-xl border border-slate-200 hover:border-[#2563eb] cursor-pointer transition">
+            <h4 class="text-xs sm:text-sm font-bold text-slate-900">Technical &amp; Risk Lead</h4>
+            <p class="text-[11px] text-slate-500 mt-0.5">9.4K+ Jobs <i class="fa-solid fa-chevron-right text-[9px] ml-0.5"></i></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- SPONSORED COMPANIES -->
+  <section class="max-w-7xl mx-auto px-3 sm:px-6 py-5 sm:py-7 w-full">
+    <h2 class="text-base sm:text-xl font-extrabold text-[#0f172a] text-center mb-4">Sponsored companies</h2>
+    <div class="flex flex-wrap items-center justify-center gap-2 mb-5 text-xs font-semibold">
+      <button onclick="quickFilterReset(); scrollToOpenings();" class="px-3.5 py-1 rounded-full bg-slate-900 text-white">All</button>
+      <button onclick="quickFilterSector('it'); scrollToOpenings();" class="px-3.5 py-1 rounded-full bg-white border border-slate-200 text-slate-600 hover:border-[#2563eb]">IT Services</button>
+      <button onclick="quickFilterSector('it'); scrollToOpenings();" class="px-3.5 py-1 rounded-full bg-white border border-slate-200 text-slate-600 hover:border-[#2563eb]">Technology</button>
+      <button onclick="quickFilterSector('bfsi'); scrollToOpenings();" class="px-3.5 py-1 rounded-full bg-white border border-slate-200 text-slate-600 hover:border-[#2563eb]">BFSI</button>
+      <button onclick="quickFilterSector('logistics'); scrollToOpenings();" class="px-3.5 py-1 rounded-full bg-white border border-slate-200 text-slate-600 hover:border-[#2563eb]">Manufacturing &amp; Logistics</button>
+      <button onclick="quickFilterSector('voice'); scrollToOpenings();" class="px-3.5 py-1 rounded-full bg-white border border-slate-200 text-slate-600 hover:border-[#2563eb]">BPM / BPO</button>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3.5 sm:gap-4">
+      <div onclick="quickFilterCompany('Wipro'); scrollToOpenings();" class="bg-white rounded-2xl border border-slate-200 p-4 text-center hover:shadow-md transition cursor-pointer">
+        <img src="https://logo.clearbit.com/wipro.com" onerror="this.src='https://ui-avatars.com/api/?name=Wipro&background=2563eb&color=fff'" alt="Wipro" class="company-logo-img mx-auto mb-2" />
+        <h3 class="font-bold text-xs sm:text-sm text-slate-900 truncate">Wipro Limited</h3>
+        <p class="text-[11px] font-bold text-slate-600 mt-1"><i class="fa-solid fa-star text-amber-400"></i> 3.9 <span class="text-slate-400 font-normal">| 62k+ reviews</span></p>
+        <span class="inline-block mt-2 text-[10px] px-2 py-0.5 rounded-full bg-slate-100 text-slate-600">IT Services</span>
+      </div>
+      <div onclick="quickFilterCompany('HCL'); scrollToOpenings();" class="bg-white rounded-2xl border border-slate-200 p-4 text-center hover:shadow-md transition cursor-pointer">
+        <img src="https://logo.clearbit.com/hcltech.com" onerror="this.src='https://ui-avatars.com/api/?name=HCL&background=0284c7&color=fff'" alt="HCLTech" class="company-logo-img mx-auto mb-2" />
+        <h3 class="font-bold text-xs sm:text-sm text-slate-900 truncate">HCLTech</h3>
+        <p class="text-[11px] font-bold text-slate-600 mt-1"><i class="fa-solid fa-star text-amber-400"></i> 4.0 <span class="text-slate-400 font-normal">| 48k+ reviews</span></p>
+        <span class="inline-block mt-2 text-[10px] px-2 py-0.5 rounded-full bg-slate-100 text-slate-600">Technology</span>
+      </div>
+      <div onclick="quickFilterCompany('Teleperformance'); scrollToOpenings();" class="bg-white rounded-2xl border border-slate-200 p-4 text-center hover:shadow-md transition cursor-pointer">
+        <img src="https://logo.clearbit.com/teleperformance.com" onerror="this.src='https://ui-avatars.com/api/?name=TP&background=7c3aed&color=fff'" alt="Teleperformance" class="company-logo-img mx-auto mb-2" />
+        <h3 class="font-bold text-xs sm:text-sm text-slate-900 truncate">Teleperformance</h3>
+        <p class="text-[11px] font-bold text-slate-600 mt-1"><i class="fa-solid fa-star text-amber-400"></i> 3.8 <span class="text-slate-400 font-normal">| 42k+ reviews</span></p>
+        <span class="inline-block mt-2 text-[10px] px-2 py-0.5 rounded-full bg-slate-100 text-slate-600">BPO / CX</span>
+      </div>
+      <div onclick="quickFilterCompany('TeamLease'); scrollToOpenings();" class="bg-white rounded-2xl border border-slate-200 p-4 text-center hover:shadow-md transition cursor-pointer">
+        <img src="https://logo.clearbit.com/teamlease.com" onerror="this.src='https://ui-avatars.com/api/?name=TL&background=0d9488&color=fff'" alt="TeamLease" class="company-logo-img mx-auto mb-2" />
+        <h3 class="font-bold text-xs sm:text-sm text-slate-900 truncate">TeamLease Services</h3>
+        <p class="text-[11px] font-bold text-slate-600 mt-1"><i class="fa-solid fa-star text-amber-400"></i> 4.1 <span class="text-slate-400 font-normal">| 12k+ reviews</span></p>
+        <span class="inline-block mt-2 text-[10px] px-2 py-0.5 rounded-full bg-slate-100 text-slate-600">BFSI Staffing</span>
+      </div>
+      <div onclick="quickFilterCompany('Randstad'); scrollToOpenings();" class="bg-white rounded-2xl border border-slate-200 p-4 text-center hover:shadow-md transition cursor-pointer">
+        <img src="https://logo.clearbit.com/randstad.in" onerror="this.src='https://ui-avatars.com/api/?name=Randstad&background=2563eb&color=fff'" alt="Randstad" class="company-logo-img mx-auto mb-2" />
+        <h3 class="font-bold text-xs sm:text-sm text-slate-900 truncate">Randstad India</h3>
+        <p class="text-[11px] font-bold text-slate-600 mt-1"><i class="fa-solid fa-star text-amber-400"></i> 4.2 <span class="text-slate-400 font-normal">| 15k+ reviews</span></p>
+        <span class="inline-block mt-2 text-[10px] px-2 py-0.5 rounded-full bg-slate-100 text-slate-600">IT Consulting</span>
+      </div>
+      <div onclick="quickFilterCompany('Infosys'); scrollToOpenings();" class="bg-white rounded-2xl border border-slate-200 p-4 text-center hover:shadow-md transition cursor-pointer">
+        <img src="https://logo.clearbit.com/infosys.com" onerror="this.src='https://ui-avatars.com/api/?name=Infosys&background=1d4ed8&color=fff'" alt="Infosys" class="company-logo-img mx-auto mb-2" />
+        <h3 class="font-bold text-xs sm:text-sm text-slate-900 truncate">Infosys Power</h3>
+        <p class="text-[11px] font-bold text-slate-600 mt-1"><i class="fa-solid fa-star text-amber-400"></i> 3.9 <span class="text-slate-400 font-normal">| 70k+ reviews</span></p>
+        <span class="inline-block mt-2 text-[10px] px-2 py-0.5 rounded-full bg-slate-100 text-slate-600">Software Product</span>
+      </div>
+      <div onclick="quickFilterCompany('JPMorgan'); scrollToOpenings();" class="bg-white rounded-2xl border border-slate-200 p-4 text-center hover:shadow-md transition cursor-pointer">
+        <img src="https://logo.clearbit.com/jpmorganchase.com" onerror="this.src='https://ui-avatars.com/api/?name=JPM&background=1e3a8a&color=fff'" alt="JPMorgan" class="company-logo-img mx-auto mb-2" />
+        <h3 class="font-bold text-xs sm:text-sm text-slate-900 truncate">JPMorgan Chase</h3>
+        <p class="text-[11px] font-bold text-slate-600 mt-1"><i class="fa-solid fa-star text-amber-400"></i> 4.3 <span class="text-slate-400 font-normal">| 16k+ reviews</span></p>
+        <span class="inline-block mt-2 text-[10px] px-2 py-0.5 rounded-full bg-slate-100 text-slate-600">Financial Services</span>
+      </div>
+      <div onclick="quickFilterCompany('Flipkart'); scrollToOpenings();" class="bg-white rounded-2xl border border-slate-200 p-4 text-center hover:shadow-md transition cursor-pointer">
+        <img src="https://logo.clearbit.com/flipkart.com" onerror="this.src='https://ui-avatars.com/api/?name=Flipkart&background=eab308&color=fff'" alt="Flipkart" class="company-logo-img mx-auto mb-2" />
+        <h3 class="font-bold text-xs sm:text-sm text-slate-900 truncate">Flipkart India</h3>
+        <p class="text-[11px] font-bold text-slate-600 mt-1"><i class="fa-solid fa-star text-amber-400"></i> 4.2 <span class="text-slate-400 font-normal">| 18k+ reviews</span></p>
+        <span class="inline-block mt-2 text-[10px] px-2 py-0.5 rounded-full bg-slate-100 text-slate-600">E-Commerce</span>
+      </div>
+    </div>
+                                                                                                                   </section>
+       <!-- PREPARE FOR YOUR NEXT INTERVIEW -->
+  <section id="interview-prep" class="max-w-7xl mx-auto px-3 sm:px-6 py-5 sm:py-7 w-full">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 items-stretch">
+      <div class="lg:col-span-3 bg-[#fff8f4] border border-orange-100 rounded-3xl p-5 flex flex-col justify-between">
+        <div>
+          <span class="text-[10px] font-extrabold text-[#2563eb] bg-blue-50 px-2.5 py-1 rounded-md">by DirectHire Insights</span>
+          <h3 class="text-lg sm:text-xl font-black text-[#0f172a] mt-3 leading-snug">Prepare for your next interview</h3>
+        </div>
+        <div class="mt-6 flex items-center justify-center text-4xl text-[#ff5722]/80">
+          <i class="fa-solid fa-comments"></i>
+        </div>
+      </div>
+
+      <div class="lg:col-span-5 bg-white border border-slate-200 rounded-3xl p-5 flex flex-col justify-between">
+        <div>
+          <h4 class="text-sm sm:text-base font-extrabold text-[#0f172a] mb-3">Interview questions by company</h4>
+          <div class="grid grid-cols-2 gap-2.5">
+            <div onclick="openJobDetailModal(7)" class="p-2.5 rounded-xl border border-slate-200 hover:border-[#2563eb] cursor-pointer flex items-center justify-between">
+              <div><p class="text-xs font-bold text-slate-900">Accenture</p><p class="text-[10px] text-slate-500">2K+ Interviews</p></div>
+              <i class="fa-solid fa-chevron-right text-[10px] text-slate-400"></i>
+            </div>
+            <div onclick="openJobDetailModal(1)" class="p-2.5 rounded-xl border border-slate-200 hover:border-[#2563eb] cursor-pointer flex items-center justify-between">
+              <div><p class="text-xs font-bold text-slate-900">Amazon</p><p class="text-[10px] text-slate-500">1.7K+ Interviews</p></div>
+              <i class="fa-solid fa-chevron-right text-[10px] text-slate-400"></i>
+            </div>
+            <div onclick="openJobDetailModal(9)" class="p-2.5 rounded-xl border border-slate-200 hover:border-[#2563eb] cursor-pointer flex items-center justify-between">
+              <div><p class="text-xs font-bold text-slate-900">Cognizant</p><p class="text-[10px] text-slate-500">1.6K+ Interviews</p></div>
+              <i class="fa-solid fa-chevron-right text-[10px] text-slate-400"></i>
+            </div>
+            <div onclick="openJobDetailModal(5)" class="p-2.5 rounded-xl border border-slate-200 hover:border-[#2563eb] cursor-pointer flex items-center justify-between">
+              <div><p class="text-xs font-bold text-slate-900">TCS</p><p class="text-[10px] text-slate-500">2.5K+ Interviews</p></div>
+              <i class="fa-solid fa-chevron-right text-[10px] text-slate-400"></i>
+            </div>
+            <div onclick="openJobDetailModal(10)" class="p-2.5 rounded-xl border border-slate-200 hover:border-[#2563eb] cursor-pointer flex items-center justify-between">
+              <div><p class="text-xs font-bold text-slate-900">Flipkart</p><p class="text-[10px] text-slate-500">488 Interviews</p></div>
+              <i class="fa-solid fa-chevron-right text-[10px] text-slate-400"></i>
+            </div>
+            <div onclick="openJobDetailModal(4)" class="p-2.5 rounded-xl border border-slate-200 hover:border-[#2563eb] cursor-pointer flex items-center justify-between">
+              <div><p class="text-xs font-bold text-slate-900">Deloitte</p><p class="text-[10px] text-slate-500">816 Interviews</p></div>
+              <i class="fa-solid fa-chevron-right text-[10px] text-slate-400"></i>
+            </div>
+          </div>
+        </div>
+        <button onclick="scrollToOpenings()" class="mt-4 text-xs font-bold text-[#2563eb] hover:underline text-center">View all companies &gt;</button>
+      </div>
+
+      <div class="lg:col-span-4 bg-white border border-slate-200 rounded-3xl p-5 flex flex-col justify-between">
+        <div>
+          <h4 class="text-sm sm:text-base font-extrabold text-[#0f172a] mb-3">Interview questions by role</h4>
+          <div class="space-y-2.5 text-xs">
+            <div onclick="quickFilterSector('it'); scrollToOpenings();" class="flex items-center justify-between py-1.5 border-b border-slate-100 cursor-pointer hover:text-[#2563eb]">
+              <span class="font-semibold text-slate-800">Software Engineer</span><span class="text-slate-400">(7.2K+ questions)</span>
+            </div>
+            <div onclick="quickFilterSector('bfsi'); scrollToOpenings();" class="flex items-center justify-between py-1.5 border-b border-slate-100 cursor-pointer hover:text-[#2563eb]">
+              <span class="font-semibold text-slate-800">Business Analyst</span><span class="text-slate-400">(2.8K+ questions)</span>
+            </div>
+            <div onclick="quickFilterSector('voice'); scrollToOpenings();" class="flex items-center justify-between py-1.5 border-b border-slate-100 cursor-pointer hover:text-[#2563eb]">
+              <span class="font-semibold text-slate-800">Consultant &amp; Support</span><span class="text-slate-400">(2.4K+ questions)</span>
+            </div>
+            <div onclick="quickFilterSector('bfsi'); scrollToOpenings();" class="flex items-center justify-between py-1.5 border-b border-slate-100 cursor-pointer hover:text-[#2563eb]">
+              <span class="font-semibold text-slate-800">Financial Analyst</span><span class="text-slate-400">(894 questions)</span>
+            </div>
+            <div onclick="quickFilterSector('logistics'); scrollToOpenings();" class="flex items-center justify-between py-1.5 cursor-pointer hover:text-[#2563eb]">
+              <span class="font-semibold text-slate-800">Sales &amp; Operations</span><span class="text-slate-400">(991 questions)</span>
+            </div>
+          </div>
+        </div>
+        <button onclick="scrollToOpenings()" class="mt-4 text-xs font-bold text-[#2563eb] hover:underline text-center">View all roles &gt;</button>
+      </div>
+    </div>
+  </section>
+
+    <!-- ACCELERATE JOB SEARCH & VIDEO PROFILE BANNERS -->
+  <section class="max-w-7xl mx-auto px-3 sm:px-6 py-4 space-y-5 w-full">
+    <div class="bg-white border border-slate-200 rounded-3xl p-5 sm:p-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 shadow-2xs">
+      <div class="flex items-start sm:items-center gap-4">
+        <div class="w-12 h-12 rounded-2xl bg-orange-50 border border-orange-200 flex items-center justify-center text-xl text-[#ff5722] shrink-0">
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+        </div>
+        <div>
+          <h3 class="text-sm sm:text-lg font-extrabold text-[#0f172a]">Accelerate your job search with DirectHire FastTrack</h3>
+          <p class="text-xs text-slate-500 mt-0.5">Direct walk-in venue access, verified HR reporting desks, and real employee reviews — 100% Free.</p>
+          <div class="flex flex-wrap items-center gap-3 mt-2 text-[11px] font-bold text-slate-600">
+            <span>✨ Verified Venues &gt;</span>
+            <span>⚡ Direct HR Desk &gt;</span>
+            <span>⭐ Workplace Reviews &gt;</span>
+          </div>
+        </div>
+      </div>
+      <button onclick="scrollToOpenings()" class="bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-bold text-xs sm:text-sm px-6 py-2.5 rounded-full shrink-0 transition">
+        Explore Live Drives
+      </button>
+    </div>
+
+    <div class="bg-[#f5f3ff] border border-indigo-100 rounded-3xl p-5 sm:p-7 flex flex-col lg:flex-row items-center justify-between gap-6">
+      <div class="max-w-md">
+        <h3 class="text-lg sm:text-xl font-black text-[#0f172a] leading-snug">Stand out among recruiters with Instant Walk-in Alerts</h3>
+        <p class="text-xs text-slate-600 mt-1 font-medium">Available for both Android and iOS mobile browsers</p>
+        <div class="mt-3.5 bg-white p-1.5 rounded-full border border-slate-200 flex items-center max-w-xs">
+          <input type="text" placeholder="Enter city or role..." onkeyup="document.getElementById('searchInput').value=this.value; filterJobs();" class="w-full px-3 py-1 text-xs focus:outline-none bg-transparent" />
+          <button onclick="scrollToOpenings()" class="bg-[#2563eb] text-white text-xs font-bold px-4 py-1.5 rounded-full shrink-0">Get link</button>
+        </div>
+      </div>
+      <div class="flex items-center gap-4">
+        <div class="bg-white p-3 rounded-2xl border border-slate-200 text-center">
+          <i class="fa-solid fa-qrcode text-4xl text-slate-800"></i>
+          <p class="text-[9px] font-bold text-slate-500 mt-1">Scan to explore</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HIRING ADVISORY (ORIGINAL UNTOUCHED) -->
+  <section id="safety" data-nosnippet class="max-w-7xl mx-auto px-3 sm:px-6 pb-10 w-full">
+    <div class="bg-[#fcf8f0] border border-[#f3e6cb] rounded-2xl p-4 sm:p-5 text-xs text-amber-900 leading-relaxed shadow-2xs">
+      <div class="flex items-center gap-2 font-bold text-amber-950 mb-1.5">
+        <i class="fa-solid fa-shield-halved text-amber-600 text-sm"></i> Official Hiring Advisory
+      </div>
+      <p>
+        <strong>Direct Hire Hub is 100% free for all candidates.</strong> 
+        Direct corporate employers and authorized staffing partners — TeamLease, Randstad, Adecco, Quess Corp, Wipro, Genpact — <span class="underline font-bold">never charge any registration or document fee</span> at any stage of hiring.
+      </p>
+    </div>
+                                                                                                                                  </section>
+       <!-- DEDICATED FULL-SCREEN JOB DETAILS VIEW WITH REVIEWS -->
   <div id="jobDetailModal" class="fixed inset-0 bg-slate-900/80 z-50 hidden overflow-y-auto">
     <div class="min-h-screen px-3 sm:px-6 py-6 flex items-start justify-center">
       <div class="bg-white rounded-2xl max-w-4xl w-full p-4 sm:p-8 relative shadow-2xl border border-slate-200">
@@ -240,7 +689,7 @@
           <h1 id="modalArticleTitle" class="text-xl sm:text-3xl font-black text-[#0f172a] leading-tight"></h1>
           <p id="modalArticleIntro" class="text-xs sm:text-sm text-slate-600 leading-relaxed font-medium"></p>
 
-                    <!-- QUICK SUMMARY BOX -->
+                   <!-- QUICK SUMMARY BOX -->
           <div class="bg-[#f8fafc] border border-slate-200 rounded-xl p-4 sm:p-5">
             <h4 class="font-bold text-xs sm:text-sm text-[#0f172a] mb-3 pb-2 border-b border-slate-200">
               <span id="modalSummaryCompany"></span> Walk-in Drive: Quick Summary
@@ -256,7 +705,7 @@
             </div>
           </div>
 
-                    <!-- EMPLOYER & EMPLOYEE REVIEWS SECTION -->
+          <!-- EMPLOYER & EMPLOYEE REVIEWS SECTION -->
           <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 sm:p-5">
             <div class="flex items-center justify-between pb-3 border-b border-slate-200 mb-4">
               <div>
@@ -305,7 +754,7 @@
             </div>
           </div>
 
-                    <!-- CORE RESPONSIBILITIES -->
+                   <!-- CORE RESPONSIBILITIES -->
           <div>
             <h3 class="text-sm sm:text-base font-bold text-[#0f172a] mb-3">Core Responsibilities &amp; Work Profile</h3>
             <ul class="list-disc pl-5 space-y-2 text-xs text-slate-600 leading-relaxed font-medium">
@@ -327,7 +776,7 @@
             </ul>
           </div>
 
-                    <!-- VENUE SECTION (ANTI-LEAK data-nosnippet) -->
+          <!-- VENUE SECTION (ANTI-LEAK data-nosnippet) -->
           <div data-nosnippet class="bg-blue-50/60 border border-blue-200 rounded-2xl p-5">
             <h3 class="text-sm sm:text-base font-bold text-[#0f172a] mb-2">Walk-in Interview Venue &amp; Reporting Desk</h3>
             <p class="text-xs text-slate-600 mb-4">Official campus entry guidelines, tower details aur reporting floor unlock karne ke liye button par click karein:</p>
@@ -356,7 +805,7 @@
             </button>
           </div>
 
-                    <!-- CLEAN ADVISORY -->
+                   <!-- CLEAN ADVISORY -->
           <div data-nosnippet class="bg-[#fffbeb] border border-[#fef3c7] rounded-xl p-4 text-[11px] text-amber-900 leading-relaxed">
             <strong>Official Advisory:</strong> Direct employers and authorized staffing partners never charge any registration fee, security deposit ya training fees. Diye gaye official cyber city address par direct walk-in report karein aur kisi unauthorized middlemen ke behkawe me na aayein.
           </div>
@@ -371,7 +820,7 @@
             </a>
           </div>
 
-                    <!-- IN-FEED RECTANGULAR AD BETWEEN CONTENT AND RECOMMENDATIONS -->
+          <!-- IN-FEED RECTANGULAR AD BETWEEN CONTENT AND RECOMMENDATIONS -->
           <div class="w-full flex justify-center items-center py-4 my-2 border-y border-slate-100">
             <script>
               atOptions = {
@@ -385,7 +834,7 @@
             <script src="https://bauval.org/22/4664641d4ae4a9bff02ad0f60bd98546"></script>
           </div>
 
-                    <!-- SIMILAR RECOMMENDATIONS (SCROLL DOWN CONTENT) -->
+          <!-- SIMILAR RECOMMENDATIONS (SCROLL DOWN CONTENT) -->
           <div class="pt-2">
             <div class="flex items-center justify-between mb-4">
               <h3 class="text-base sm:text-lg font-extrabold text-[#0f172a]">Similar Verified Drives You May Like</h3>
@@ -402,20 +851,7 @@
     </div>
   </div>
 
-    <!-- HIRING ADVISORY -->
-  <section id="safety" data-nosnippet class="max-w-7xl mx-auto px-3 sm:px-4 pb-10 w-full">
-    <div class="bg-[#fcf8f0] border border-[#f3e6cb] rounded-2xl p-4 sm:p-5 text-xs text-amber-900 leading-relaxed shadow-2xs">
-      <div class="flex items-center gap-2 font-bold text-amber-950 mb-1.5">
-        <i class="fa-solid fa-shield-halved text-amber-600 text-sm"></i> Official Hiring Advisory
-      </div>
-      <p>
-        <strong>Direct Hire Hub is 100% free for all candidates.</strong> 
-        Direct corporate employers and authorized staffing partners — TeamLease, Randstad, Adecco, Quess Corp, Wipro, Genpact — <span class="underline font-bold">never charge any registration or document fee</span> at any stage of hiring.
-      </p>
-    </div>
-  </section>
-
-  <!-- DARK FOOTER -->
+    <!-- DARK FOOTER -->
   <footer id="footer" class="bg-[#050b14] text-white border-t border-slate-800">
     <div class="max-w-7xl mx-auto px-4 py-10 sm:py-12">
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
@@ -424,30 +860,28 @@
             <span class="text-lg font-black text-[#38bdf8] tracking-tight">Direct Hire Hub</span>
             <span class="text-[8px] font-bold tracking-widest text-slate-400 uppercase mt-0.5">YOUR CAREER, OUR MISSION</span>
           </div>
-          <p class="text-xs text-slate-400 leading-relaxed">Verified walk-in drives, corporate openings, verified ratings and staffing alerts across India — 100% free.</p>
+          <p class="text-xs text-slate-400 leading-relaxed">Verified walk-in drives, corporate openings, verified ratings and staffing alerts across India — 100% free independent informational portal.</p>
         </div>
         <div>
           <h5 class="text-xs font-bold uppercase tracking-wider text-slate-300 mb-3">Explore</h5>
           <ul class="text-xs text-slate-400 space-y-2 font-medium">
             <li><a href="#openings" class="hover:text-white">Latest Drives</a></li>
-            <li><a href="#openings" class="hover:text-white">Top MNCs</a></li>
+            <li><a href="#featured-companies" class="hover:text-white">Top MNCs</a></li>
           </ul>
         </div>
         <div>
           <h5 class="text-xs font-bold uppercase tracking-wider text-slate-300 mb-3">Legal</h5>
-          
-                    <ul class="text-xs text-slate-400 space-y-2 font-medium">
+          <ul class="text-xs text-slate-400 space-y-2 font-medium">
             <li><button onclick="openPolicyModal('disclaimer')" class="hover:text-white text-left">Disclaimer</button></li>
             <li><button onclick="openPolicyModal('privacy')" class="hover:text-white text-left">Privacy Policy</button></li>
           </ul>
         </div>
         <div>
-          <h5 class="text-xs font-bold uppercase tracking-wider text-slate-300 mb-3">Company</h5>
+          <h5 class="text-xs font-bold uppercase tracking-wider text-slate-300 mb-3">Portal</h5>
           <ul class="text-xs text-slate-400 space-y-2 font-medium">
             <li><button onclick="openPolicyModal('about')" class="hover:text-white text-left">About Us</button></li>
             <li><button onclick="openPolicyModal('contact')" class="hover:text-white text-left">Contact Us</button></li>
           </ul>
-          
         </div>
       </div>
       <div class="mt-10 pt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 gap-2">
@@ -456,6 +890,7 @@
       </div>
     </div>
   </footer>
+
     <!-- DEDICATED POLICY & COMPANY MODAL -->
   <div id="policyModal" class="fixed inset-0 bg-slate-900/80 z-50 hidden flex items-center justify-center p-3 sm:p-4 overflow-y-auto">
     <div class="bg-white rounded-2xl max-w-2xl w-full p-5 sm:p-7 relative shadow-2xl my-auto text-slate-800">
@@ -473,9 +908,8 @@
       </div>
     </div>
   </div>
-  
 
-    <!-- 320x50 MOBILE BOTTOM FLOATING STICKY BANNER -->
+  <!-- 320x50 MOBILE BOTTOM FLOATING STICKY BANNER -->
   <div class="fixed bottom-0 left-0 right-0 z-40 flex md:hidden justify-center items-center bg-white/95 border-t border-slate-200 py-1 shadow-lg">
     <script>
       atOptions = {
@@ -489,14 +923,19 @@
     <script src="https://bauval.org/22/185f28e787e3ea541b418348e83e699e"></script>
   </div>
 
-  <!-- JAVASCRIPT LOGIC ENGINE -->
+    <!-- JAVASCRIPT LOGIC ENGINE -->
   <script>
     const ADSTERRA_DIRECT_LINK = "";
     let currentPageBatch = 1;
     const CARDS_PER_BATCH = 10;
     const MAX_TOTAL_CARDS = 100;
 
-        // SEED DATABASE WITH REAL REVIEWS (1-5 HIGH CTC)
+    function scrollToOpenings() {
+      const el = document.getElementById('openings');
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // SEED DATABASE WITH REAL REVIEWS (1-5 HIGH CTC)
     const rawMasterJobs = [
       { 
         id: 1, tier: "high", env: "onsite", salaryBracket: "high", sector: "it", 
@@ -601,7 +1040,7 @@
       { company: "Randstad India", logo: "randstad.in", sector: "it", loc: "Bangalore", salary: "₹3.8 - ₹5.2 LPA", salaryBracket: "entry", env: "onsite", role: "Junior Cloud Infrastructure Trainee", venue: "Randstad Tech Tower, Whitefield, Bangalore", rating: "4.2", reviewsCount: "15k+", scoreWlb: "★ 4.1", scoreSal: "★ 4.2", scoreCult: "★ 4.3", scoreGrow: "★ 4.2", pros: "Corporate MNC deployment, smooth payroll, genuine staffing transparency.", cons: "Contract renewals depend on client enterprise budget approvals." }
     ];
 
-        const masterJobsData = [...rawMasterJobs];
+    const masterJobsData = [...rawMasterJobs];
     for (let i = 11; i <= MAX_TOTAL_CARDS; i++) {
       const template = corporatePool[(i - 11) % corporatePool.length];
       masterJobsData.push({
@@ -700,7 +1139,7 @@
     function loadNextBatch() {
       currentPageBatch++;
       renderBatch(currentPageBatch, false);
-        }
+    }
 
         function filterJobs() {
       const q = document.getElementById('searchInput').value.toLowerCase().trim();
@@ -718,6 +1157,12 @@
       });
 
       renderBatch(1, true);
+    }
+
+    function filterByCity(city) {
+      document.getElementById('searchInput').value = city;
+      filterJobs();
+      scrollToOpenings();
     }
 
     function quickFilterSector(sec) {
@@ -787,9 +1232,9 @@
     function closeJobDetailModal() {
       document.getElementById('jobDetailModal').classList.add('hidden');
       document.body.classList.remove('overflow-hidden');
-        }
+    }
 
-        function revealCompleteVenue() {
+    function revealCompleteVenue() {
       if (ADSTERRA_DIRECT_LINK) { window.open(ADSTERRA_DIRECT_LINK, '_blank'); }
       document.getElementById('modalVenueLocker').classList.remove('hidden');
       document.getElementById('modalVenueAddressBox').classList.remove('hidden');
@@ -805,25 +1250,24 @@
         matchingJobs = masterJobsData.filter(j => j.id !== currentId);
       }
 
-        matchingJobs.slice(0, 4).forEach(job => {
-      const item = document.createElement('div');
-      item.className = "p-3.5 bg-slate-50 border border-slate-200 rounded-xl hover:border-blue-300 transition flex flex-col justify-between";
-      item.innerHTML = `
-        <div>
-          <div class="flex items-center justify-between mb-1.5">
-            <span class="text-xs font-bold text-[#0f172a]">${job.company}</span>
-            <span class="text-[11px] font-bold text-amber-600">★ ${job.rating}</span>
+      matchingJobs.slice(0, 4).forEach(job => {
+        const item = document.createElement('div');
+        item.className = "p-3.5 bg-slate-50 border border-slate-200 rounded-xl hover:border-blue-300 transition flex flex-col justify-between";
+        item.innerHTML = `
+          <div>
+            <div class="flex items-center justify-between mb-1.5">
+              <span class="text-xs font-bold text-[#0f172a]">${job.company}</span>
+              <span class="text-[11px] font-bold text-amber-600">★ ${job.rating}</span>
+            </div>
+            <p class="text-xs font-semibold text-slate-700 line-clamp-1">${job.title}</p>
+            <p class="text-[11px] text-slate-500 mt-1">📍 ${job.loc}</p>
           </div>
-          <p class="text-xs font-semibold text-slate-700 line-clamp-1">${job.title}</p>
-          <p class="text-[11px] text-slate-500 mt-1">📍 ${job.loc}</p>
-        </div>
-        <button type="button" onclick="switchJobDetailModal(${job.id})" class="mt-3 text-[11px] font-bold text-[#2563eb] hover:underline text-left cursor-pointer py-1">
-          View Details &amp; Reviews →
-        </button>
-      `;
-      grid.appendChild(item);
-    });
-          
+          <button type="button" onclick="switchJobDetailModal(${job.id})" class="mt-3 text-[11px] font-bold text-[#2563eb] hover:underline text-left cursor-pointer py-1">
+            View Details &amp; Reviews →
+          </button>
+        `;
+        grid.appendChild(item);
+      });
     }
 
     function toggleSidebar(show) {
@@ -840,14 +1284,15 @@
       }
     }
 
-        document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('DOMContentLoaded', () => {
       renderBatch(1, true);
     });
+
         const policyContentData = {
       disclaimer: {
         title: "Official Disclaimer",
         body: `
-          <p><strong>100% Free Information Portal:</strong> Direct Hire Hub (directhirehub.in) is an independent verified walk-in and job notification aggregator. We never charge candidates any registration fee, interview scheduling charges, or placement fees under any circumstances.</p>
+          <p><strong>100% Free Information Portal:</strong> Direct Hire Hub (directhirehub.in) is an independent verified walk-in and job notification aggregator (not a registered recruitment company or consultancy). We never charge candidates any registration fee, interview scheduling charges, or placement fees under any circumstances.</p>
           <p><strong>Recruitment Fraud Advisory:</strong> Direct multinational employers (e.g., Amazon, Google, Genpact, TCS, Microsoft) and certified staffing partners (TeamLease, Randstad, Adecco) never solicit security deposits, document charges, or training fees. Never pay money to any unauthorized third-party agencies or middlemen.</p>
           <p><strong>Drive Verification & Accuracy:</strong> While our automated engine cross-checks all walk-in drives and reporting venues with verified sources, interview schedules, venue slots, and requirements are subject to management discretion at the respective company premises.</p>
         `
@@ -882,7 +1327,7 @@
       }
     };
 
-    function openPolicyModal(type) {
+        function openPolicyModal(type) {
       const data = policyContentData[type];
       if (!data) return;
       document.getElementById('policyModalTitle').innerText = data.title;
@@ -895,7 +1340,8 @@
       document.getElementById('policyModal').classList.add('hidden');
       document.body.classList.remove('overflow-hidden');
     }
-                function switchJobDetailModal(jobId) {
+
+    function switchJobDetailModal(jobId) {
       openJobDetailModal(Number(jobId));
       const modal = document.getElementById('jobDetailModal');
       if (modal) {
@@ -907,3 +1353,4 @@
   </script>
 </body>
 </html>
+
