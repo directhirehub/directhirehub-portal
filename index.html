@@ -6,6 +6,7 @@
   <title>Direct Hire Hub - Your Career, Our Mission</title>
   <meta name="description" content="Verified walk-in drives, corporate MNCs, certified staffing partners & employee reviews across India. 100% free with zero registration fee.">
   <link rel="canonical" href="https://directhirehub.in/">
+    <link rel="icon" type="image/png" href="/20261021_072011.png">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
@@ -430,17 +431,19 @@
         </div>
         <div>
           <h5 class="text-xs font-bold uppercase tracking-wider text-slate-300 mb-3">Legal</h5>
-          <ul class="text-xs text-slate-400 space-y-2 font-medium">
-            <li><a href="#" class="hover:text-white">Disclaimer</a></li>
-            <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+          
+                    <ul class="text-xs text-slate-400 space-y-2 font-medium">
+            <li><button onclick="openPolicyModal('disclaimer')" class="hover:text-white text-left">Disclaimer</button></li>
+            <li><button onclick="openPolicyModal('privacy')" class="hover:text-white text-left">Privacy Policy</button></li>
           </ul>
         </div>
         <div>
           <h5 class="text-xs font-bold uppercase tracking-wider text-slate-300 mb-3">Company</h5>
           <ul class="text-xs text-slate-400 space-y-2 font-medium">
-            <li><a href="#" class="hover:text-white">About Us</a></li>
-            <li><a href="#" class="hover:text-white">Contact Us</a></li>
+            <li><button onclick="openPolicyModal('about')" class="hover:text-white text-left">About Us</button></li>
+            <li><button onclick="openPolicyModal('contact')" class="hover:text-white text-left">Contact Us</button></li>
           </ul>
+          
         </div>
       </div>
       <div class="mt-10 pt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 gap-2">
@@ -449,6 +452,24 @@
       </div>
     </div>
   </footer>
+    <!-- DEDICATED POLICY & COMPANY MODAL -->
+  <div id="policyModal" class="fixed inset-0 bg-slate-900/80 z-50 hidden flex items-center justify-center p-3 sm:p-4 overflow-y-auto">
+    <div class="bg-white rounded-2xl max-w-2xl w-full p-5 sm:p-7 relative shadow-2xl my-auto text-slate-800">
+      <button onclick="closePolicyModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center">
+        <i class="fa-solid fa-xmark text-sm"></i>
+      </button>
+
+      <h3 id="policyModalTitle" class="text-lg sm:text-xl font-extrabold text-[#0f172a] mb-4 pb-2 border-b border-slate-100"></h3>
+      <div id="policyModalBody" class="text-xs sm:text-sm text-slate-600 space-y-3 leading-relaxed max-h-[70vh] overflow-y-auto pr-2"></div>
+      
+      <div class="mt-6 pt-3 border-t border-slate-100 text-right">
+        <button onclick="closePolicyModal()" class="bg-[#2563eb] hover:bg-[#1d4ed8] text-white text-xs font-bold px-5 py-2.5 rounded-xl">
+          Close Window
+        </button>
+      </div>
+    </div>
+  </div>
+  
 
     <!-- 320x50 MOBILE BOTTOM FLOATING STICKY BANNER -->
   <div class="fixed bottom-0 left-0 right-0 z-40 flex md:hidden justify-center items-center bg-white/95 border-t border-slate-200 py-1 shadow-lg">
@@ -817,6 +838,58 @@
         document.addEventListener('DOMContentLoaded', () => {
       renderBatch(1, true);
     });
-  </script>
+        const policyContentData = {
+      disclaimer: {
+        title: "Official Disclaimer",
+        body: `
+          <p><strong>100% Free Information Portal:</strong> Direct Hire Hub (directhirehub.in) is an independent verified walk-in and job notification aggregator. We never charge candidates any registration fee, interview scheduling charges, or placement fees under any circumstances.</p>
+          <p><strong>Recruitment Fraud Advisory:</strong> Direct multinational employers (e.g., Amazon, Google, Genpact, TCS, Microsoft) and certified staffing partners (TeamLease, Randstad, Adecco) never solicit security deposits, document charges, or training fees. Never pay money to any unauthorized third-party agencies or middlemen.</p>
+          <p><strong>Drive Verification & Accuracy:</strong> While our automated engine cross-checks all walk-in drives and reporting venues with verified sources, interview schedules, venue slots, and requirements are subject to management discretion at the respective company premises.</p>
+        `
+      },
+      privacy: {
+        title: "Privacy Policy",
+        body: `
+          <p><strong>Zero Account Tracking & Direct Access:</strong> Direct Hire Hub operates on a 100% frictionless, no-login model. We do not require registration, phone numbers, or passwords. We do not collect, monetize, or sell your personal information to third-party commercial databases.</p>
+          <p><strong>Local Browser Preferences:</strong> Your selected filters (role, work environment, salary bracket) are temporarily handled on your local device browser to provide faster, relevant recommendations without server-side tracking.</p>
+          <p><strong>Advertising & Third-Party Cookies:</strong> We partner with trusted ad networks (such as Adsterra and Google) that may deploy non-intrusive, standard impression cookies in compliance with standard web security guidelines.</p>
+        `
+      },
+      about: {
+        title: "About Direct Hire Hub",
+        body: `
+          <p><strong>Our Mission:</strong> Direct Hire Hub is dedicated to empowering freshers and experienced job seekers across India by providing transparent, direct access to verified corporate walk-in drives and MNC career opportunities—eliminating fraudulent intermediaries.</p>
+          <p><strong>Zero-Middlemen Architecture:</strong> We track authorized staffing giants and direct corporate reporting desks, enabling candidates to walk straight into official cyber city and tech park interview desks with complete confidence.</p>
+          <p><strong>Pan-India Real-Time Coverage:</strong> Our platform features 100+ active walk-in drives and direct openings across major employment hubs including Gurgaon, Noida, Bangalore, Hyderabad, Pune, Mumbai, as well as verified Remote (Work-From-Home) roles.</p>
+        `
+      },
+      contact: {
+        title: "Contact Us & Support",
+        body: `
+          <p>If you need to verify a specific drive listing, report an unauthorized fee request, notify us of a corporate walk-in drive, or require technical support, reach out to our team:</p>
+          <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2 mt-3">
+            <p><strong>📧 Support Email:</strong> <a href="mailto:support@directhirehub.in" class="text-[#2563eb] underline">support@directhirehub.in</a></p>
+            <p><strong>🏢 Portal Identity:</strong> Direct Hire Hub Support Desk (India)</p>
+            <p><strong>⏰ Response SLA:</strong> 24 to 48 Business Hours</p>
+          </div>
+          <p class="text-[11px] text-slate-500 mt-2"><strong>Please Note:</strong> Direct Hire Hub is an informational career portal. We do not operate as a private placement agency.</p>
+        `
+      }
+    };
+
+    function openPolicyModal(type) {
+      const data = policyContentData[type];
+      if (!data) return;
+      document.getElementById('policyModalTitle').innerText = data.title;
+      document.getElementById('policyModalBody').innerHTML = data.body;
+      document.getElementById('policyModal').classList.remove('hidden');
+      document.body.classList.add('overflow-hidden');
+    }
+
+    function closePolicyModal() {
+      document.getElementById('policyModal').classList.add('hidden');
+      document.body.classList.remove('overflow-hidden');
+    }
+      </script>
 </body>
 </html>
