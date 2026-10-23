@@ -891,15 +891,15 @@
       document.getElementById('policyModal').classList.add('hidden');
       document.body.classList.remove('overflow-hidden');
     }
-        function switchJobDetailModal(jobId) {
-      closeJobDetailModal();
-      setTimeout(() => {
-        openJobDetailModal(jobId);
-        const modalContainer = document.querySelector('#jobDetailModal > div');
-        if (modalContainer) modalContainer.scrollTop = 0;
-      }, 50);
-        }
-    
-      </script>
+                function switchJobDetailModal(jobId) {
+      openJobDetailModal(Number(jobId));
+      const modal = document.getElementById('jobDetailModal');
+      if (modal) {
+        modal.scrollTop = 0;
+        const inner = modal.firstElementChild;
+        if (inner) inner.scrollTop = 0;
+      }
+    }
+  </script>
 </body>
 </html>
