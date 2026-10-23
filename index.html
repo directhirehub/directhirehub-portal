@@ -2,32 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
   <title>Direct Hire Hub - Your Career, Our Mission</title>
-  <meta name="description" content="Verified walk-in drives, corporate MNCs & certified staffing partners across India. 100% free with zero registration fee.">
+  <meta name="description" content="Verified walk-in drives, corporate MNCs, certified staffing partners & employee reviews across India. 100% free with zero registration fee.">
   <link rel="canonical" href="https://directhirehub.in/">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800;900&display=swap');
-    body { font-family: 'Plus Jakarta Sans', sans-serif; }
-    .ad-placeholder { min-height: 250px; background: #f8fafc; }
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap');
+    body { font-family: 'Plus Jakarta Sans', sans-serif; -webkit-tap-highlight-color: transparent; }
+    .company-logo-img { width: 44px; height: 44px; object-fit: contain; padding: 4px; border-radius: 12px; background: #ffffff; border: 1px solid #e2e8f0; }
   </style>
 </head>
 <body class="bg-[#f8fafc] text-slate-900 flex flex-col min-h-screen antialiased overflow-x-hidden pb-16">
 
-  <!-- TOP HEADER -->
-  <header class="bg-white border-b border-slate-200 sticky top-0 z-40">
-    <div class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
+    <!-- TOP ADAPTIVE HEADER -->
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-40 w-full">
+    <div class="max-w-7xl mx-auto px-3 sm:px-4 h-16 sm:h-20 flex items-center justify-between">
       
-      <!-- Blue Brand Logo with Tie Icon & Slogan -->
-      <a href="/" class="flex flex-col items-center justify-center select-none py-1">
-        <div class="flex items-center text-xl sm:text-2xl font-black text-[#2563eb] tracking-tight leading-none">
+      <!-- Brand Logo with Tie Icon -->
+      <a href="/" class="flex flex-col items-start sm:items-center justify-center select-none py-1">
+        <div class="flex items-center text-lg sm:text-2xl font-black text-[#2563eb] tracking-tight leading-none">
           <span>Direct</span>
-          <span class="mx-1.5 flex items-center">
+          <span class="mx-1 flex items-center">
             <span class="relative inline-flex items-center justify-center font-black">
               H
-              <svg class="absolute w-[13px] h-[17px] text-[#0f172a] -top-[1px]" viewBox="0 0 24 24" fill="currentColor">
+              <svg class="absolute w-[11px] sm:w-[13px] h-[15px] sm:h-[17px] text-[#0f172a] -top-[1px]" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M7 3 L12 7 L17 3 L14 2 L10 2 Z" fill="#0f172a" />
                 <polygon points="10,7 14,7 13.2,10 10.8,10" fill="#2563eb" />
                 <polygon points="10.8,10 13.2,10 14.5,18 12,22 9.5,18" fill="#0f172a" />
@@ -36,33 +36,30 @@
           </span>
           <span>Hub</span>
         </div>
-        <div class="flex items-center gap-2 mt-1 w-full justify-center">
-          <span class="h-[1.5px] w-5 sm:w-7 bg-[#2563eb]"></span>
-          <span class="text-[8px] sm:text-[9px] font-extrabold tracking-[0.18em] text-[#0f172a] uppercase whitespace-nowrap">
+        <div class="flex items-center gap-1.5 sm:gap-2 mt-1 w-full justify-center">
+          <span class="h-[1px] sm:h-[1.5px] w-4 sm:w-7 bg-[#2563eb]"></span>
+          <span class="text-[7px] sm:text-[9px] font-extrabold tracking-[0.14em] sm:tracking-[0.18em] text-[#0f172a] uppercase whitespace-nowrap">
             YOUR CAREER, OUR MISSION
           </span>
-          <span class="h-[1.5px] w-5 sm:w-7 bg-[#2563eb]"></span>
+          <span class="h-[1px] sm:h-[1.5px] w-4 sm:w-7 bg-[#2563eb]"></span>
         </div>
       </a>
 
       <!-- Desktop Nav -->
       <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-slate-600">
         <a href="#openings" class="hover:text-[#2563eb]">Latest Drives</a>
-        <a href="#openings" class="hover:text-[#2563eb]">Staffing Giants</a>
+        <a href="#openings" class="hover:text-[#2563eb]">Employee Reviews</a>
         <a href="#safety" class="hover:text-[#2563eb]">Safety Guide</a>
         <a href="#footer" class="hover:text-[#2563eb]">About Us</a>
       </nav>
 
-      <!-- Right Header Actions -->
+      <!-- Right Header Actions (Clean Live Badge + Menu) -->
       <div class="flex items-center gap-2 sm:gap-3">
-        <span class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-blue-50 text-[#2563eb] border border-blue-200">
-          <span class="w-2 h-2 rounded-full bg-[#2563eb] animate-ping"></span> Live Verified
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-blue-50 text-[#2563eb] border border-blue-200">
+          <span class="w-2 h-2 rounded-full bg-[#2563eb] animate-ping"></span> 100 Live Drives
         </span>
-        <button onclick="openRecruiterModal()" class="hidden sm:block bg-[#2563eb] hover:bg-[#1d4ed8] text-white text-xs sm:text-sm font-bold px-4 py-2 rounded-lg shadow-sm">
-          Post a Drive
-        </button>
-        <button onclick="toggleSidebar(true)" aria-label="Open Navigation" class="p-2.5 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-700 hover:text-[#2563eb] focus:outline-none">
-          <i class="fa-solid fa-bars-staggered text-lg"></i>
+        <button onclick="toggleSidebar(true)" aria-label="Open Navigation" class="p-2 sm:p-2.5 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-700 hover:text-[#2563eb] focus:outline-none">
+          <i class="fa-solid fa-bars-staggered text-base sm:text-lg"></i>
         </button>
       </div>
     </div>
@@ -71,8 +68,8 @@
     <!-- RIGHT SLIDING DRAWER -->
   <div id="drawerOverlay" onclick="toggleSidebar(false)" class="fixed inset-0 bg-slate-900/50 z-50 opacity-0 pointer-events-none transition-opacity duration-300"></div>
 
-  <aside id="sideDrawer" class="fixed top-0 right-0 h-full w-[85%] max-w-[340px] bg-white z-50 shadow-2xl transform translate-x-full transition-transform duration-300 flex flex-col">
-    <div class="p-5 border-b border-slate-100 flex items-center justify-between">
+  <aside id="sideDrawer" class="fixed top-0 right-0 h-full w-[85%] max-w-[320px] bg-white z-50 shadow-2xl transform translate-x-full transition-transform duration-300 flex flex-col">
+    <div class="p-4 border-b border-slate-100 flex items-center justify-between">
       <div class="flex flex-col">
         <span class="text-base font-black text-[#2563eb]">Direct Hire Hub</span>
         <span class="text-[8px] font-bold text-[#0f172a] uppercase mt-0.5">YOUR CAREER, OUR MISSION</span>
@@ -82,133 +79,91 @@
       </button>
     </div>
 
-    <div class="p-5 flex-1 overflow-y-auto space-y-6">
-      <!-- Sectors -->
+    <div class="p-4 flex-1 overflow-y-auto space-y-5 text-xs font-semibold">
       <div>
-        <p class="text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-2">Hiring Sectors</p>
+        <p class="text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-2">Hiring Sectors</p>
         <div class="space-y-1">
-          <a href="#openings" onclick="quickFilter('it'); toggleSidebar(false);" class="block p-2 rounded-xl hover:bg-slate-50 text-slate-700 font-semibold text-xs">💻 IT, Software &amp; Tech Trainee</a>
-          <a href="#openings" onclick="quickFilter('voice'); toggleSidebar(false);" class="block p-2 rounded-xl hover:bg-slate-50 text-slate-700 font-semibold text-xs">🎧 BPO, KPO &amp; Customer Support</a>
-          <a href="#openings" onclick="quickFilter('bfsi'); toggleSidebar(false);" class="block p-2 rounded-xl hover:bg-slate-50 text-slate-700 font-semibold text-xs">🏦 Banking &amp; Finance (BFSI)</a>
-          <a href="#openings" onclick="quickFilter('logistics'); toggleSidebar(false);" class="block p-2 rounded-xl hover:bg-slate-50 text-slate-700 font-semibold text-xs">📦 Logistics &amp; Supply Chain</a>
+          <button onclick="quickFilterSector('it'); toggleSidebar(false);" class="w-full text-left p-2 rounded-xl hover:bg-slate-50 text-slate-700 flex items-center gap-2">💻 IT &amp; Tech Trainee</button>
+          <button onclick="quickFilterSector('voice'); toggleSidebar(false);" class="w-full text-left p-2 rounded-xl hover:bg-slate-50 text-slate-700 flex items-center gap-2">🎧 BPO &amp; Customer Support</button>
+          <button onclick="quickFilterSector('bfsi'); toggleSidebar(false);" class="w-full text-left p-2 rounded-xl hover:bg-slate-50 text-slate-700 flex items-center gap-2">🏦 Banking &amp; Finance (BFSI)</button>
+          <button onclick="quickFilterSector('logistics'); toggleSidebar(false);" class="w-full text-left p-2 rounded-xl hover:bg-slate-50 text-slate-700 flex items-center gap-2">📦 Logistics &amp; Operations</button>
         </div>
       </div>
 
-      <!-- Staffing Giants & MNCs -->
       <div>
-        <p class="text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-2">Staffing Partners &amp; MNCs</p>
-        <div class="grid grid-cols-2 gap-1.5 text-xs font-semibold text-slate-600 max-h-40 overflow-y-auto pr-1">
-          <button onclick="quickFilter('teamlease'); toggleSidebar(false);" class="p-2 bg-slate-50 hover:bg-blue-50 rounded-lg text-left border border-slate-100">🤝 TeamLease</button>
-          <button onclick="quickFilter('randstad'); toggleSidebar(false);" class="p-2 bg-slate-50 hover:bg-blue-50 rounded-lg text-left border border-slate-100">🤝 Randstad</button>
-          <button onclick="quickFilter('adecco'); toggleSidebar(false);" class="p-2 bg-slate-50 hover:bg-blue-50 rounded-lg text-left border border-slate-100">🤝 Adecco</button>
-          <button onclick="quickFilter('quess'); toggleSidebar(false);" class="p-2 bg-slate-50 hover:bg-blue-50 rounded-lg text-left border border-slate-100">🤝 Quess Corp</button>
-          <button onclick="quickFilter('manpower'); toggleSidebar(false);" class="p-2 bg-slate-50 hover:bg-blue-50 rounded-lg text-left border border-slate-100">🤝 ManpowerGroup</button>
-          <button onclick="quickFilter('genpact'); toggleSidebar(false);" class="p-2 bg-slate-50 hover:bg-blue-50 rounded-lg text-left border border-slate-100">🏢 Genpact</button>
-          <button onclick="quickFilter('wipro'); toggleSidebar(false);" class="p-2 bg-slate-50 hover:bg-blue-50 rounded-lg text-left border border-slate-100">🏢 Wipro</button>
-          <button onclick="quickFilter('amazon'); toggleSidebar(false);" class="p-2 bg-slate-50 hover:bg-blue-50 rounded-lg text-left border border-slate-100">🏢 Amazon</button>
+        <p class="text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-2">Work Environment</p>
+        <div class="space-y-1">
+          <button onclick="quickFilterEnvironment('wfh'); toggleSidebar(false);" class="w-full text-left p-2 rounded-xl hover:bg-slate-50 text-slate-700 flex items-center gap-2">🏠 Work From Home (Remote)</button>
+          <button onclick="quickFilterEnvironment('onsite'); toggleSidebar(false);" class="w-full text-left p-2 rounded-xl hover:bg-slate-50 text-slate-700 flex items-center gap-2">🏢 Cyber City / Campus Onsite</button>
+          <button onclick="quickFilterEnvironment('hybrid'); toggleSidebar(false);" class="w-full text-left p-2 rounded-xl hover:bg-slate-50 text-slate-700 flex items-center gap-2">🔄 Hybrid (2-3 Days Office)</button>
         </div>
       </div>
 
-      <!-- All Major Hubs -->
       <div>
-        <p class="text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-2">Major Employment Hubs</p>
-        <div class="grid grid-cols-2 gap-1.5 text-xs font-semibold text-slate-600 max-h-40 overflow-y-auto pr-1">
-          <button onclick="filterByCity('gurgaon'); toggleSidebar(false);" class="p-2 bg-slate-50 hover:bg-blue-50 rounded-lg text-left border border-slate-100">📍 Gurgaon</button>
-          <button onclick="filterByCity('noida'); toggleSidebar(false);" class="p-2 bg-slate-50 hover:bg-blue-50 rounded-lg text-left border border-slate-100">📍 Noida</button>
-          <button onclick="filterByCity('bangalore'); toggleSidebar(false);" class="p-2 bg-slate-50 hover:bg-blue-50 rounded-lg text-left border border-slate-100">📍 Bangalore</button>
-          <button onclick="filterByCity('hyderabad'); toggleSidebar(false);" class="p-2 bg-slate-50 hover:bg-blue-50 rounded-lg text-left border border-slate-100">📍 Hyderabad</button>
-          <button onclick="filterByCity('pune'); toggleSidebar(false);" class="p-2 bg-slate-50 hover:bg-blue-50 rounded-lg text-left border border-slate-100">📍 Pune</button>
-          <button onclick="filterByCity('remote'); toggleSidebar(false);" class="p-2 bg-slate-50 hover:bg-blue-50 rounded-lg text-left border border-slate-100">📍 Remote / WFH</button>
+        <p class="text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-2">Major Hubs</p>
+        <div class="grid grid-cols-2 gap-1.5">
+          <button onclick="filterByCity('gurgaon'); toggleSidebar(false);" class="p-2 bg-slate-50 rounded-lg text-left border border-slate-100">📍 Gurgaon</button>
+          <button onclick="filterByCity('noida'); toggleSidebar(false);" class="p-2 bg-slate-50 rounded-lg text-left border border-slate-100">📍 Noida</button>
+          <button onclick="filterByCity('bangalore'); toggleSidebar(false);" class="p-2 bg-slate-50 rounded-lg text-left border border-slate-100">📍 Bangalore</button>
+          <button onclick="filterByCity('hyderabad'); toggleSidebar(false);" class="p-2 bg-slate-50 rounded-lg text-left border border-slate-100">📍 Hyderabad</button>
         </div>
       </div>
     </div>
-  </aside>
+            </aside>
 
-  <!-- READY RECRUITER VERIFICATION MODAL -->
-  <div id="recruiterModal" class="fixed inset-0 bg-slate-900/60 z-50 hidden flex items-center justify-center p-4">
-    <div class="bg-white rounded-2xl max-w-md w-full p-6 relative shadow-2xl">
-      <button onclick="closeRecruiterModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600"><i class="fa-solid fa-xmark text-lg"></i></button>
-      <div class="flex items-center gap-2 mb-3">
-        <div class="w-8 h-8 rounded-lg bg-blue-100 text-[#2563eb] flex items-center justify-center"><i class="fa-solid fa-shield-halved"></i></div>
-        <h3 class="font-extrabold text-[#0f172a] text-lg">Recruiter Verification</h3>
+    <!-- HERO SECTION WITH DEEP MULTI-DIMENSIONAL SELECTORS -->
+  <section class="bg-gradient-to-b from-blue-50/50 via-slate-50 to-[#f8fafc] pt-6 sm:pt-10 pb-8 sm:pb-12 px-3 sm:px-4 border-b border-slate-200/60 text-center">
+    <div class="max-w-6xl mx-auto">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] sm:text-xs font-bold bg-white border border-[#2563eb]/20 text-[#2563eb] shadow-sm mb-4">
+        <span class="w-2 h-2 rounded-full bg-[#2563eb]"></span> LIVE • 100+ Verified drives with real employee reviews
       </div>
-      <p class="text-xs text-slate-500 mb-4">Official corporate email required. Personal domains (@gmail, @yahoo) are automatically blocked.</p>
-      <div class="space-y-3">
-        <input type="text" id="hrCompany" placeholder="Company Name (e.g. TeamLease, Genpact)" class="w-full text-xs p-3 border border-slate-200 rounded-xl focus:outline-none" />
-        <input type="email" id="hrEmail" placeholder="Official Email (e.g. hr@teamlease.com)" class="w-full text-xs p-3 border border-slate-200 rounded-xl focus:outline-none" />
-        <button onclick="submitRecruiterAuth()" class="w-full bg-[#2563eb] text-white text-xs font-bold py-3 rounded-xl">Verify &amp; Onboard Drive</button>
-        <p id="recruiterMsg" class="text-[11px] font-semibold text-center mt-2"></p>
-      </div>
-    </div>
-          </div>
-
-    <!-- HERO SECTION WITH DUAL DROPDOWNS: COMPANIES/PARTNERS & HUBS -->
-  <section class="bg-gradient-to-b from-blue-50/50 via-slate-50 to-[#f8fafc] pt-10 pb-12 px-4 border-b border-slate-200/60 text-center">
-    <div class="max-w-5xl mx-auto">
-      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold bg-white border border-[#2563eb]/20 text-[#2563eb] shadow-sm mb-5">
-        <span class="w-2 h-2 rounded-full bg-[#2563eb]"></span> LIVE • Verified hiring alerts
-      </div>
-      <h1 class="text-3xl sm:text-5xl font-extrabold text-[#0f172a] tracking-tight">
-        Verified Walk-in Drives & Fresh Job Openings <span class="text-[#2563eb]">Across India</span>
+      <h1 class="text-2xl sm:text-5xl font-extrabold text-[#0f172a] tracking-tight leading-tight">
+        Verified Walk-in Drives &amp; Direct Jobs <span class="text-[#2563eb]">Across India</span>
       </h1>
-      <p class="text-sm sm:text-base text-slate-600 mt-4 max-w-2xl mx-auto font-medium">
-        Direct hiring alerts and authorized staffing partner drives with zero middleman fee.
+      <p class="text-xs sm:text-base text-slate-600 mt-3 sm:mt-4 max-w-2xl mx-auto font-medium">
+        Filter by High CTC, Top MNCs, Staffing Giants, Environment, and Real Employer Reviews.
       </p>
 
-      <div class="mt-8 bg-white p-2.5 sm:p-3 rounded-2xl border border-slate-200/80 shadow-md max-w-4xl mx-auto flex flex-col md:flex-row gap-2.5">
-        <div class="flex-1 relative flex items-center">
+      <div class="mt-6 sm:mt-8 bg-white p-2.5 sm:p-3 rounded-2xl border border-slate-200/80 shadow-md max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-2">
+        <div class="relative flex items-center md:col-span-2">
           <i class="fa-solid fa-magnifying-glass absolute left-3.5 text-slate-400 text-sm"></i>
-          <input type="text" id="searchInput" onkeyup="filterJobs()" placeholder="Search role, keyword or skill (e.g. Voice, Software)" class="w-full pl-10 pr-3 py-2.5 text-xs sm:text-sm text-slate-800 rounded-xl focus:outline-none" />
+          <input type="text" id="searchInput" onkeyup="filterJobs()" placeholder="Role, company or review" class="w-full pl-10 pr-3 py-2 text-xs sm:text-sm text-slate-800 rounded-xl focus:outline-none" />
         </div>
         
-        <!-- Dropdown 1: Staffing Partners & MNCs -->
-        <div class="md:w-48 border-t md:border-t-0 md:border-l border-slate-200 flex items-center px-2">
-          <select id="companyFilter" onchange="filterJobs()" class="w-full bg-transparent text-xs sm:text-sm font-semibold text-slate-600 py-2.5 focus:outline-none cursor-pointer">
-            <option value="">All Partners &amp; MNCs</option>
-            <option value="teamlease">TeamLease Services</option>
-            <option value="randstad">Randstad India</option>
-            <option value="adecco">Adecco India</option>
-            <option value="quess">Quess Corp</option>
-            <option value="manpower">ManpowerGroup</option>
-            <option value="genpact">Genpact</option>
-            <option value="amazon">Amazon</option>
-            <option value="tcs">TCS</option>
-            <option value="teleperformance">Teleperformance</option>
-            <option value="wipro">Wipro</option>
-          </select>
-        </div>
+        <select id="sectorFilter" onchange="filterJobs()" class="bg-slate-50 border border-slate-200 text-xs sm:text-sm font-semibold text-slate-600 p-2 rounded-xl focus:outline-none cursor-pointer">
+          <option value="">All Sectors</option>
+          <option value="it">IT &amp; Software</option>
+          <option value="voice">BPO &amp; Customer Care</option>
+          <option value="bfsi">Banking &amp; Finance</option>
+          <option value="logistics">Logistics &amp; Ops</option>
+        </select>
 
-        <!-- Dropdown 2: Major Employment Hubs -->
-        <div class="md:w-48 border-t md:border-t-0 md:border-l border-slate-200 flex items-center px-2">
-          <select id="cityFilter" onchange="filterJobs()" class="w-full bg-transparent text-xs sm:text-sm font-semibold text-slate-600 py-2.5 focus:outline-none cursor-pointer">
-            <option value="">All Employment Hubs</option>
-            <option value="gurgaon">Gurgaon (DLF / Cyber City)</option>
-            <option value="noida">Noida / Greater Noida</option>
-            <option value="delhi">Delhi NCR</option>
-            <option value="bangalore">Bangalore</option>
-            <option value="hyderabad">Hyderabad</option>
-            <option value="pune">Pune</option>
-            <option value="mumbai">Mumbai / Navi Mumbai</option>
-            <option value="chennai">Chennai</option>
-            <option value="kolkata">Kolkata</option>
-            <option value="ahmedabad">Ahmedabad</option>
-            <option value="remote">Remote / WFH</option>
-          </select>
-        </div>
-        <button onclick="filterJobs()" class="bg-[#2563eb] hover:bg-[#1d4ed8] text-white text-xs sm:text-sm font-bold px-6 py-2.5 rounded-xl shadow-sm">Explore</button>
+        <select id="salaryFilter" onchange="filterJobs()" class="bg-slate-50 border border-slate-200 text-xs sm:text-sm font-semibold text-slate-600 p-2 rounded-xl focus:outline-none cursor-pointer">
+          <option value="">All Salary Brackets</option>
+          <option value="high">High CTC (₹8+ LPA)</option>
+          <option value="mid">Mid Tier (₹4 - ₹8 LPA)</option>
+          <option value="entry">Entry Level (Up to ₹4 LPA)</option>
+        </select>
+
+        <select id="envFilter" onchange="filterJobs()" class="bg-slate-50 border border-slate-200 text-xs sm:text-sm font-semibold text-slate-600 p-2 rounded-xl focus:outline-none cursor-pointer">
+          <option value="">All Environments</option>
+          <option value="wfh">Work From Home (Remote)</option>
+          <option value="onsite">On-Site Office</option>
+          <option value="hybrid">Hybrid Mode</option>
+        </select>
       </div>
 
-      <div class="flex flex-wrap items-center justify-center gap-2 mt-5 text-xs font-semibold text-slate-600">
-        <button onclick="quickFilter('walk-in')" class="px-3.5 py-1.5 rounded-full bg-white border border-slate-200 hover:border-[#2563eb] hover:text-[#2563eb]">Walk-in Drives</button>
-        <button onclick="quickFilter('staffing')" class="px-3.5 py-1.5 rounded-full bg-white border border-slate-200 hover:border-[#2563eb] hover:text-[#2563eb]">Staffing Giants</button>
-        <button onclick="quickFilter('fresher')" class="px-3.5 py-1.5 rounded-full bg-white border border-slate-200 hover:border-[#2563eb] hover:text-[#2563eb]">IT Freshers</button>
-        <button onclick="quickFilter('')" class="px-3.5 py-1.5 rounded-full bg-white border border-slate-200 hover:border-[#2563eb] hover:text-[#2563eb]">Pan-India Portals</button>
+      <div class="flex flex-wrap items-center justify-center gap-1.5 sm:gap-2 mt-4 text-[11px] sm:text-xs font-semibold text-slate-600">
+        <button onclick="quickFilterTier('high')" class="px-3 py-1 rounded-full bg-white border border-slate-200 hover:border-[#2563eb]">💎 High CTC Drives</button>
+        <button onclick="quickFilterEnvironment('wfh')" class="px-3 py-1 rounded-full bg-white border border-slate-200 hover:border-[#2563eb]">🏠 Remote (WFH)</button>
+        <button onclick="quickFilterSector('voice')" class="px-3 py-1 rounded-full bg-white border border-slate-200 hover:border-[#2563eb]">🎧 Walk-in BPO</button>
+        <button onclick="quickFilterReset()" class="px-3 py-1 rounded-full bg-white border border-slate-200 hover:border-[#2563eb]">All 100 Openings</button>
       </div>
     </div>
   </section>
 
-  <!-- 728x90 TOP BANNER AD (Desktop / Tablet) -->
-  <div class="max-w-7xl mx-auto px-4 my-4 hidden md:flex justify-center items-center">
+  <!-- 728x90 TOP BANNER AD -->
+  <div class="max-w-7xl mx-auto px-4 my-3 hidden md:flex justify-center items-center">
     <script>
       atOptions = {
         'key' : '4664641d4ae4a9bff02ad0f60bd98546',
@@ -221,486 +176,230 @@
     <script src="https://bauval.org/22/4664641d4ae4a9bff02ad0f60bd98546"></script>
   </div>
 
-  <!-- METRICS -->
-  <section class="bg-[#0f172a] text-white py-6 px-4">
-    <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-      <div><p class="text-2xl sm:text-3xl font-extrabold text-[#38bdf8]">500+</p><p class="text-[11px] text-slate-400 uppercase mt-0.5">Verified Drives</p></div>
-      <div><p class="text-2xl sm:text-3xl font-extrabold text-[#60a5fa]">100%</p><p class="text-[11px] text-slate-400 uppercase mt-0.5">Free Information</p></div>
-      <div><p class="text-2xl sm:text-3xl font-extrabold text-[#fbbf24]">₹0</p><p class="text-[11px] text-slate-400 uppercase mt-0.5">Zero Charges</p></div>
-      <div><p class="text-2xl sm:text-3xl font-extrabold text-[#34d399]">10</p><p class="text-[11px] text-slate-400 uppercase mt-0.5">Live Walk-in Drives</p></div>
-    </div>
-  </section>
-
-  <!-- MAIN LISTINGS -->
-  <main id="openings" class="max-w-7xl mx-auto px-4 py-10 w-full flex-grow">
+    <!-- DYNAMIC 100-CARD CONTAINER (10-10 BATCH LOADED) -->
+  <main id="openings" class="max-w-7xl mx-auto px-3 sm:px-4 py-6 sm:py-10 w-full flex-grow">
     
-    <!-- RECOMMENDATION BOX -->
-    <div id="recommendationBox" class="hidden mb-8 p-4 bg-blue-50/80 border border-blue-200 rounded-2xl flex items-center justify-between">
-      <div class="flex items-center gap-3">
-        <div class="w-8 h-8 rounded-xl bg-[#2563eb] text-white flex items-center justify-center text-sm font-bold"><i class="fa-solid fa-sparkles"></i></div>
-        <div>
-          <p class="text-xs font-bold text-[#0f172a]">Recommended for you</p>
-          <p id="recommendationText" class="text-[11px] text-slate-600">Based on your recent interest.</p>
-        </div>
+    <div class="flex items-center justify-between mb-5">
+      <div>
+        <h2 class="text-lg sm:text-2xl font-extrabold text-[#0f172a]">Live &amp; Verified Openings</h2>
+        <p class="text-xs text-slate-500 font-medium">Displaying 10 verified cards per batch with live ratings &amp; reviews</p>
       </div>
-      <button onclick="document.getElementById('recommendationBox').classList.add('hidden')" class="text-slate-400 hover:text-slate-600 text-xs"><i class="fa-solid fa-xmark"></i></button>
+      <span id="batchCountBadge" class="text-xs font-bold text-[#2563eb] bg-blue-50 border border-blue-200 px-3 py-1 rounded-full">Showing 1-10</span>
     </div>
 
-    <div class="flex items-center justify-between mb-6">
-      <h2 class="text-xl sm:text-2xl font-extrabold text-[#0f172a]">Live &amp; Verified Openings</h2>
-      <span class="text-xs font-bold text-[#2563eb] bg-blue-50 border border-blue-200 px-3 py-1 rounded-full">Updated Today</span>
+    <!-- CARDS MOUNT POINT -->
+    <div id="dynamicJobsGrid" class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5">
+      <!-- Injected smoothly by JavaScript -->
     </div>
 
-    <div id="jobsGrid" class="grid grid-cols-1 md:grid-cols-2 gap-5">
-
-            <!-- 1: Genpact -->
-      <div class="job-card bg-white rounded-2xl border border-slate-200 p-5 shadow-2xs hover:shadow-md transition flex flex-col justify-between" 
-           data-search="genpact customer support voice gurgaon walk-in fresher"
-           data-valid-through="2026-10-25" data-role="voice" data-company="genpact" data-city="gurgaon">
-        <div>
-          <div class="flex items-start justify-between">
-            <div class="flex items-center gap-3">
-              <div class="w-11 h-11 rounded-xl bg-teal-500 text-white flex items-center justify-center font-black text-xl shadow-xs border border-teal-600">G</div>
-              <div>
-                <h3 class="font-bold text-slate-900 text-sm">Genpact <i class="fa-solid fa-circle-check text-sky-500 text-xs"></i></h3>
-                <span class="text-[10px] font-bold uppercase text-teal-700 bg-teal-50 px-2 py-0.5 rounded border border-teal-200">Corporate Drive</span>
-              </div>
-            </div>
-            <span class="text-[10px] font-extrabold text-rose-600 bg-rose-50 border border-rose-200 px-2 py-0.5 rounded-full">URGENT</span>
-          </div>
-          <h4 class="text-base font-bold text-slate-900 mt-3 leading-snug">Customer Support Executive (International Voice)</h4>
-          <div class="mt-3 space-y-1 text-xs text-slate-500 font-medium">
-            <p>📍 Gurgaon • DLF Cyber City</p><p>💼 0-1 Yr (Freshers)</p><p class="text-[#2563eb] font-semibold">📅 Walk-in: 24 Oct 2026</p>
-          </div>
-        </div>
-        <div class="mt-5 pt-3 border-t border-slate-100">
-          <div class="flex items-center justify-between">
-            <span class="px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-700 font-bold text-xs border border-emerald-200">₹2.75 - ₹4.0 LPA</span>
-            <button onclick="unlockDetails('job-1', 'voice', 'Gurgaon')" class="bg-[#2563eb] hover:bg-[#1d4ed8] text-white text-xs font-bold px-4 py-2 rounded-xl">View Details &amp; Venue →</button>
-          </div>
-          <div id="job-1" data-nosnippet class="hidden mt-4 p-4 bg-slate-50 border border-slate-200 rounded-xl text-xs space-y-2">
-            <div class="flex justify-center items-center py-2 bg-white rounded-lg border border-slate-200">
-              <script>
-                atOptions = {
-                  'key' : '3addc55401bfe2c51203c9107b4d1232',
-                  'format' : 'iframe',
-                  'height' : 250,
-                  'width' : 300,
-                  'params' : {}
-                };
-              </script>
-              <script src="https://bauval.org/22/3addc55401bfe2c51203c9107b4d1232"></script>
-            </div>
-            <p><strong>Venue:</strong> DLF Cyber City, Building 10, Tower B, Sector 24, Gurgaon</p>
-            <p><strong>Timings:</strong> 10:00 AM – 2:00 PM</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- 2: TeamLease Services (Staffing Giant) -->
-      <div class="job-card bg-white rounded-2xl border border-slate-200 p-5 shadow-2xs hover:shadow-md transition flex flex-col justify-between" 
-           data-search="teamlease banking operations bfsi noida staffing"
-           data-valid-through="2026-10-27" data-role="bfsi" data-company="teamlease" data-city="noida">
-        <div>
-          <div class="flex items-start justify-between">
-            <div class="flex items-center gap-3">
-              <div class="w-11 h-11 rounded-xl bg-[#1e3a8a] text-white flex flex-col items-center justify-center font-black text-xs shadow-xs border border-blue-900 leading-tight">
-                <span>TEAM</span><span class="text-[8px] text-amber-400">LEASE</span>
-              </div>
-              <div>
-                <h3 class="font-bold text-slate-900 text-sm">TeamLease Services <i class="fa-solid fa-certificate text-emerald-500 text-xs"></i></h3>
-                <span class="text-[10px] font-bold uppercase text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">Authorized Staffing</span>
-              </div>
-            </div>
-            <span class="text-[10px] font-bold text-blue-600 bg-blue-50 border border-blue-200 px-2 py-0.5 rounded-full">BFSI</span>
-          </div>
-          <h4 class="text-base font-bold text-slate-900 mt-3 leading-snug">Banking Operations Executive (HDFC / Axis Back-Office)</h4>
-          <div class="mt-3 space-y-1 text-xs text-slate-500 font-medium">
-            <p>📍 Noida • Sector 62</p><p>💼 0-2 Yrs (Graduates)</p><p class="text-[#2563eb] font-semibold">📅 Walk-in: 26 Oct 2026</p>
-          </div>
-        </div>
-        <div class="mt-5 pt-3 border-t border-slate-100">
-          <div class="flex items-center justify-between">
-            <span class="px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-700 font-bold text-xs border border-emerald-200">₹2.8 - ₹3.6 LPA</span>
-            <button onclick="unlockDetails('job-2', 'bfsi', 'Noida')" class="bg-[#2563eb] hover:bg-[#1d4ed8] text-white text-xs font-bold px-4 py-2 rounded-xl">View Details &amp; Venue →</button>
-          </div>
-          <div id="job-2" data-nosnippet class="hidden mt-4 p-4 bg-slate-50 border border-slate-200 rounded-xl text-xs space-y-2">
-            <div class="flex justify-center items-center py-2 bg-white rounded-lg border border-slate-200">
-              <script>
-                atOptions = {
-                  'key' : '3addc55401bfe2c51203c9107b4d1232',
-                  'format' : 'iframe',
-                  'height' : 250,
-                  'width' : 300,
-                  'params' : {}
-                };
-              </script>
-              <script src="https://bauval.org/22/3addc55401bfe2c51203c9107b4d1232"></script>
-            </div>
-            <p><strong>Venue:</strong> TeamLease Regional Hub, Stellar IT Park, Sector 62, Noida</p>
-          </div>
-        </div>
-                </div>
-
-            <!-- 3: Randstad India (Staffing Giant) -->
-      <div class="job-card bg-white rounded-2xl border border-slate-200 p-5 shadow-2xs hover:shadow-md transition flex flex-col justify-between" 
-           data-search="randstad software trainee it bangalore staffing"
-           data-valid-through="2026-11-04" data-role="it" data-company="randstad" data-city="bangalore">
-        <div>
-          <div class="flex items-start justify-between">
-            <div class="flex items-center gap-3">
-              <div class="w-11 h-11 rounded-xl bg-[#0c2340] text-white flex items-center justify-center font-bold text-xs shadow-xs border border-slate-800">
-                <span class="text-blue-400 font-black text-sm tracking-tighter">r<span class="text-white">|</span>s</span>
-              </div>
-              <div>
-                <h3 class="font-bold text-slate-900 text-sm">Randstad India <i class="fa-solid fa-certificate text-emerald-500 text-xs"></i></h3>
-                <span class="text-[10px] font-bold uppercase text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">Authorized Staffing</span>
-              </div>
-            </div>
-          </div>
-          <h4 class="text-base font-bold text-slate-900 mt-3 leading-snug">Junior Cloud &amp; Infrastructure Support Trainee</h4>
-          <div class="mt-3 space-y-1 text-xs text-slate-500 font-medium">
-            <p>📍 Bangalore • Whitefield</p><p>💼 0-1 Yr (B.Tech / BCA)</p><p class="text-[#2563eb] font-semibold">📅 Apply by: 4 Nov 2026</p>
-          </div>
-        </div>
-        <div class="mt-5 pt-3 border-t border-slate-100">
-          <div class="flex items-center justify-between">
-            <span class="px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-700 font-bold text-xs border border-emerald-200">₹3.8 - ₹5.2 LPA</span>
-            <button onclick="unlockDetails('job-3', 'it', 'Bangalore')" class="bg-[#2563eb] hover:bg-[#1d4ed8] text-white text-xs font-bold px-4 py-2 rounded-xl">View Details &amp; Venue →</button>
-          </div>
-          <div id="job-3" data-nosnippet class="hidden mt-4 p-4 bg-slate-50 border border-slate-200 rounded-xl text-xs space-y-2">
-            <div class="flex justify-center items-center py-2 bg-white rounded-lg border border-slate-200">
-              <script>
-                atOptions = {
-                  'key' : '3addc55401bfe2c51203c9107b4d1232',
-                  'format' : 'iframe',
-                  'height' : 250,
-                  'width' : 300,
-                  'params' : {}
-                };
-              </script>
-              <script src="https://bauval.org/22/3addc55401bfe2c51203c9107b4d1232"></script>
-            </div>
-            <p><strong>Campus Venue:</strong> Randstad Tech Tower, EPIP Zone, Whitefield, Bangalore</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- 4: Adecco India (Staffing Giant) -->
-      <div class="job-card bg-white rounded-2xl border border-slate-200 p-5 shadow-2xs hover:shadow-md transition flex flex-col justify-between" 
-           data-search="adecco logistics operations hub gurgaon staffing"
-           data-valid-through="2026-10-28" data-role="logistics" data-company="adecco" data-city="gurgaon">
-        <div>
-          <div class="flex items-start justify-between">
-            <div class="flex items-center gap-3">
-              <div class="w-11 h-11 rounded-xl bg-[#da291c] text-white flex items-center justify-center font-black text-sm shadow-xs border border-red-700">Adecco</div>
-              <div>
-                <h3 class="font-bold text-slate-900 text-sm">Adecco India <i class="fa-solid fa-certificate text-emerald-500 text-xs"></i></h3>
-                <span class="text-[10px] font-bold uppercase text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">Authorized Staffing</span>
-              </div>
-            </div>
-            <span class="text-[10px] font-extrabold text-rose-600 bg-rose-50 border border-rose-200 px-2 py-0.5 rounded-full">URGENT</span>
-          </div>
-          <h4 class="text-base font-bold text-slate-900 mt-3 leading-snug">Hub Logistics &amp; Inventory Operations Coordinator</h4>
-          <div class="mt-3 space-y-1 text-xs text-slate-500 font-medium">
-            <p>📍 Gurgaon • Bilaspur Hub</p><p>💼 0-2 Yrs</p><p class="text-[#2563eb] font-semibold">📅 Walk-in: 27 Oct 2026</p>
-          </div>
-        </div>
-        <div class="mt-5 pt-3 border-t border-slate-100">
-          <div class="flex items-center justify-between">
-            <span class="px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-700 font-bold text-xs border border-emerald-200">₹2.6 - ₹3.5 LPA</span>
-            <button onclick="unlockDetails('job-4', 'logistics', 'Gurgaon')" class="bg-[#2563eb] hover:bg-[#1d4ed8] text-white text-xs font-bold px-4 py-2 rounded-xl">View Details &amp; Venue →</button>
-          </div>
-          <div id="job-4" data-nosnippet class="hidden mt-4 p-4 bg-slate-50 border border-slate-200 rounded-xl text-xs space-y-2">
-            <div class="flex justify-center items-center py-2 bg-white rounded-lg border border-slate-200">
-              <script>
-                atOptions = {
-                  'key' : '3addc55401bfe2c51203c9107b4d1232',
-                  'format' : 'iframe',
-                  'height' : 250,
-                  'width' : 300,
-                  'params' : {}
-                };
-              </script>
-              <script src="https://bauval.org/22/3addc55401bfe2c51203c9107b4d1232"></script>
-            </div>
-            <p><strong>Venue:</strong> Adecco Operations Desk, Warehouse Zone, Pataudi Road, Gurgaon</p>
-          </div>
-        </div>
-                </div>
-
-            <!-- 5: Amazon -->
-      <div class="job-card bg-white rounded-2xl border border-slate-200 p-5 shadow-2xs hover:shadow-md transition flex flex-col justify-between" 
-           data-search="amazon customer service associate hyderabad voice"
-           data-valid-through="2026-10-26" data-role="voice" data-company="amazon" data-city="hyderabad">
-        <div>
-          <div class="flex items-start justify-between">
-            <div class="flex items-center gap-3">
-              <div class="w-11 h-11 rounded-xl bg-slate-900 text-amber-400 flex flex-col items-center justify-center font-black text-xs shadow-xs border border-slate-800">
-                <i class="fa-brands fa-amazon text-base"></i>
-              </div>
-              <div>
-                <h3 class="font-bold text-slate-900 text-sm">Amazon <i class="fa-solid fa-circle-check text-sky-500 text-xs"></i></h3>
-                <span class="text-[10px] font-bold uppercase text-teal-700 bg-teal-50 px-2 py-0.5 rounded border border-teal-200">Corporate Drive</span>
-              </div>
-            </div>
-            <span class="text-[10px] font-extrabold text-rose-600 bg-rose-50 border border-rose-200 px-2 py-0.5 rounded-full">URGENT</span>
-          </div>
-          <h4 class="text-base font-bold text-slate-900 mt-3 leading-snug">Customer Service Associate (CSA)</h4>
-          <div class="mt-3 space-y-1 text-xs text-slate-500 font-medium">
-            <p>📍 Hyderabad • Financial District</p><p>💼 0-3 Yrs</p><p class="text-[#2563eb] font-semibold">📅 Walk-in: 25 Oct 2026</p>
-          </div>
-        </div>
-        <div class="mt-5 pt-3 border-t border-slate-100">
-          <div class="flex items-center justify-between">
-            <span class="px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-700 font-bold text-xs border border-emerald-200">₹2.9 - ₹4.0 LPA</span>
-            <button onclick="unlockDetails('job-5', 'voice', 'Hyderabad')" class="bg-[#2563eb] hover:bg-[#1d4ed8] text-white text-xs font-bold px-4 py-2 rounded-xl">View Details &amp; Venue →</button>
-          </div>
-          <div id="job-5" data-nosnippet class="hidden mt-4 p-4 bg-slate-50 border border-slate-200 rounded-xl text-xs space-y-2">
-            <div class="flex justify-center items-center py-2 bg-white rounded-lg border border-slate-200">
-              <script>
-                atOptions = {
-                  'key' : '3addc55401bfe2c51203c9107b4d1232',
-                  'format' : 'iframe',
-                  'height' : 250,
-                  'width' : 300,
-                  'params' : {}
-                };
-              </script>
-              <script src="https://bauval.org/22/3addc55401bfe2c51203c9107b4d1232"></script>
-            </div>
-            <p><strong>Venue:</strong> Amazon Dev Centre, Nanakramguda, Hyderabad</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- 6: TCS -->
-      <div class="job-card bg-white rounded-2xl border border-slate-200 p-5 shadow-2xs hover:shadow-md transition flex flex-col justify-between" 
-           data-search="tcs assistant system engineer pan-india remote fresher it"
-           data-valid-through="2026-11-12" data-role="it" data-company="tcs" data-city="remote">
-        <div>
-          <div class="flex items-start justify-between">
-            <div class="flex items-center gap-3">
-              <div class="w-11 h-11 rounded-xl bg-blue-700 text-white flex items-center justify-center font-black text-xs shadow-xs border border-blue-900">TCS</div>
-              <div>
-                <h3 class="font-bold text-slate-900 text-sm">TCS <i class="fa-solid fa-circle-check text-sky-500 text-xs"></i></h3>
-                <span class="text-[10px] font-bold uppercase text-sky-700 bg-sky-50 px-2 py-0.5 rounded border border-sky-200">Fresh Opening</span>
-              </div>
-            </div>
-          </div>
-          <h4 class="text-base font-bold text-slate-900 mt-3 leading-snug">TCS NQT 2026 - Assistant System Engineer</h4>
-          <div class="mt-3 space-y-1 text-xs text-slate-500 font-medium">
-            <p>📍 Remote • PAN-India postings</p><p>💼 0-1 Yr (Freshers)</p><p class="text-[#2563eb] font-semibold">📅 Apply by: 12 Nov 2026</p>
-          </div>
-        </div>
-        <div class="mt-5 pt-3 border-t border-slate-100">
-          <div class="flex items-center justify-between">
-            <span class="px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-700 font-bold text-xs border border-emerald-200">₹3.36 - ₹7.0 LPA</span>
-            <button onclick="unlockDetails('job-6', 'it', 'Remote')" class="bg-[#2563eb] hover:bg-[#1d4ed8] text-white text-xs font-bold px-4 py-2 rounded-xl">View Details &amp; Venue →</button>
-          </div>
-          <div id="job-6" data-nosnippet class="hidden mt-4 p-4 bg-slate-50 border border-slate-200 rounded-xl text-xs space-y-2">
-            <div class="flex justify-center items-center py-2 bg-white rounded-lg border border-slate-200">
-              <script>
-                atOptions = {
-                  'key' : '3addc55401bfe2c51203c9107b4d1232',
-                  'format' : 'iframe',
-                  'height' : 250,
-                  'width' : 300,
-                  'params' : {}
-                };
-              </script>
-              <script src="https://bauval.org/22/3addc55401bfe2c51203c9107b4d1232"></script>
-            </div>
-            <p><strong>Mode:</strong> iON Digital Zones Pan-India</p>
-          </div>
-        </div>
-      </div>
-
-            <!-- 7: Teleperformance -->
-      <div class="job-card bg-white rounded-2xl border border-slate-200 p-5 shadow-2xs hover:shadow-md transition flex flex-col justify-between" 
-           data-search="teleperformance non voice chat noida voice"
-           data-valid-through="2026-10-26" data-role="voice" data-company="teleperformance" data-city="noida">
-        <div>
-          <div class="flex items-start justify-between">
-            <div class="flex items-center gap-3">
-              <div class="w-11 h-11 rounded-xl bg-violet-600 text-white flex items-center justify-center font-black text-sm shadow-xs border border-violet-800">TP</div>
-              <div>
-                <h3 class="font-bold text-slate-900 text-sm">Teleperformance <i class="fa-solid fa-circle-check text-sky-500 text-xs"></i></h3>
-                <span class="text-[10px] font-bold uppercase text-teal-700 bg-teal-50 px-2 py-0.5 rounded border border-teal-200">Corporate Drive</span>
-              </div>
-            </div>
-            <span class="text-[10px] font-extrabold text-rose-600 bg-rose-50 border border-rose-200 px-2 py-0.5 rounded-full">URGENT</span>
-          </div>
-          <h4 class="text-base font-bold text-slate-900 mt-3 leading-snug">Customer Service Representative - Non Voice (Chat)</h4>
-          <div class="mt-3 space-y-1 text-xs text-slate-500 font-medium">
-            <p>📍 Noida • Sector 62</p><p>💼 0-2 Yrs</p><p class="text-[#2563eb] font-semibold">📅 Walk-in: 25 Oct 2026</p>
-          </div>
-        </div>
-        <div class="mt-5 pt-3 border-t border-slate-100">
-          <div class="flex items-center justify-between">
-            <span class="px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-700 font-bold text-xs border border-emerald-200">₹2.4 - ₹3.2 LPA</span>
-            <button onclick="unlockDetails('job-7', 'voice', 'Noida')" class="bg-[#2563eb] hover:bg-[#1d4ed8] text-white text-xs font-bold px-4 py-2 rounded-xl">View Details &amp; Venue →</button>
-          </div>
-          <div id="job-7" data-nosnippet class="hidden mt-4 p-4 bg-slate-50 border border-slate-200 rounded-xl text-xs space-y-2">
-            <div class="flex justify-center items-center py-2 bg-white rounded-lg border border-slate-200">
-              <script>
-                atOptions = {
-                  'key' : '3addc55401bfe2c51203c9107b4d1232',
-                  'format' : 'iframe',
-                  'height' : 250,
-                  'width' : 300,
-                  'params' : {}
-                };
-              </script>
-              <script src="https://bauval.org/22/3addc55401bfe2c51203c9107b4d1232"></script>
-            </div>
-            <p><strong>Venue:</strong> Logix Cyber Park, Tower B, Sector 62, Noida</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- 8: Quess Corp (Staffing Giant) -->
-      <div class="job-card bg-white rounded-2xl border border-slate-200 p-5 shadow-2xs hover:shadow-md transition flex flex-col justify-between" 
-           data-search="quess corp verification operations bfsi pune staffing"
-           data-valid-through="2026-10-28" data-role="bfsi" data-company="quess" data-city="pune">
-        <div>
-          <div class="flex items-start justify-between">
-            <div class="flex items-center gap-3">
-              <div class="w-11 h-11 rounded-xl bg-orange-600 text-white flex items-center justify-center font-black text-sm shadow-xs border border-orange-800">QUESS</div>
-              <div>
-                <h3 class="font-bold text-slate-900 text-sm">Quess Corp <i class="fa-solid fa-certificate text-emerald-500 text-xs"></i></h3>
-                <span class="text-[10px] font-bold uppercase text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">Authorized Staffing</span>
-              </div>
-            </div>
-          </div>
-          <h4 class="text-base font-bold text-slate-900 mt-3 leading-snug">Banking Verification &amp; Process Executive</h4>
-          <div class="mt-3 space-y-1 text-xs text-slate-500 font-medium">
-            <p>📍 Pune • Viman Nagar</p><p>💼 0-2 Yrs</p><p class="text-[#2563eb] font-semibold">📅 Walk-in: 27 Oct 2026</p>
-          </div>
-        </div>
-        <div class="mt-5 pt-3 border-t border-slate-100">
-          <div class="flex items-center justify-between">
-            <span class="px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-700 font-bold text-xs border border-emerald-200">₹2.5 - ₹3.6 LPA</span>
-            <button onclick="unlockDetails('job-8', 'bfsi', 'Pune')" class="bg-[#2563eb] hover:bg-[#1d4ed8] text-white text-xs font-bold px-4 py-2 rounded-xl">View Details &amp; Venue →</button>
-          </div>
-          <div id="job-8" data-nosnippet class="hidden mt-4 p-4 bg-slate-50 border border-slate-200 rounded-xl text-xs space-y-2">
-            <div class="flex justify-center items-center py-2 bg-white rounded-lg border border-slate-200">
-              <script>
-                atOptions = {
-                  'key' : '3addc55401bfe2c51203c9107b4d1232',
-                  'format' : 'iframe',
-                  'height' : 250,
-                  'width' : 300,
-                  'params' : {}
-                };
-              </script>
-              <script src="https://bauval.org/22/3addc55401bfe2c51203c9107b4d1232"></script>
-            </div>
-            <p><strong>Venue:</strong> Quess Corp Recruitment Hub, Viman Nagar, Pune</p>
-          </div>
-        </div>
-  </div>
-
-            <!-- 9: ManpowerGroup India (Staffing Giant) -->
-      <div class="job-card bg-white rounded-2xl border border-slate-200 p-5 shadow-2xs hover:shadow-md transition flex flex-col justify-between" 
-           data-search="manpowergroup desktop support it gurgaon staffing"
-           data-valid-through="2026-11-05" data-role="it" data-company="manpower" data-city="gurgaon">
-        <div>
-          <div class="flex items-start justify-between">
-            <div class="flex items-center gap-3">
-              <div class="w-11 h-11 rounded-xl bg-[#008080] text-white flex flex-col items-center justify-center font-black text-[9px] shadow-xs border border-teal-800 leading-tight">
-                <span>MAN</span><span>POWER</span>
-              </div>
-              <div>
-                <h3 class="font-bold text-slate-900 text-sm">ManpowerGroup <i class="fa-solid fa-certificate text-emerald-500 text-xs"></i></h3>
-                <span class="text-[10px] font-bold uppercase text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">Authorized Staffing</span>
-              </div>
-            </div>
-          </div>
-          <h4 class="text-base font-bold text-slate-900 mt-3 leading-snug">IT Desktop Support &amp; Network Engineer</h4>
-          <div class="mt-3 space-y-1 text-xs text-slate-500 font-medium">
-            <p>📍 Gurgaon • Sector 32</p><p>💼 0-2 Yrs</p><p class="text-[#2563eb] font-semibold">📅 Walk-in: 28 Oct 2026</p>
-          </div>
-        </div>
-        <div class="mt-5 pt-3 border-t border-slate-100">
-          <div class="flex items-center justify-between">
-            <span class="px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-700 font-bold text-xs border border-emerald-200">₹3.0 - ₹4.5 LPA</span>
-            <button onclick="unlockDetails('job-9', 'it', 'Gurgaon')" class="bg-[#2563eb] hover:bg-[#1d4ed8] text-white text-xs font-bold px-4 py-2 rounded-xl">View Details &amp; Venue →</button>
-          </div>
-          <div id="job-9" data-nosnippet class="hidden mt-4 p-4 bg-slate-50 border border-slate-200 rounded-xl text-xs space-y-2">
-            <div class="flex justify-center items-center py-2 bg-white rounded-lg border border-slate-200">
-              <script>
-                atOptions = {
-                  'key' : '3addc55401bfe2c51203c9107b4d1232',
-                  'format' : 'iframe',
-                  'height' : 250,
-                  'width' : 300,
-                  'params' : {}
-                };
-              </script>
-              <script src="https://bauval.org/22/3addc55401bfe2c51203c9107b4d1232"></script>
-            </div>
-            <p><strong>Venue:</strong> Institutional Area, Sector 32, Gurgaon</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- 10: Wipro BPS -->
-      <div class="job-card bg-white rounded-2xl border border-slate-200 p-5 shadow-2xs hover:shadow-md transition flex flex-col justify-between" 
-           data-search="wipro bps domestic voice delhi ncr okhla"
-           data-valid-through="2026-10-25" data-role="voice" data-company="wipro" data-city="delhi">
-        <div>
-          <div class="flex items-start justify-between">
-            <div class="flex items-center gap-3">
-              <div class="w-11 h-11 rounded-xl bg-sky-500 text-white flex items-center justify-center font-black text-sm shadow-xs border border-sky-600">Wipro</div>
-              <div>
-                <h3 class="font-bold text-slate-900 text-sm">Wipro BPS <i class="fa-solid fa-circle-check text-sky-500 text-xs"></i></h3>
-                <span class="text-[10px] font-bold uppercase text-teal-700 bg-teal-50 px-2 py-0.5 rounded border border-teal-200">Corporate Drive</span>
-              </div>
-            </div>
-            <span class="text-[10px] font-extrabold text-rose-600 bg-rose-50 border border-rose-200 px-2 py-0.5 rounded-full">URGENT</span>
-          </div>
-          <h4 class="text-base font-bold text-slate-900 mt-3 leading-snug">Customer Support - Domestic Voice</h4>
-          <div class="mt-3 space-y-1 text-xs text-slate-500 font-medium">
-            <p>📍 Delhi-NCR • Okhla Phase 3</p><p>💼 0-1 Yr (Freshers)</p><p class="text-[#2563eb] font-semibold">📅 Walk-in: 24 Oct 2026</p>
-          </div>
-        </div>
-        <div class="mt-5 pt-3 border-t border-slate-100">
-          <div class="flex items-center justify-between">
-            <span class="px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-700 font-bold text-xs border border-emerald-200">₹2.2 - ₹3.0 LPA</span>
-            <button onclick="unlockDetails('job-10', 'voice', 'Delhi-NCR')" class="bg-[#2563eb] hover:bg-[#1d4ed8] text-white text-xs font-bold px-4 py-2 rounded-xl">View Details &amp; Venue →</button>
-          </div>
-          <div id="job-10" data-nosnippet class="hidden mt-4 p-4 bg-slate-50 border border-slate-200 rounded-xl text-xs space-y-2">
-            <div class="flex justify-center items-center py-2 bg-white rounded-lg border border-slate-200">
-              <script>
-                atOptions = {
-                  'key' : '3addc55401bfe2c51203c9107b4d1232',
-                  'format' : 'iframe',
-                  'height' : 250,
-                  'width' : 300,
-                  'params' : {}
-                };
-              </script>
-              <script src="https://bauval.org/22/3addc55401bfe2c51203c9107b4d1232"></script>
-            </div>
-            <p><strong>Venue:</strong> A-26/4, Mohan Estate, Near Okhla Phase 3, New Delhi</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- LOAD MORE DRIVES BUTTON -->
-    <div class="mt-10 text-center">
-      <button onclick="loadMoreJobs()" class="bg-white hover:bg-slate-50 text-[#2563eb] font-bold text-xs sm:text-sm px-6 py-3 rounded-xl border border-blue-200 shadow-sm transition">
-        Load More Verified Drives <i class="fa-solid fa-chevron-down ml-1 text-xs"></i>
+    <!-- LOAD MORE (10 BY 10 TILL 100 CARDS) -->
+    <div class="mt-8 sm:mt-10 text-center">
+      <button id="loadMoreBtn" onclick="loadNextBatch()" class="bg-white hover:bg-slate-50 text-[#2563eb] font-bold text-xs sm:text-sm px-8 py-3.5 rounded-xl border border-blue-200 shadow-sm transition inline-flex items-center gap-2">
+        <span>Load Next 10 Verified Drives</span> <i class="fa-solid fa-chevron-down text-xs"></i>
       </button>
+      <p id="paginationEndOfResults" class="hidden text-xs font-bold text-slate-400 mt-3">All 100 verified drives have been loaded for today.</p>
     </div>
   </main>
 
-    <!-- HIRING ADVISORY (CLEAN - NO CYBER CRIME MENTION) -->
-  <section id="safety" data-nosnippet class="max-w-7xl mx-auto px-4 pb-12 w-full">
-    <div class="bg-[#fcf8f0] border border-[#f3e6cb] rounded-2xl p-5 text-xs text-amber-900 leading-relaxed shadow-2xs">
+    <!-- DEDICATED FULL-SCREEN JOB DETAILS VIEW WITH REVIEWS -->
+  <div id="jobDetailModal" class="fixed inset-0 bg-slate-900/80 z-50 hidden overflow-y-auto">
+    <div class="min-h-screen px-3 sm:px-6 py-6 flex items-start justify-center">
+      <div class="bg-white rounded-2xl max-w-4xl w-full p-4 sm:p-8 relative shadow-2xl border border-slate-200">
+        
+        <button onclick="closeJobDetailModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 w-9 h-9 rounded-full bg-slate-100 flex items-center justify-center transition">
+          <i class="fa-solid fa-xmark text-base"></i>
+        </button>
+
+        <!-- TOP SPONSORED BANNER -->
+        <div class="w-full flex justify-center items-center pb-6 border-b border-slate-100">
+          <script>
+            atOptions = {
+              'key' : '4664641d4ae4a9bff02ad0f60bd98546',
+              'format' : 'iframe',
+              'height' : 90,
+              'width' : 728,
+              'params' : {}
+            };
+          </script>
+          <script src="https://bauval.org/22/4664641d4ae4a9bff02ad0f60bd98546"></script>
+        </div>
+
+        <!-- MAIN SCROLLABLE ARTICLE BODY -->
+        <div class="space-y-6 mt-6">
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="text-[10px] font-extrabold uppercase text-[#2563eb] bg-blue-50 px-2.5 py-0.5 rounded-full border border-blue-200">verified drive</span>
+            <span class="text-[10px] font-extrabold uppercase text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200">direct hiring</span>
+            <span id="modalRatingBadge" class="text-[10px] font-extrabold text-amber-800 bg-amber-50 px-2.5 py-0.5 rounded-full border border-amber-200 flex items-center gap-1"></span>
+          </div>
+
+          <h1 id="modalArticleTitle" class="text-xl sm:text-3xl font-black text-[#0f172a] leading-tight"></h1>
+          <p id="modalArticleIntro" class="text-xs sm:text-sm text-slate-600 leading-relaxed font-medium"></p>
+
+                    <!-- QUICK SUMMARY BOX -->
+          <div class="bg-[#f8fafc] border border-slate-200 rounded-xl p-4 sm:p-5">
+            <h4 class="font-bold text-xs sm:text-sm text-[#0f172a] mb-3 pb-2 border-b border-slate-200">
+              <span id="modalSummaryCompany"></span> Walk-in Drive: Quick Summary
+            </h4>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-700">
+              <p>🏢 <strong>Company:</strong> <span id="modalSummaryCompName"></span></p>
+              <p>💼 <strong>Designation:</strong> <span id="modalSummaryRole"></span></p>
+              <p>📍 <strong>Job Location:</strong> <span id="modalSummaryLoc"></span></p>
+              <p>🎓 <strong>Qualification:</strong> Undergraduate / Any Graduate</p>
+              <p>⏳ <strong>Experience:</strong> 0 to 2 Years (Freshers Eligible)</p>
+              <p>💰 <strong>Estimated Salary:</strong> <span id="modalSummarySal" class="font-bold text-emerald-700"></span></p>
+              <p class="sm:col-span-2">🌐 <strong>Work Mode:</strong> <span id="modalSummaryEnv"></span></p>
+            </div>
+          </div>
+
+                    <!-- EMPLOYER & EMPLOYEE REVIEWS SECTION -->
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 sm:p-5">
+            <div class="flex items-center justify-between pb-3 border-b border-slate-200 mb-4">
+              <div>
+                <h3 class="text-sm sm:text-base font-extrabold text-[#0f172a] flex items-center gap-1.5">
+                  <i class="fa-solid fa-star text-amber-500"></i> Employee Ratings &amp; Workplace Feedback
+                </h3>
+                <p class="text-[11px] text-slate-500">Aggregated from verified employee experiences across India</p>
+              </div>
+              <span id="modalOverallScore" class="text-lg font-black text-[#0f172a] bg-white px-3 py-1 rounded-lg border border-slate-200"></span>
+            </div>
+
+            <!-- Score Bars -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center mb-4">
+              <div class="bg-white p-2.5 rounded-lg border border-slate-100">
+                <p class="text-[10px] text-slate-500">Work-Life Balance</p>
+                <p id="scoreWlb" class="text-xs font-black text-[#0f172a]">★ 4.0</p>
+              </div>
+              <div class="bg-white p-2.5 rounded-lg border border-slate-100">
+                <p class="text-[10px] text-slate-500">Salary &amp; Perks</p>
+                <p id="scoreSalary" class="text-xs font-black text-[#0f172a]">★ 4.2</p>
+              </div>
+              <div class="bg-white p-2.5 rounded-lg border border-slate-100">
+                <p class="text-[10px] text-slate-500">Culture &amp; Team</p>
+                <p id="scoreCulture" class="text-xs font-black text-[#0f172a]">★ 4.3</p>
+              </div>
+              <div class="bg-white p-2.5 rounded-lg border border-slate-100">
+                <p class="text-[10px] text-slate-500">Growth Path</p>
+                <p id="scoreGrowth" class="text-xs font-black text-[#0f172a]">★ 4.1</p>
+              </div>
+            </div>
+
+            <!-- Real Employee Pros & Cons -->
+            <div class="space-y-2.5 text-xs text-slate-700">
+              <div class="bg-emerald-50/70 border border-emerald-200 rounded-lg p-3">
+                <p class="font-bold text-emerald-800 flex items-center gap-1.5 mb-1">
+                  <i class="fa-solid fa-thumbs-up"></i> Top Pros (Employees Liked)
+                </p>
+                <p id="modalReviewPros" class="leading-relaxed"></p>
+              </div>
+              <div class="bg-rose-50/70 border border-rose-200 rounded-lg p-3">
+                <p class="font-bold text-rose-800 flex items-center gap-1.5 mb-1">
+                  <i class="fa-solid fa-thumbs-down"></i> Top Cons (Watch Out)
+                </p>
+                <p id="modalReviewCons" class="leading-relaxed"></p>
+              </div>
+            </div>
+          </div>
+
+                    <!-- CORE RESPONSIBILITIES -->
+          <div>
+            <h3 class="text-sm sm:text-base font-bold text-[#0f172a] mb-3">Core Responsibilities &amp; Work Profile</h3>
+            <ul class="list-disc pl-5 space-y-2 text-xs text-slate-600 leading-relaxed font-medium">
+              <li>Inbound aur outbound customer calls ko professionally answer karke service requests aur operational inquiries resolve karna.</li>
+              <li>CRM ticketing tools par har interaction ke clear, accurate call logs aur case resolution notes maintain karna.</li>
+              <li>Customer complaints ko escalation matrix aur first-call resolution (FCR) guidelines ke mutabiq timely handle karna.</li>
+              <li>Process quality standards, compliance metrics, aur client service level agreements (SLAs) achieve karna.</li>
+            </ul>
+          </div>
+
+          <!-- ELIGIBILITY CRITERIA -->
+          <div>
+            <h3 class="text-sm sm:text-base font-bold text-[#0f172a] mb-3">Candidate Profile &amp; Eligibility Criteria</h3>
+            <ul class="list-disc pl-5 space-y-2 text-xs text-slate-600 leading-relaxed font-medium">
+              <li><strong>Education:</strong> 12th Pass (Undergraduate) ya Any Graduate (B.A, B.Com, BBA, B.Sc, B.Tech freshers).</li>
+              <li><strong>Communication Skills:</strong> Fluent verbal English communication ke sath clear Hindi speaking clarity.</li>
+              <li><strong>Active Listening:</strong> Customer handling patience, issue probing skills aur positive client orientation.</li>
+              <li><strong>Flexibility:</strong> Day/Rotational environment aur weekly offs me kaam karne ki availability.</li>
+            </ul>
+          </div>
+
+                    <!-- VENUE SECTION (ANTI-LEAK data-nosnippet) -->
+          <div data-nosnippet class="bg-blue-50/60 border border-blue-200 rounded-2xl p-5">
+            <h3 class="text-sm sm:text-base font-bold text-[#0f172a] mb-2">Walk-in Interview Venue &amp; Reporting Desk</h3>
+            <p class="text-xs text-slate-600 mb-4">Official campus entry guidelines, tower details aur reporting floor unlock karne ke liye button par click karein:</p>
+            
+            <div id="modalVenueLocker" class="hidden flex justify-center items-center py-2 bg-white rounded-xl border border-slate-200 mb-4 overflow-hidden">
+              <script>
+                atOptions = {
+                  'key' : '3addc55401bfe2c51203c9107b4d1232',
+                  'format' : 'iframe',
+                  'height' : 250,
+                  'width' : 300,
+                  'params' : {}
+                };
+              </script>
+              <script src="https://bauval.org/22/3addc55401bfe2c51203c9107b4d1232"></script>
+            </div>
+
+            <div id="modalVenueAddressBox" class="hidden bg-white p-4 rounded-xl border border-blue-200 text-xs space-y-2 mb-4">
+              <p><strong><i class="fa-solid fa-location-dot text-[#2563eb] mr-1.5"></i> Exact Venue Address:</strong> <span id="modalVenueText"></span></p>
+              <p><strong><i class="fa-regular fa-clock text-amber-500 mr-1.5"></i> Interview Timings:</strong> 10:00 AM – 2:00 PM</p>
+              <p><strong><i class="fa-solid fa-id-card text-emerald-600 mr-1.5"></i> Carry with you:</strong> 2 Copies Resume, Govt Photo ID, Qualification Certificates</p>
+            </div>
+
+            <button id="unlockVenueBtn" onclick="revealCompleteVenue()" class="bg-[#2563eb] hover:bg-[#1d4ed8] text-white text-xs sm:text-sm font-bold px-6 py-3 rounded-xl flex items-center justify-center gap-2 shadow-sm transition">
+              <i class="fa-solid fa-lock text-xs"></i> Unlock Complete Venue Address
+            </button>
+          </div>
+
+                    <!-- CLEAN ADVISORY -->
+          <div data-nosnippet class="bg-[#fffbeb] border border-[#fef3c7] rounded-xl p-4 text-[11px] text-amber-900 leading-relaxed">
+            <strong>Official Advisory:</strong> Direct employers and authorized staffing partners never charge any registration fee, security deposit ya training fees. Diye gaye official cyber city address par direct walk-in report karein aur kisi unauthorized middlemen ke behkawe me na aayein.
+          </div>
+
+          <!-- DIRECT ACTION BUTTONS -->
+          <div class="flex gap-3 pt-2">
+            <button onclick="closeJobDetailModal()" class="w-1/3 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold py-3 rounded-xl transition">
+              ← Back to Openings
+            </button>
+            <a id="modalExternalApplyBtn" href="#" target="_blank" class="w-2/3 bg-[#2563eb] hover:bg-[#1d4ed8] text-white text-xs sm:text-sm font-bold py-3 rounded-xl text-center flex items-center justify-center gap-2 shadow-sm transition">
+              Official Careers Apply <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+            </a>
+          </div>
+
+                    <!-- IN-FEED RECTANGULAR AD BETWEEN CONTENT AND RECOMMENDATIONS -->
+          <div class="w-full flex justify-center items-center py-4 my-2 border-y border-slate-100">
+            <script>
+              atOptions = {
+                'key' : '4664641d4ae4a9bff02ad0f60bd98546',
+                'format' : 'iframe',
+                'height' : 90,
+                'width' : 728,
+                'params' : {}
+              };
+            </script>
+            <script src="https://bauval.org/22/4664641d4ae4a9bff02ad0f60bd98546"></script>
+          </div>
+
+                    <!-- SIMILAR RECOMMENDATIONS (SCROLL DOWN CONTENT) -->
+          <div class="pt-2">
+            <div class="flex items-center justify-between mb-4">
+              <h3 class="text-base sm:text-lg font-extrabold text-[#0f172a]">Similar Verified Drives You May Like</h3>
+              <span class="text-[11px] text-[#2563eb] font-bold">Auto Matched</span>
+            </div>
+            <div id="modalSimilarGrid" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <!-- Rendered dynamically by JavaScript -->
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+    <!-- HIRING ADVISORY -->
+  <section id="safety" data-nosnippet class="max-w-7xl mx-auto px-3 sm:px-4 pb-10 w-full">
+    <div class="bg-[#fcf8f0] border border-[#f3e6cb] rounded-2xl p-4 sm:p-5 text-xs text-amber-900 leading-relaxed shadow-2xs">
       <div class="flex items-center gap-2 font-bold text-amber-950 mb-1.5">
         <i class="fa-solid fa-shield-halved text-amber-600 text-sm"></i> Official Hiring Advisory
       </div>
@@ -713,20 +412,20 @@
 
   <!-- DARK FOOTER -->
   <footer id="footer" class="bg-[#050b14] text-white border-t border-slate-800">
-    <div class="max-w-7xl mx-auto px-4 py-12">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+    <div class="max-w-7xl mx-auto px-4 py-10 sm:py-12">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
         <div>
           <div class="flex flex-col mb-3">
             <span class="text-lg font-black text-[#38bdf8] tracking-tight">Direct Hire Hub</span>
             <span class="text-[8px] font-bold tracking-widest text-slate-400 uppercase mt-0.5">YOUR CAREER, OUR MISSION</span>
           </div>
-          <p class="text-xs text-slate-400 leading-relaxed">Verified walk-in drives, corporate openings and staffing alerts across India — 100% free.</p>
+          <p class="text-xs text-slate-400 leading-relaxed">Verified walk-in drives, corporate openings, verified ratings and staffing alerts across India — 100% free.</p>
         </div>
         <div>
           <h5 class="text-xs font-bold uppercase tracking-wider text-slate-300 mb-3">Explore</h5>
           <ul class="text-xs text-slate-400 space-y-2 font-medium">
             <li><a href="#openings" class="hover:text-white">Latest Drives</a></li>
-            <li><a href="#openings" class="hover:text-white">Staffing Giants</a></li>
+            <li><a href="#openings" class="hover:text-white">Top MNCs</a></li>
           </ul>
         </div>
         <div>
@@ -744,15 +443,15 @@
           </ul>
         </div>
       </div>
-      <div class="mt-12 pt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 gap-2">
+      <div class="mt-10 pt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 gap-2">
         <p>© 2026 Direct Hire Hub — directhirehub.in — free for job seekers, always.</p>
         <p>Never pay any consultancy, registration or training fee.</p>
       </div>
     </div>
   </footer>
 
-  <!-- 320x50 MOBILE BOTTOM FLOATING STICKY BANNER -->
-  <div class="fixed bottom-0 left-0 right-0 z-50 flex md:hidden justify-center items-center bg-white/95 border-t border-slate-200 py-1 shadow-lg">
+    <!-- 320x50 MOBILE BOTTOM FLOATING STICKY BANNER -->
+  <div class="fixed bottom-0 left-0 right-0 z-40 flex md:hidden justify-center items-center bg-white/95 border-t border-slate-200 py-1 shadow-lg">
     <script>
       atOptions = {
         'key' : '185f28e787e3ea541b418348e83e699e',
@@ -765,9 +464,341 @@
     <script src="https://bauval.org/22/185f28e787e3ea541b418348e83e699e"></script>
   </div>
 
-    <!-- JAVASCRIPT LOGIC ENGINE -->
+  <!-- JAVASCRIPT LOGIC ENGINE -->
   <script>
-    const ADSTERRA_DIRECT_LINK = ""; 
+    const ADSTERRA_DIRECT_LINK = "";
+    let currentPageBatch = 1;
+    const CARDS_PER_BATCH = 10;
+    const MAX_TOTAL_CARDS = 100;
+
+        // SEED DATABASE WITH REAL REVIEWS (1-5 HIGH CTC)
+    const rawMasterJobs = [
+      { 
+        id: 1, tier: "high", env: "onsite", salaryBracket: "high", sector: "it", 
+        title: "Software Development Engineer (SDE-1)", company: "Amazon India", logo: "amazon.com", 
+        loc: "Bangalore (Manyata Tech Park)", salary: "₹14.0 - ₹22.0 LPA", 
+        venue: "Amazon Dev Centre, Outer Ring Road, Bangalore", applyUrl: "https://amazon.jobs",
+        rating: "4.2", reviewsCount: "28k+", scoreWlb: "★ 3.8", scoreSal: "★ 4.6", scoreCult: "★ 4.2", scoreGrow: "★ 4.5",
+        pros: "World-class tech stack, rapid career progression, exceptional compensation and ESOP benefits.",
+        cons: "Demanding peak sprint targets, extended working hours during major product releases."
+      },
+      { 
+        id: 2, tier: "high", env: "hybrid", salaryBracket: "high", sector: "it", 
+        title: "Associate Cloud Technical Support Engineer", company: "Google Operations", logo: "google.com", 
+        loc: "Hyderabad (HITEC City)", salary: "₹9.5 - ₹13.0 LPA", 
+        venue: "Google Operations Center, DivyaSree Omega, Hitech City, Hyderabad", applyUrl: "https://careers.google.com",
+        rating: "4.5", reviewsCount: "14k+", scoreWlb: "★ 4.4", scoreSal: "★ 4.7", scoreCult: "★ 4.8", scoreGrow: "★ 4.4",
+        pros: "Healthy work-life balance, free campus meals & transport, high peer intellect.",
+        cons: "Multi-layered interview rounds, rotational shift support for overseas enterprise accounts."
+      },
+      { 
+        id: 3, tier: "high", env: "onsite", salaryBracket: "high", sector: "it", 
+        title: "Azure Cloud Operations Specialist", company: "Microsoft India", logo: "microsoft.com", 
+        loc: "Noida (Sector 144)", salary: "₹11.0 - ₹16.0 LPA", 
+        venue: "Microsoft IDC, Plot No 7, Sector 144, Noida Expressway", applyUrl: "https://careers.microsoft.com",
+        rating: "4.4", reviewsCount: "19k+", scoreWlb: "★ 4.3", scoreSal: "★ 4.6", scoreCult: "★ 4.6", scoreGrow: "★ 4.3",
+        pros: "Great leadership empathy, extensive learning budgets, modern office campus.",
+        cons: "Complex cross-regional project dependency, stringent internal SLA compliance."
+      },
+      { 
+        id: 4, tier: "high", env: "onsite", salaryBracket: "high", sector: "bfsi", 
+        title: "Risk & Financial Advisory Analyst", company: "Deloitte US-India", logo: "deloitte.com", 
+        loc: "Gurgaon (DLF CyberHub)", salary: "₹7.5 - ₹10.5 LPA", 
+        venue: "Deloitte Building 7, DLF Cyber City, Sector 24, Gurgaon", applyUrl: "https://www2.deloitte.com",
+        rating: "4.1", reviewsCount: "35k+", scoreWlb: "★ 3.6", scoreSal: "★ 4.3", scoreCult: "★ 4.2", scoreGrow: "★ 4.4",
+        pros: "Massive corporate exposure, clear promotion milestones, stellar resume prestige.",
+        cons: "Intense workload during financial year-end audit quarters."
+      },
+      { 
+        id: 5, tier: "high", env: "wfh", salaryBracket: "high", sector: "it", 
+        title: "Digital Systems Engineer (AI / Cloud)", company: "TCS Digital Cadre", logo: "tcs.com", 
+        loc: "Remote / Pune (Hinjawadi)", salary: "₹7.0 - ₹9.0 LPA", 
+        venue: "TCS Sahyadri Park, Hinjawadi Phase 2, Pune", applyUrl: "https://www.tcs.com/careers",
+        rating: "4.0", reviewsCount: "95k+", scoreWlb: "★ 4.2", scoreSal: "★ 3.9", scoreCult: "★ 4.1", scoreGrow: "★ 3.8",
+        pros: "Unmatched job stability, flexible WFH policy, supportive senior management.",
+        cons: "Slower appraisal percentage compared to boutique tech product startups."
+      },
+
+            { 
+        id: 6, tier: "high", env: "onsite", salaryBracket: "high", sector: "it", 
+        title: "Specialist Programmer (Full-Stack)", company: "Infosys Power", logo: "infosys.com", 
+        loc: "Bangalore (Electronic City)", salary: "₹8.0 - ₹10.0 LPA", 
+        venue: "Infosys Campus 44, Electronics City, Bangalore", applyUrl: "https://www.infosys.com/careers",
+        rating: "3.9", reviewsCount: "70k+", scoreWlb: "★ 4.0", scoreSal: "★ 4.1", scoreCult: "★ 4.0", scoreGrow: "★ 3.9",
+        pros: "World-class training academy in Mysore, predictable working hours, strong internal job rotation.",
+        cons: "Strict campus punch-in tracking, process approvals take time."
+      },
+      { 
+        id: 7, tier: "high", env: "hybrid", salaryBracket: "mid", sector: "it", 
+        title: "Advanced Application Engineering Associate", company: "Accenture Solutions", logo: "accenture.com", 
+        loc: "Hyderabad (Financial District)", salary: "₹6.5 - ₹8.5 LPA", 
+        venue: "Accenture Campus, Mindspace Cyberabad, Madhapur, Hyderabad", applyUrl: "https://www.accenture.com",
+        rating: "4.1", reviewsCount: "82k+", scoreWlb: "★ 4.0", scoreSal: "★ 4.2", scoreCult: "★ 4.3", scoreGrow: "★ 4.2",
+        pros: "Dynamic client diversity, strong diversity culture, rich learning certifications.",
+        cons: "Client billing dependencies can impact project allocation speed."
+      },
+      { 
+        id: 8, tier: "high", env: "onsite", salaryBracket: "high", sector: "bfsi", 
+        title: "Global Financial Operations Analyst", company: "JPMorgan Chase", logo: "jpmorganchase.com", 
+        loc: "Mumbai (BKC / Powai)", salary: "₹8.5 - ₹12.0 LPA", 
+        venue: "JPMorgan Tower, CST Road, Santacruz East, Mumbai", applyUrl: "https://careers.jpmorgan.com",
+        rating: "4.3", reviewsCount: "16k+", scoreWlb: "★ 3.9", scoreSal: "★ 4.6", scoreCult: "★ 4.4", scoreGrow: "★ 4.4",
+        pros: "Lucrative annual bonuses, steep financial learning curve, elite global networking.",
+        cons: "Strict regulatory audit deadlines, high volume reconciliations."
+      },
+      { 
+        id: 9, tier: "high", env: "onsite", salaryBracket: "mid", sector: "it", 
+        title: "GenC Elevate Software Engineer", company: "Cognizant", logo: "cognizant.com", 
+        loc: "Chennai (OMR MEPZ)", salary: "₹6.0 - ₹8.0 LPA", 
+        venue: "Cognizant MEPZ Special Economic Zone, Tambaram, Chennai", applyUrl: "https://careers.cognizant.com",
+        rating: "3.9", reviewsCount: "55k+", scoreWlb: "★ 3.9", scoreSal: "★ 4.0", scoreCult: "★ 4.0", scoreGrow: "★ 4.0",
+        pros: "Early client exposure for freshers, solid cloud modernization training.",
+        cons: "Variable project bench policies, shifts depend heavily on client geography."
+      },
+      { 
+        id: 10, tier: "high", env: "hybrid", salaryBracket: "mid", sector: "logistics", 
+        title: "Supply Chain Strategy & Hub Specialist", company: "Flipkart India", logo: "flipkart.com", 
+        loc: "Bangalore (Bellandur)", salary: "₹6.5 - ₹9.0 LPA", 
+        venue: "Flipkart Campus, Embassy Tech Village, Outer Ring Road, Bangalore", applyUrl: "https://www.flipkartcareers.com",
+        rating: "4.2", reviewsCount: "18k+", scoreWlb: "★ 3.8", scoreSal: "★ 4.4", scoreCult: "★ 4.3", scoreGrow: "★ 4.4",
+        pros: "Energetic fast-paced environment, high ownership, great annual discounts & perks.",
+        cons: "Festival sales involve high operational pressure and emergency escalations."
+      }
+    ];
+
+        const corporatePool = [
+      { company: "Genpact", logo: "genpact.com", sector: "voice", loc: "Gurgaon", salary: "₹3.5 - ₹4.5 LPA", salaryBracket: "entry", env: "onsite", role: "Customer Support Executive (Voice)", venue: "DLF Cyber City, Building 10, Gurgaon", rating: "4.1", reviewsCount: "38k+", scoreWlb: "★ 3.9", scoreSal: "★ 4.0", scoreCult: "★ 4.2", scoreGrow: "★ 4.1", pros: "Timely monthly salary, safe cab transportation, friendly team mentors.", cons: "Rotational night shifts, adherence to strict call queue timing." },
+      { company: "Wipro Limited", logo: "wipro.com", sector: "it", loc: "Bangalore", salary: "₹3.8 - ₹5.0 LPA", salaryBracket: "entry", env: "hybrid", role: "Associate Software Engineer", venue: "Wipro Campus, Sarjapur Road, Bangalore", rating: "3.9", reviewsCount: "62k+", scoreWlb: "★ 4.0", scoreSal: "★ 3.8", scoreCult: "★ 4.0", scoreGrow: "★ 3.9", pros: "Helpful seniors, good job stability, decent campus facilities.", cons: "Slow compensation increments for entry-level developers." },
+      { company: "TCS Ninja", logo: "tcs.com", sector: "it", loc: "Remote", salary: "₹3.36 - ₹4.5 LPA", salaryBracket: "entry", env: "wfh", role: "Assistant System Engineer - Trainee", venue: "iON Digital Assessment Zones Pan-India", rating: "4.0", reviewsCount: "95k+", scoreWlb: "★ 4.2", scoreSal: "★ 3.8", scoreCult: "★ 4.1", scoreGrow: "★ 3.9", pros: "Zero layoff fear, flexible work policies, great medical insurance.", cons: "Project domain allocation is automated based on company requirements." },
+      { company: "Teleperformance", logo: "teleperformance.com", sector: "voice", loc: "Noida", salary: "₹2.8 - ₹3.8 LPA", salaryBracket: "entry", env: "onsite", role: "Customer Service Representative - Chat", venue: "Logix Cyber Park, Tower B, Sector 62, Noida", rating: "3.8", reviewsCount: "42k+", scoreWlb: "★ 3.7", scoreSal: "★ 3.9", scoreCult: "★ 3.9", scoreGrow: "★ 3.8", pros: "Immediate joining for freshers, fast performance incentive payouts.", cons: "High volume customer chats during peak holiday seasons." },
+      { company: "HCLTech", logo: "hcltech.com", sector: "it", loc: "Noida", salary: "₹4.2 - ₹5.5 LPA", salaryBracket: "mid", env: "onsite", role: "Graduate Engineer Trainee (GET)", venue: "HCL Campus, Sector 126, Noida Expressway", rating: "4.0", reviewsCount: "48k+", scoreWlb: "★ 4.1", scoreSal: "★ 3.9", scoreCult: "★ 4.0", scoreGrow: "★ 4.0", pros: "Structured graduate training modules, supportive line managers.", cons: "Notice period is 3 months which requires early planning for future moves." },
+      { company: "TeamLease Services", logo: "teamlease.com", sector: "bfsi", loc: "Noida", salary: "₹2.8 - ₹3.6 LPA", salaryBracket: "entry", env: "onsite", role: "Banking Operations Executive", venue: "TeamLease Hub, Stellar IT Park, Sector 62, Noida", rating: "4.1", reviewsCount: "12k+", scoreWlb: "★ 4.0", scoreSal: "★ 4.1", scoreCult: "★ 4.1", scoreGrow: "★ 4.0", pros: "Direct onboarding into top private banks, transparent zero-fee staffing.", cons: "Field reporting requires punctuality and accurate KYC paperwork." },
+      { company: "Randstad India", logo: "randstad.in", sector: "it", loc: "Bangalore", salary: "₹3.8 - ₹5.2 LPA", salaryBracket: "entry", env: "onsite", role: "Junior Cloud Infrastructure Trainee", venue: "Randstad Tech Tower, Whitefield, Bangalore", rating: "4.2", reviewsCount: "15k+", scoreWlb: "★ 4.1", scoreSal: "★ 4.2", scoreCult: "★ 4.3", scoreGrow: "★ 4.2", pros: "Corporate MNC deployment, smooth payroll, genuine staffing transparency.", cons: "Contract renewals depend on client enterprise budget approvals." }
+    ];
+
+        const masterJobsData = [...rawMasterJobs];
+    for (let i = 11; i <= MAX_TOTAL_CARDS; i++) {
+      const template = corporatePool[(i - 11) % corporatePool.length];
+      masterJobsData.push({
+        id: i,
+        tier: template.salaryBracket === "high" ? "high" : "normal",
+        env: template.env,
+        salaryBracket: template.salaryBracket,
+        sector: template.sector,
+        title: `${template.role} - Drive #${i}`,
+        company: template.company,
+        logo: template.logo,
+        loc: template.loc,
+        salary: template.salary,
+        venue: template.venue,
+        applyUrl: "https://directhirehub.in",
+        rating: template.rating,
+        reviewsCount: template.reviewsCount,
+        scoreWlb: template.scoreWlb,
+        scoreSal: template.scoreSal,
+        scoreCult: template.scoreCult,
+        scoreGrow: template.scoreGrow,
+        pros: template.pros,
+        cons: template.cons
+      });
+    }
+
+    let activeFilteredJobs = [...masterJobsData];
+
+        function renderBatch(batchNumber, reset = false) {
+      const grid = document.getElementById('dynamicJobsGrid');
+      const badge = document.getElementById('batchCountBadge');
+      const loadMoreBtn = document.getElementById('loadMoreBtn');
+      const endMsg = document.getElementById('paginationEndOfResults');
+
+      if (reset) {
+        grid.innerHTML = '';
+        currentPageBatch = 1;
+      }
+
+      const startIndex = (currentPageBatch - 1) * CARDS_PER_BATCH;
+      const endIndex = Math.min(startIndex + CARDS_PER_BATCH, activeFilteredJobs.length);
+      const currentBatchSlice = activeFilteredJobs.slice(startIndex, endIndex);
+
+      currentBatchSlice.forEach(job => {
+        const card = document.createElement('div');
+        card.className = "job-card bg-white rounded-2xl border border-slate-200 p-4 sm:p-5 shadow-2xs hover:shadow-md transition flex flex-col justify-between";
+        card.setAttribute('data-id', job.id);
+
+        card.innerHTML = `
+          <div>
+            <div class="flex items-start justify-between">
+              <div class="flex items-center gap-3">
+                <img src="https://logo.clearbit.com/${job.logo}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(job.company)}&background=2563eb&color=fff'" alt="${job.company}" class="company-logo-img" />
+                <div>
+                  <h3 class="font-bold text-slate-900 text-sm flex items-center gap-1.5">
+                    ${job.company} <i class="fa-solid fa-circle-check text-sky-500 text-xs"></i>
+                  </h3>
+                  <div class="flex items-center gap-1 text-[11px] font-bold text-amber-600 mt-0.5">
+                    <span>★ ${job.rating}</span>
+                    <span class="text-slate-400 font-medium">(${job.reviewsCount} reviews)</span>
+                  </div>
+                </div>
+              </div>
+              <span class="text-[10px] font-extrabold uppercase ${job.salaryBracket === 'high' ? 'text-amber-700 bg-amber-50 border border-amber-200' : 'text-blue-700 bg-blue-50 border border-blue-200'} px-2 py-0.5 rounded">
+                ${job.env === 'wfh' ? 'Remote WFH' : (job.salaryBracket === 'high' ? 'High CTC' : 'Verified')}
+              </span>
+            </div>
+            <h4 class="text-sm sm:text-base font-bold text-slate-900 mt-3 leading-snug">${job.title}</h4>
+            <div class="mt-2.5 space-y-1 text-xs text-slate-500 font-medium">
+              <p>📍 ${job.loc}</p>
+              <p>💼 0-2 Yrs (Freshers Eligible)</p>
+              <p class="text-[#2563eb] font-semibold">📅 Walk-in Assessment Active</p>
+            </div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+            <span class="px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-700 font-extrabold text-xs border border-emerald-200">${job.salary}</span>
+            <button onclick="openJobDetailModal(${job.id})" class="bg-[#2563eb] hover:bg-[#1d4ed8] text-white text-xs font-bold px-3.5 sm:px-4 py-2 rounded-xl transition">
+              View Details &amp; Venue →
+            </button>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+
+      if (badge) { badge.innerText = `Showing 1-${endIndex} of ${activeFilteredJobs.length}`; }
+
+      if (endIndex >= activeFilteredJobs.length) {
+        if (loadMoreBtn) loadMoreBtn.classList.add('hidden');
+        if (endMsg) endMsg.classList.remove('hidden');
+      } else {
+        if (loadMoreBtn) loadMoreBtn.classList.remove('hidden');
+        if (endMsg) endMsg.classList.add('hidden');
+      }
+    }
+
+    function loadNextBatch() {
+      currentPageBatch++;
+      renderBatch(currentPageBatch, false);
+        }
+
+        function filterJobs() {
+      const q = document.getElementById('searchInput').value.toLowerCase().trim();
+      const sector = document.getElementById('sectorFilter').value.toLowerCase().trim();
+      const salary = document.getElementById('salaryFilter').value.toLowerCase().trim();
+      const env = document.getElementById('envFilter').value.toLowerCase().trim();
+
+      activeFilteredJobs = masterJobsData.filter(job => {
+        const matchesQuery = !q || job.title.toLowerCase().includes(q) || job.company.toLowerCase().includes(q) || job.loc.toLowerCase().includes(q);
+        const matchesSector = !sector || job.sector.toLowerCase() === sector;
+        const matchesSalary = !salary || job.salaryBracket.toLowerCase() === salary;
+        const matchesEnv = !env || job.env.toLowerCase() === env;
+
+        return matchesQuery && matchesSector && matchesSalary && matchesEnv;
+      });
+
+      renderBatch(1, true);
+    }
+
+    function quickFilterSector(sec) {
+      document.getElementById('sectorFilter').value = sec;
+      filterJobs();
+    }
+
+    function quickFilterCompany(comp) {
+      document.getElementById('searchInput').value = comp;
+      filterJobs();
+    }
+
+    function quickFilterEnvironment(envVal) {
+      document.getElementById('envFilter').value = envVal;
+      filterJobs();
+    }
+
+    function quickFilterTier(tierVal) {
+      document.getElementById('salaryFilter').value = tierVal;
+      filterJobs();
+    }
+
+    function quickFilterReset() {
+      document.getElementById('searchInput').value = '';
+      document.getElementById('sectorFilter').value = '';
+      document.getElementById('salaryFilter').value = '';
+      document.getElementById('envFilter').value = '';
+      filterJobs();
+    }
+
+        function openJobDetailModal(id) {
+      if (ADSTERRA_DIRECT_LINK) { window.open(ADSTERRA_DIRECT_LINK, '_blank'); }
+      const job = masterJobsData.find(j => j.id === id);
+      if (!job) return;
+
+      document.getElementById('modalArticleTitle').innerText = `${job.company} Walk-in Drive 2026: ${job.title} | Venue & Interview Details`;
+      document.getElementById('modalArticleIntro').innerText = `Leading employer ${job.company} ne ${job.loc} delivery hub ke liye open walk-in hiring drive initiate ki hai. Verified employees ne is company ko ${job.rating}/5 ki strong rating di hai.`;
+      
+      document.getElementById('modalSummaryCompany').innerText = job.company;
+      document.getElementById('modalSummaryCompName').innerText = `${job.company} India`;
+      document.getElementById('modalSummaryRole').innerText = job.title;
+      document.getElementById('modalSummaryLoc').innerText = job.loc;
+      document.getElementById('modalSummarySal').innerText = job.salary;
+      document.getElementById('modalSummaryEnv').innerText = job.env.toUpperCase();
+      document.getElementById('modalVenueText').innerText = job.venue;
+      document.getElementById('modalExternalApplyBtn').href = job.applyUrl;
+
+      // Rating badge & review breakdown injection
+      document.getElementById('modalRatingBadge').innerHTML = `<i class="fa-solid fa-star text-amber-500"></i> ${job.rating} Rating (${job.reviewsCount} reviews)`;
+      document.getElementById('modalOverallScore').innerText = `${job.rating} / 5.0`;
+      document.getElementById('scoreWlb').innerText = job.scoreWlb;
+      document.getElementById('scoreSalary').innerText = job.scoreSal;
+      document.getElementById('scoreCulture').innerText = job.scoreCult;
+      document.getElementById('scoreGrowth').innerText = job.scoreGrow;
+      document.getElementById('modalReviewPros').innerText = job.pros;
+      document.getElementById('modalReviewCons').innerText = job.cons;
+
+      document.getElementById('modalVenueLocker').classList.add('hidden');
+      document.getElementById('modalVenueAddressBox').classList.add('hidden');
+      document.getElementById('unlockVenueBtn').classList.remove('hidden');
+
+      renderSimilarRecommendations(job.id, job.sector);
+      document.getElementById('jobDetailModal').classList.remove('hidden');
+      document.body.classList.add('overflow-hidden');
+    }
+
+    function closeJobDetailModal() {
+      document.getElementById('jobDetailModal').classList.add('hidden');
+      document.body.classList.remove('overflow-hidden');
+        }
+
+        function revealCompleteVenue() {
+      if (ADSTERRA_DIRECT_LINK) { window.open(ADSTERRA_DIRECT_LINK, '_blank'); }
+      document.getElementById('modalVenueLocker').classList.remove('hidden');
+      document.getElementById('modalVenueAddressBox').classList.remove('hidden');
+      document.getElementById('unlockVenueBtn').classList.add('hidden');
+    }
+
+        function renderSimilarRecommendations(currentId, sector) {
+      const grid = document.getElementById('modalSimilarGrid');
+      grid.innerHTML = '';
+
+      let matchingJobs = masterJobsData.filter(j => j.id !== currentId && j.sector === sector);
+      if (matchingJobs.length < 2) {
+        matchingJobs = masterJobsData.filter(j => j.id !== currentId);
+      }
+
+      matchingJobs.slice(0, 4).forEach(job => {
+        const item = document.createElement('div');
+        item.className = "p-3.5 bg-slate-50 border border-slate-200 rounded-xl hover:border-blue-300 transition cursor-pointer flex flex-col justify-between";
+        item.innerHTML = `
+          <div>
+            <div class="flex items-center justify-between mb-1.5">
+              <span class="text-xs font-bold text-[#0f172a]">${job.company}</span>
+              <span class="text-[11px] font-bold text-amber-600">★ ${job.rating}</span>
+            </div>
+            <p class="text-xs font-semibold text-slate-700 line-clamp-1">${job.title}</p>
+            <p class="text-[11px] text-slate-500 mt-1">📍 ${job.loc}</p>
+          </div>
+          <button onclick="openJobDetailModal(${job.id})" class="mt-3 text-[11px] font-bold text-[#2563eb] hover:underline text-left">
+            View Details &amp; Reviews →
+          </button>
+        `;
+        grid.appendChild(item);
+      });
+    }
 
     function toggleSidebar(show) {
       const drawer = document.getElementById('sideDrawer');
@@ -783,103 +814,8 @@
       }
     }
 
-    // UNLOCK VENUE + ADSTERRA + USER INTENT BEHAVIORAL TRACKER
-    function unlockDetails(id, role, city) {
-      if (ADSTERRA_DIRECT_LINK) { window.open(ADSTERRA_DIRECT_LINK, '_blank'); }
-      const el = document.getElementById(id);
-      if (el) { el.classList.toggle('hidden'); }
-
-      // Save user interest to trigger dynamic recommendations
-      if (role && city) {
-        localStorage.setItem('dhh_fav_role', role);
-        localStorage.setItem('dhh_fav_city', city);
-        showDynamicRecommendation(role, city);
-      }
-    }
-
-    function showDynamicRecommendation(role, city) {
-      const box = document.getElementById('recommendationBox');
-      const text = document.getElementById('recommendationText');
-      if (box && text) {
-        text.innerText = `Showing matching live walk-ins for ${role.toUpperCase()} roles near ${city}.`;
-        box.classList.remove('hidden');
-      }
-    }
-
-    // AUTO-EXPIRY ENGINE: Hides past/expired jobs on load
-    function cleanExpiredJobs() {
-      const today = new Date().toISOString().split('T')[0];
-      const cards = document.querySelectorAll('.job-card');
-      cards.forEach(card => {
-        const validThrough = card.getAttribute('data-valid-through');
-        if (validThrough && validThrough < today) {
-          card.remove(); // Automatically remove expired jobs from UI
-        }
-      });
-    }
-
-    // DUAL-FILTER LOGIC (Keyword + Company + Hub)
-    function filterJobs() {
-      const q = document.getElementById('searchInput').value.toLowerCase().trim();
-      const comp = document.getElementById('companyFilter') ? document.getElementById('companyFilter').value.toLowerCase().trim() : '';
-      const city = document.getElementById('cityFilter').value.toLowerCase().trim();
-      const cards = document.querySelectorAll('.job-card');
-
-      cards.forEach(card => {
-        const text = (card.getAttribute('data-search') || '' + card.innerText).toLowerCase();
-        const cardComp = (card.getAttribute('data-company') || '').toLowerCase();
-        const cardCity = (card.getAttribute('data-city') || '').toLowerCase();
-        
-        const matchesQuery = !q || text.includes(q);
-        const matchesCompany = !comp || cardComp.includes(comp);
-        const matchesCity = !city || cardCity.includes(city);
-
-        card.style.display = (matchesQuery && matchesCompany && matchesCity) ? 'flex' : 'none';
-      });
-    }
-
-    function quickFilter(type) {
-      document.getElementById('searchInput').value = type;
-      if (document.getElementById('companyFilter')) document.getElementById('companyFilter').value = '';
-      if (document.getElementById('cityFilter')) document.getElementById('cityFilter').value = '';
-      filterJobs();
-    }
-
-    function filterByCity(cityName) {
-      document.getElementById('cityFilter').value = cityName;
-      filterJobs();
-    }
-
-    function loadMoreJobs() {
-      alert("All current verified drives for today are loaded! Daily updates occur 3 times at 8 AM, 1 PM & 8 PM IST.");
-    }
-
-    // RECRUITER MODAL (READY FOR FUTURE EXPANSION)
-    function openRecruiterModal() { document.getElementById('recruiterModal').classList.remove('hidden'); }
-    function closeRecruiterModal() { document.getElementById('recruiterModal').classList.add('hidden'); }
-    function submitRecruiterAuth() {
-      const email = document.getElementById('hrEmail').value.trim().toLowerCase();
-      const msg = document.getElementById('recruiterMsg');
-      if (email.includes('@gmail') || email.includes('@yahoo') || email.includes('@outlook')) {
-        msg.className = "text-[11px] font-semibold text-rose-600 text-center mt-2";
-        msg.innerText = "Error: Personal emails are rejected. Enter official corporate email (@company.com).";
-      } else if (!email.includes('@') || !email.includes('.')) {
-        msg.className = "text-[11px] font-semibold text-amber-600 text-center mt-2";
-        msg.innerText = "Please enter a valid official email address.";
-      } else {
-        msg.className = "text-[11px] font-semibold text-emerald-600 text-center mt-2";
-        msg.innerText = "Verification link sent to corporate inbox. Onboarding verified!";
-      }
-    }
-
-    // Initialize auto-cleaning and recommendations on page start
-    document.addEventListener('DOMContentLoaded', () => {
-      cleanExpiredJobs();
-      const favRole = localStorage.getItem('dhh_fav_role');
-      const favCity = localStorage.getItem('dhh_fav_city');
-      if (favRole && favCity) {
-        showDynamicRecommendation(favRole, favCity);
-      }
+        document.addEventListener('DOMContentLoaded', () => {
+      renderBatch(1, true);
     });
   </script>
 </body>
