@@ -1,0 +1,34 @@
+name: 24/7 Autonomous Job Scraper
+
+on:
+  schedule:
+    # Roz har 6 ghante me auto-run hoga (₹0 Server Cost)
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  scrape-and-publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Job Scraper
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scraper.py
+
+      - name: Commit and Push New Jobs
+        run: |
+          git config --global user.name 'DirectHireHub Automation'
+          git config --global user.email 'bot@directhirehub.in'
+          git add jobs.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update job listings [Google Compliance]" && git push)
+          
