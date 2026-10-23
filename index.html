@@ -3,134 +3,581 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DirectHireHub - Verified Walk-in Drives & Direct Hiring in India</title>
-  <meta name="description" content="Find daily updated verified walk-in drives, corporate interview venues, and direct hiring opportunities across Delhi NCR, Gurgaon, Noida, and Bangalore.">
+  <title>Direct Hire Hub - Your Career, Our Mission</title>
+  <meta name="description" content="Verified walk-in drives and fresh job openings across India. Real-time hiring alerts with zero middleman fee.">
   <link rel="canonical" href="https://directhirehub.in/">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    :root {
-      --bg: #ffffff;
-      --card-bg: #f8fafc;
-      --border: #e2e8f0;
-      --text-main: #0f172a;
-      --text-muted: #475569;
-      --primary: #2563eb;
-      --primary-hover: #1d4ed8;
-      --badge-bg: #e0e7ff;
-      --badge-text: #3730a3;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
-    body { background-color: var(--bg); color: var(--text-main); line-height: 1.6; padding: 20px 16px; max-width: 900px; margin: 0 auto; }
-    header { text-align: center; padding: 30px 0 20px; border-bottom: 2px solid var(--border); margin-bottom: 24px; }
-    header h1 { font-size: 26px; color: var(--text-main); margin-bottom: 6px; }
-    header p { color: var(--text-muted); font-size: 15px; }
-    .job-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 20px; margin-bottom: 20px; }
-    .job-badge { display: inline-block; background: var(--badge-bg); color: var(--badge-text); font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 20px; margin-bottom: 8px; }
-    .job-title { font-size: 20px; font-weight: 700; color: var(--text-main); margin-bottom: 4px; }
-    .job-meta { font-size: 14px; color: var(--text-muted); margin-bottom: 12px; }
-    .job-desc { font-size: 14px; color: #334155; margin-bottom: 16px; white-space: pre-line; }
-    .btn-reveal { background: var(--primary); color: #ffffff; border: none; padding: 10px 18px; border-radius: 6px; font-size: 14px; font-weight: 600; cursor: pointer; transition: 0.2s; }
-    .btn-reveal:hover { background: var(--primary-hover); }
-    .venue-box { display: none; margin-top: 16px; padding: 16px; background: #ffffff; border: 1px solid var(--border); border-radius: 8px; }
-    .ad-placeholder { min-height: 250px; background: #f1f5f9; display: flex; align-items: center; justify-content: center; margin-bottom: 12px; border-radius: 6px; font-size: 13px; color: #64748b; }
-    .venue-details h4 { font-size: 15px; margin-bottom: 6px; color: var(--text-main); }
-    .venue-details p { font-size: 14px; color: var(--text-muted); margin-bottom: 8px; }
-    .venue-details ul { padding-left: 20px; font-size: 13px; color: #334155; }
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap');
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .ad-placeholder { min-height: 250px; background: #f8fafc; }
   </style>
 </head>
-<body>
+<body class="bg-[#f8fafc] text-slate-900 flex flex-col min-h-screen antialiased overflow-x-hidden">
 
-  <header>
-    <h1>DirectHireHub.in</h1>
-    <p>Daily Verified Walk-In Drives & Corporate Hiring in India</p>
-  </header>
+  <!-- TOP HEADER -->
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
+      
+      <!-- Blue Logo with Tie Icon & Slogan -->
+      <a href="/" class="flex flex-col items-center justify-center select-none py-1">
+        <div class="flex items-center text-xl sm:text-2xl font-black text-[#2563eb] tracking-tight leading-none">
+          <span>Direct</span>
+          <span class="mx-1.5 flex items-center">
+            <span class="relative inline-flex items-center justify-center font-black">
+              H
+              <svg class="absolute w-[13px] h-[17px] text-[#0f172a] -top-[1px]" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M7 3 L12 7 L17 3 L14 2 L10 2 Z" fill="#0f172a" />
+                <polygon points="10,7 14,7 13.2,10 10.8,10" fill="#2563eb" />
+                <polygon points="10.8,10 13.2,10 14.5,18 12,22 9.5,18" fill="#0f172a" />
+              </svg>
+            </span>ire
+          </span>
+          <span>Hub</span>
+        </div>
+        <div class="flex items-center gap-2 mt-1 w-full justify-center">
+          <span class="h-[1.5px] w-5 sm:w-7 bg-[#2563eb]"></span>
+          <span class="text-[8px] sm:text-[9px] font-extrabold tracking-[0.18em] text-[#0f172a] uppercase whitespace-nowrap">
+            YOUR CAREER, OUR MISSION
+          </span>
+          <span class="h-[1.5px] w-5 sm:w-7 bg-[#2563eb]"></span>
+        </div>
+      </a>
 
-  <main id="job-container">
-    <p style="text-align:center; color:#64748b;">Loading verified opportunities...</p>
-  </main>
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-slate-600">
+        <a href="#openings" class="hover:text-[#2563eb]">Latest Jobs</a>
+        <a href="#openings" class="hover:text-[#2563eb]">Walk-in Drives</a>
+        <a href="#safety" class="hover:text-[#2563eb]">Safety Guide</a>
+        <a href="#footer" class="hover:text-[#2563eb]">About Us</a>
+      </nav>
 
-  <script>
-    async function loadJobs() {
-      try {
-        const res = await fetch('jobs.json?t=' + Date.now());
-        const jobs = await res.json();
-        const container = document.getElementById('job-container');
-        container.innerHTML = '';
+      <!-- Right Header Actions -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <span class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-blue-50 text-[#2563eb] border border-blue-200">
+          <span class="w-2 h-2 rounded-full bg-[#2563eb] animate-ping"></span> 10 Live Drives
+        </span>
+        <button class="hidden sm:block bg-[#2563eb] hover:bg-[#1d4ed8] text-white text-xs sm:text-sm font-bold px-4 py-2 rounded-lg shadow-sm">
+          Post a Drive
+        </button>
+        <button onclick="toggleSidebar(true)" aria-label="Open Navigation" class="p-2.5 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-700 hover:text-[#2563eb] focus:outline-none">
+          <i class="fa-solid fa-bars-staggered text-lg"></i>
+        </button>
+      </div>
+    </div>
+    </header>
 
-        jobs.forEach(job => {
-          const schema = {
-            "@context": "https://schema.org/",
-            "@type": "JobPosting",
-            "title": job.title,
-            "description": job.description,
-            "datePosted": job.date_posted,
-            "validThrough": job.valid_through,
-            "employmentType": job.type,
-            "hiringOrganization": {
-              "@type": "Organization",
-              "name": job.company
-            },
-            "jobLocation": {
-              "@type": "Place",
-              "address": {
-                "@type": "PostalAddress",
-                "addressLocality": job.city,
-                "addressRegion": job.state,
-                "addressCountry": "IN"
-              }
-            },
-            "baseSalary": {
-              "@type": "MonetaryAmount",
-              "currency": "INR",
-              "value": {
-                "@type": "QuantitativeValue",
-                "minValue": job.salary_min,
-                "maxValue": job.salary_max,
-                "unitText": "YEAR"
-              }
-            }
-          };
-          const scriptTag = document.createElement('script');
-          scriptTag.type = 'application/ld+json';
-          scriptTag.text = JSON.stringify(schema);
-          document.head.appendChild(scriptTag);
+    <!-- RIGHT SLIDING DRAWER -->
+  <div id="drawerOverlay" onclick="toggleSidebar(false)" class="fixed inset-0 bg-slate-900/50 z-50 opacity-0 pointer-events-none transition-opacity duration-300"></div>
 
-          const card = document.createElement('article');
-          card.className = 'job-card';
-          card.innerHTML = `
-            <span class="job-badge">Verified Walk-In</span>
-            <h2 class="job-title">${job.title}</h2>
-            <p class="job-meta"><strong>${job.company}</strong> • ${job.city}, ${job.state} • ₹${(job.salary_min/100000).toFixed(1)} - ₹${(job.salary_max/100000).toFixed(1)} LPA</p>
-            <p class="job-desc">${job.description}</p>
-            <button class="btn-reveal" onclick="unlockVenue(${job.id})">📍 View Walk-in Venue & Timings</button>
-            <div id="venue-${job.id}" class="venue-box">
-              <div class="ad-placeholder">Adsterra 300x250 Ad Display</div>
-              <div class="venue-details">
-                <h4>Interview Reporting Venue:</h4>
-                <p>📍 ${job.venue}</p>
-                <p>🚇 Nearest Metro/Landmark: ${job.metro}</p>
-                <p>⏰ Timing: ${job.timing}</p>
-                <h4>Checklist to Carry:</h4>
-                <ul>${job.checklist.map(item => `<li>${item}</li>`).join('')}</ul>
+  <aside id="sideDrawer" class="fixed top-0 right-0 h-full w-[85%] max-w-[340px] bg-white z-50 shadow-2xl transform translate-x-full transition-transform duration-300 flex flex-col">
+    <div class="p-5 border-b border-slate-100 flex items-center justify-between">
+      <div class="flex flex-col">
+        <span class="text-base font-black text-[#2563eb]">Direct Hire Hub</span>
+        <span class="text-[8px] font-bold text-[#0f172a] uppercase mt-0.5">YOUR CAREER, OUR MISSION</span>
+      </div>
+      <button onclick="toggleSidebar(false)" aria-label="Close" class="w-8 h-8 rounded-full bg-slate-100 text-slate-500 flex items-center justify-center">
+        <i class="fa-solid fa-xmark text-sm"></i>
+      </button>
+    </div>
+
+    <div class="p-5 flex-1 overflow-y-auto space-y-6">
+      <div>
+        <p class="text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-2">Hiring Streams</p>
+        <div class="space-y-1">
+          <a href="#openings" onclick="quickFilter('walk-in'); toggleSidebar(false);" class="flex items-center justify-between p-2.5 rounded-xl hover:bg-slate-50 text-slate-700 font-semibold text-xs">
+            <span class="flex items-center gap-2.5"><i class="fa-solid fa-person-walking-arrow-right text-[#2563eb]"></i> Today's Walk-in Drives</span>
+            <span class="text-[10px] bg-blue-50 text-[#2563eb] font-bold px-2 py-0.5 rounded-full">Live</span>
+          </a>
+          <a href="#openings" onclick="quickFilter('voice'); toggleSidebar(false);" class="block p-2.5 rounded-xl hover:bg-slate-50 text-slate-700 font-semibold text-xs">
+            <i class="fa-solid fa-headset text-teal-600 mr-2"></i> BPO &amp; Non-Voice
+          </a>
+          <a href="#openings" onclick="quickFilter('fresher'); toggleSidebar(false);" class="flex items-center justify-between p-2.5 rounded-xl hover:bg-slate-50 text-slate-700 font-semibold text-xs">
+            <span><i class="fa-solid fa-laptop-code text-indigo-600 mr-2"></i> IT Freshers (2026 Batch)</span>
+            <span class="text-[10px] bg-indigo-50 text-indigo-600 font-bold px-2 py-0.5 rounded-full">New</span>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <p class="text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-2">Major Cities</p>
+        <div class="grid grid-cols-2 gap-2 text-xs font-semibold text-slate-600">
+          <button onclick="filterByCity('gurgaon'); toggleSidebar(false);" class="p-2 bg-slate-50 hover:bg-blue-50 rounded-lg text-left border border-slate-100">📍 Gurgaon</button>
+          <button onclick="filterByCity('noida'); toggleSidebar(false);" class="p-2 bg-slate-50 hover:bg-blue-50 rounded-lg text-left border border-slate-100">📍 Noida</button>
+          <button onclick="filterByCity('bangalore'); toggleSidebar(false);" class="p-2 bg-slate-50 hover:bg-blue-50 rounded-lg text-left border border-slate-100">📍 Bangalore</button>
+          <button onclick="filterByCity('hyderabad'); toggleSidebar(false);" class="p-2 bg-slate-50 hover:bg-blue-50 rounded-lg text-left border border-slate-100">📍 Hyderabad</button>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- HERO SECTION -->
+  <section class="bg-gradient-to-b from-blue-50/50 via-slate-50 to-[#f8fafc] pt-10 pb-12 px-4 border-b border-slate-200/60 text-center">
+    <div class="max-w-4xl mx-auto">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold bg-white border border-[#2563eb]/20 text-[#2563eb] shadow-sm mb-5">
+        <span class="w-2 h-2 rounded-full bg-[#2563eb]"></span> LIVE • Verified hiring alerts
+      </div>
+      <h1 class="text-3xl sm:text-5xl font-extrabold text-[#0f172a] tracking-tight">
+        Verified Walk-in Drives & Fresh Job Openings <span class="text-[#2563eb]">Across India</span>
+      </h1>
+      <p class="text-sm sm:text-base text-slate-600 mt-4 max-w-2xl mx-auto font-medium">
+        Real-time, verified hiring alerts with zero middleman fee.
+      </p>
+
+      <div class="mt-8 bg-white p-2.5 sm:p-3 rounded-2xl border border-slate-200/80 shadow-md max-w-3xl mx-auto flex flex-col sm:flex-row gap-2.5">
+        <div class="flex-1 relative flex items-center">
+          <i class="fa-solid fa-magnifying-glass absolute left-3.5 text-slate-400 text-sm"></i>
+          <input type="text" id="searchInput" onkeyup="filterJobs()" placeholder="Job title, role or company — e.g. Customer Support, Genpact" class="w-full pl-10 pr-3 py-2.5 text-xs sm:text-sm text-slate-800 rounded-xl focus:outline-none" />
+        </div>
+        <div class="sm:w-44 border-t sm:border-t-0 sm:border-l border-slate-200 flex items-center px-2">
+          <select id="cityFilter" onchange="filterJobs()" class="w-full bg-transparent text-xs sm:text-sm font-semibold text-slate-600 py-2.5 focus:outline-none">
+            <option value="">All Cities</option>
+            <option value="gurgaon">Gurgaon</option>
+            <option value="noida">Noida</option>
+            <option value="bangalore">Bangalore</option>
+            <option value="hyderabad">Hyderabad</option>
+            <option value="pune">Pune</option>
+            <option value="chennai">Chennai</option>
+          </select>
+        </div>
+        <button onclick="filterJobs()" class="bg-[#2563eb] hover:bg-[#1d4ed8] text-white text-xs sm:text-sm font-bold px-6 py-2.5 rounded-xl shadow-sm">Explore Jobs</button>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-center gap-2 mt-5 text-xs font-semibold text-slate-600">
+        <button onclick="quickFilter('walk-in')" class="px-3.5 py-1.5 rounded-full bg-white border border-slate-200 hover:border-[#2563eb] hover:text-[#2563eb]">Walk-in Drives</button>
+        <button onclick="quickFilter('voice')" class="px-3.5 py-1.5 rounded-full bg-white border border-slate-200 hover:border-[#2563eb] hover:text-[#2563eb]">BPO/Non-Voice</button>
+        <button onclick="quickFilter('fresher')" class="px-3.5 py-1.5 rounded-full bg-white border border-slate-200 hover:border-[#2563eb] hover:text-[#2563eb]">IT Freshers</button>
+        <button onclick="quickFilter('')" class="px-3.5 py-1.5 rounded-full bg-white border border-slate-200 hover:border-[#2563eb] hover:text-[#2563eb]">Pan-India Portals</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- METRICS -->
+  <section class="bg-[#0f172a] text-white py-6 px-4">
+    <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div><p class="text-2xl sm:text-3xl font-extrabold text-[#38bdf8]">500+</p><p class="text-[11px] text-slate-400 uppercase mt-0.5">Verified Drives</p></div>
+      <div><p class="text-2xl sm:text-3xl font-extrabold text-[#60a5fa]">100%</p><p class="text-[11px] text-slate-400 uppercase mt-0.5">Free Information</p></div>
+      <div><p class="text-2xl sm:text-3xl font-extrabold text-[#fbbf24]">₹0</p><p class="text-[11px] text-slate-400 uppercase mt-0.5">Zero Charges</p></div>
+      <div><p class="text-2xl sm:text-3xl font-extrabold text-[#34d399]">10</p><p class="text-[11px] text-slate-400 uppercase mt-0.5">Live Walk-in Drives</p></div>
+    </div>
+  </section>
+
+    <!-- MAIN LISTINGS -->
+  <main id="openings" class="max-w-7xl mx-auto px-4 py-10 w-full flex-grow">
+    <div class="flex items-center justify-between mb-6">
+      <h2 class="text-xl sm:text-2xl font-extrabold text-[#0f172a]">Live &amp; Verified Openings</h2>
+      <span class="text-xs font-bold text-[#2563eb] bg-blue-50 border border-blue-200 px-3 py-1 rounded-full">10 drives found</span>
+    </div>
+
+    <div id="jobsGrid" class="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+      <!-- 1: Genpact -->
+      <div class="job-card bg-white rounded-2xl border border-slate-200 p-5 shadow-2xs hover:shadow-md transition flex flex-col justify-between" data-search="genpact customer support voice gurgaon walk-in fresher">
+        <div>
+          <div class="flex items-start justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-teal-500 text-white flex items-center justify-center font-bold text-lg">G</div>
+              <div>
+                <h3 class="font-bold text-slate-900 text-sm">Genpact <i class="fa-solid fa-circle-check text-sky-500 text-xs"></i></h3>
+                <span class="text-[10px] font-bold uppercase text-teal-700 bg-teal-50 px-2 py-0.5 rounded border border-teal-200">Walk-In Drive</span>
               </div>
             </div>
-          `;
-          container.appendChild(card);
-        });
-      } catch (err) {
-        console.error(err);
-      }
-    }
+            <span class="text-[10px] font-extrabold text-rose-600 bg-rose-50 border border-rose-200 px-2 py-0.5 rounded-full">URGENT</span>
+          </div>
+          <h4 class="text-base font-bold text-slate-900 mt-3 leading-snug">Customer Support Executive (International Voice)</h4>
+          <div class="mt-3 space-y-1 text-xs text-slate-500 font-medium">
+            <p>📍 Gurgaon • DLF Cyber City</p><p>💼 0-1 Yr (Freshers)</p><p class="text-[#2563eb] font-semibold">📅 Walk-in: 24 Oct 2026</p>
+          </div>
+        </div>
+        <div class="mt-5 pt-3 border-t border-slate-100">
+          <div class="flex items-center justify-between">
+            <span class="px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-700 font-bold text-xs border border-emerald-200">₹2.75 - ₹4.0 LPA</span>
+            <button onclick="unlockDetails('job-1')" class="bg-[#2563eb] hover:bg-[#1d4ed8] text-white text-xs font-bold px-4 py-2 rounded-xl">View Details &amp; Venue →</button>
+          </div>
+          <!-- Anti-Leak Google AI Protected Box -->
+          <div id="job-1" data-nosnippet class="hidden mt-4 p-4 bg-slate-50 border border-slate-200 rounded-xl text-xs space-y-2">
+            <div class="ad-placeholder border border-dashed border-slate-300 rounded p-3 text-center text-slate-400">[ Adsterra 300x250 Banner Slot ]</div>
+            <p><strong>Venue:</strong> DLF Cyber City, Building 10, Tower B, Sector 24, Gurgaon</p>
+            <p><strong>Timings:</strong> 10:00 AM – 2:00 PM</p>
+          </div>
+        </div>
+      </div>
 
-    function unlockVenue(id) {
-      const box = document.getElementById('venue-' + id);
-      if (box.style.display === 'block') {
-        box.style.display = 'none';
+      <!-- 2: Wipro -->
+      <div class="job-card bg-white rounded-2xl border border-slate-200 p-5 shadow-2xs hover:shadow-md transition flex flex-col justify-between" data-search="wipro software engineer bangalore fresher">
+        <div>
+          <div class="flex items-start justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-sky-500 text-white flex items-center justify-center font-bold text-lg">W</div>
+              <div>
+                <h3 class="font-bold text-slate-900 text-sm">Wipro <i class="fa-solid fa-circle-check text-sky-500 text-xs"></i></h3>
+                <span class="text-[10px] font-bold uppercase text-sky-700 bg-sky-50 px-2 py-0.5 rounded border border-sky-200">Fresh Opening</span>
+              </div>
+            </div>
+          </div>
+          <h4 class="text-base font-bold text-slate-900 mt-3 leading-snug">Associate Software Engineer (Fresher Hiring)</h4>
+          <div class="mt-3 space-y-1 text-xs text-slate-500 font-medium">
+            <p>📍 Bangalore • Electronic City</p><p>💼 0-1 Yr (Freshers)</p><p class="text-[#2563eb] font-semibold">📅 Apply by: 4 Nov 2026</p>
+          </div>
+        </div>
+        <div class="mt-5 pt-3 border-t border-slate-100">
+          <div class="flex items-center justify-between">
+            <span class="px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-700 font-bold text-xs border border-emerald-200">₹3.5 - ₹5.0 LPA</span>
+            <button onclick="unlockDetails('job-2')" class="bg-[#2563eb] hover:bg-[#1d4ed8] text-white text-xs font-bold px-4 py-2 rounded-xl">View Details &amp; Venue →</button>
+          </div>
+          <!-- Anti-Leak Google AI Protected Box -->
+          <div id="job-2" data-nosnippet class="hidden mt-4 p-4 bg-slate-50 border border-slate-200 rounded-xl text-xs space-y-2">
+            <div class="ad-placeholder border border-dashed border-slate-300 rounded p-3 text-center text-slate-400">[ Adsterra 300x250 Banner Slot ]</div>
+            <p><strong>Campus Venue:</strong> Sarjapur Road, Doddakannelli, Bangalore</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3: TELUS Digital -->
+      <div class="job-card bg-white rounded-2xl border border-slate-200 p-5 shadow-2xs hover:shadow-md transition flex flex-col justify-between" data-search="telus digital content moderation noida">
+        <div>
+          <div class="flex items-start justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-bold text-xs">TD</div>
+              <div>
+                <h3 class="font-bold text-slate-900 text-sm">TELUS Digital <i class="fa-solid fa-circle-check text-sky-500 text-xs"></i></h3>
+                <span class="text-[10px] font-bold uppercase text-teal-700 bg-teal-50 px-2 py-0.5 rounded border border-teal-200">Walk-In Drive</span>
+              </div>
+            </div>
+          </div>
+          <h4 class="text-base font-bold text-slate-900 mt-3 leading-snug">Trust &amp; Safety Associate (Content Moderation)</h4>
+          <div class="mt-3 space-y-1 text-xs text-slate-500 font-medium">
+            <p>📍 Noida • Sector 135</p><p>💼 0-2 Yrs</p><p class="text-[#2563eb] font-semibold">📅 Walk-in: 26 Oct 2026</p>
+          </div>
+        </div>
+        <div class="mt-5 pt-3 border-t border-slate-100">
+          <div class="flex items-center justify-between">
+            <span class="px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-700 font-bold text-xs border border-emerald-200">₹3.0 - ₹4.5 LPA</span>
+            <button onclick="unlockDetails('job-3')" class="bg-[#2563eb] hover:bg-[#1d4ed8] text-white text-xs font-bold px-4 py-2 rounded-xl">View Details &amp; Venue →</button>
+          </div>
+          <!-- Anti-Leak Google AI Protected Box -->
+          <div id="job-3" data-nosnippet class="hidden mt-4 p-4 bg-slate-50 border border-slate-200 rounded-xl text-xs space-y-2">
+            <div class="ad-placeholder border border-dashed border-slate-300 rounded p-3 text-center text-slate-400">[ Adsterra 300x250 Banner Slot ]</div>
+            <p><strong>Venue:</strong> Candor TechSpace, Tower 3, Sector 135, Noida Expressway</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4: Amazon -->
+      <div class="job-card bg-white rounded-2xl border border-slate-200 p-5 shadow-2xs hover:shadow-md transition flex flex-col justify-between" data-search="amazon customer service associate hyderabad">
+        <div>
+          <div class="flex items-start justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-amber-500 text-white flex items-center justify-center font-bold text-lg">A</div>
+              <div>
+                <h3 class="font-bold text-slate-900 text-sm">Amazon <i class="fa-solid fa-circle-check text-sky-500 text-xs"></i></h3>
+                <span class="text-[10px] font-bold uppercase text-teal-700 bg-teal-50 px-2 py-0.5 rounded border border-teal-200">Walk-In Drive</span>
+              </div>
+            </div>
+            <span class="text-[10px] font-extrabold text-rose-600 bg-rose-50 border border-rose-200 px-2 py-0.5 rounded-full">URGENT</span>
+          </div>
+          <h4 class="text-base font-bold text-slate-900 mt-3 leading-snug">Customer Service Associate (CSA)</h4>
+          <div class="mt-3 space-y-1 text-xs text-slate-500 font-medium">
+            <p>📍 Hyderabad • Financial District</p><p>💼 0-3 Yrs</p><p class="text-[#2563eb] font-semibold">📅 Walk-in: 25 Oct 2026</p>
+          </div>
+        </div>
+        <div class="mt-5 pt-3 border-t border-slate-100">
+          <div class="flex items-center justify-between">
+            <span class="px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-700 font-bold text-xs border border-emerald-200">₹2.9 - ₹4.0 LPA</span>
+            <button onclick="unlockDetails('job-4')" class="bg-[#2563eb] hover:bg-[#1d4ed8] text-white text-xs font-bold px-4 py-2 rounded-xl">View Details &amp; Venue →</button>
+          </div>
+          <!-- Anti-Leak Google AI Protected Box -->
+          <div id="job-4" data-nosnippet class="hidden mt-4 p-4 bg-slate-50 border border-slate-200 rounded-xl text-xs space-y-2">
+            <div class="ad-placeholder border border-dashed border-slate-300 rounded p-3 text-center text-slate-400">[ Adsterra 300x250 Banner Slot ]</div>
+            <p><strong>Venue:</strong> Amazon Dev Centre, Nanakramguda, Hyderabad</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5: TCS -->
+      <div class="job-card bg-white rounded-2xl border border-slate-200 p-5 shadow-2xs hover:shadow-md transition flex flex-col justify-between" data-search="tcs assistant system engineer pan-india remote fresher">
+        <div>
+          <div class="flex items-start justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center font-bold text-lg">T</div>
+              <div>
+                <h3 class="font-bold text-slate-900 text-sm">TCS <i class="fa-solid fa-circle-check text-sky-500 text-xs"></i></h3>
+                <span class="text-[10px] font-bold uppercase text-sky-700 bg-sky-50 px-2 py-0.5 rounded border border-sky-200">Fresh Opening</span>
+              </div>
+            </div>
+          </div>
+          <h4 class="text-base font-bold text-slate-900 mt-3 leading-snug">TCS NQT 2026 - Assistant System Engineer</h4>
+          <div class="mt-3 space-y-1 text-xs text-slate-500 font-medium">
+            <p>📍 Remote • PAN-India postings</p><p>💼 0-1 Yr (Freshers)</p><p class="text-[#2563eb] font-semibold">📅 Apply by: 12 Nov 2026</p>
+          </div>
+        </div>
+        <div class="mt-5 pt-3 border-t border-slate-100">
+          <div class="flex items-center justify-between">
+            <span class="px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-700 font-bold text-xs border border-emerald-200">₹3.36 - ₹7.0 LPA</span>
+            <button onclick="unlockDetails('job-5')" class="bg-[#2563eb] hover:bg-[#1d4ed8] text-white text-xs font-bold px-4 py-2 rounded-xl">View Details &amp; Venue →</button>
+          </div>
+          <!-- Anti-Leak Google AI Protected Box -->
+          <div id="job-5" data-nosnippet class="hidden mt-4 p-4 bg-slate-50 border border-slate-200 rounded-xl text-xs space-y-2">
+            <div class="ad-placeholder border border-dashed border-slate-300 rounded p-3 text-center text-slate-400">[ Adsterra 300x250 Banner Slot ]</div>
+            <p><strong>Mode:</strong> iON Digital Zones Pan-India</p>
+          </div>
+        </div>
+      </div>
+      <!-- CARDS END -->
+
+            <!-- 6: Teleperformance -->
+      <div class="job-card bg-white rounded-2xl border border-slate-200 p-5 shadow-2xs hover:shadow-md transition flex flex-col justify-between" data-search="teleperformance non voice chat noida">
+        <div>
+          <div class="flex items-start justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-violet-600 text-white flex items-center justify-center font-bold text-lg">T</div>
+              <div>
+                <h3 class="font-bold text-slate-900 text-sm">Teleperformance <i class="fa-solid fa-circle-check text-sky-500 text-xs"></i></h3>
+                <span class="text-[10px] font-bold uppercase text-teal-700 bg-teal-50 px-2 py-0.5 rounded border border-teal-200">Walk-In Drive</span>
+              </div>
+            </div>
+            <span class="text-[10px] font-extrabold text-rose-600 bg-rose-50 border border-rose-200 px-2 py-0.5 rounded-full">URGENT</span>
+          </div>
+          <h4 class="text-base font-bold text-slate-900 mt-3 leading-snug">Customer Service Representative - Non Voice (Chat)</h4>
+          <div class="mt-3 space-y-1 text-xs text-slate-500 font-medium">
+            <p>📍 Noida • Sector 62</p><p>💼 0-2 Yrs</p><p class="text-[#2563eb] font-semibold">📅 Walk-in: 25 Oct 2026</p>
+          </div>
+        </div>
+        <div class="mt-5 pt-3 border-t border-slate-100">
+          <div class="flex items-center justify-between">
+            <span class="px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-700 font-bold text-xs border border-emerald-200">₹2.4 - ₹3.2 LPA</span>
+            <button onclick="unlockDetails('job-6')" class="bg-[#2563eb] hover:bg-[#1d4ed8] text-white text-xs font-bold px-4 py-2 rounded-xl">View Details &amp; Venue →</button>
+          </div>
+          <!-- Anti-Leak Google AI Protected Box -->
+          <div id="job-6" data-nosnippet class="hidden mt-4 p-4 bg-slate-50 border border-slate-200 rounded-xl text-xs space-y-2">
+            <div class="ad-placeholder border border-dashed border-slate-300 rounded p-3 text-center text-slate-400">[ Adsterra 300x250 Banner Slot ]</div>
+            <p><strong>Venue:</strong> Logix Cyber Park, Tower B, Sector 62, Noida</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7: Tech Mahindra -->
+      <div class="job-card bg-white rounded-2xl border border-slate-200 p-5 shadow-2xs hover:shadow-md transition flex flex-col justify-between" data-search="tech mahindra chat email pune">
+        <div>
+          <div class="flex items-start justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-cyan-600 text-white flex items-center justify-center font-bold text-xs">TM</div>
+              <div>
+                <h3 class="font-bold text-slate-900 text-sm">Tech Mahindra <i class="fa-solid fa-circle-check text-sky-500 text-xs"></i></h3>
+                <span class="text-[10px] font-bold uppercase text-teal-700 bg-teal-50 px-2 py-0.5 rounded border border-teal-200">Walk-In Drive</span>
+              </div>
+            </div>
+          </div>
+          <h4 class="text-base font-bold text-slate-900 mt-3 leading-snug">Technical Support Associate (Chat &amp; Email)</h4>
+          <div class="mt-3 space-y-1 text-xs text-slate-500 font-medium">
+            <p>📍 Pune • Hinjawadi Phase 3</p><p>💼 0-2 Yrs</p><p class="text-[#2563eb] font-semibold">📅 Walk-in: 27 Oct 2026</p>
+          </div>
+        </div>
+        <div class="mt-5 pt-3 border-t border-slate-100">
+          <div class="flex items-center justify-between">
+            <span class="px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-700 font-bold text-xs border border-emerald-200">₹2.8 - ₹4.2 LPA</span>
+            <button onclick="unlockDetails('job-7')" class="bg-[#2563eb] hover:bg-[#1d4ed8] text-white text-xs font-bold px-4 py-2 rounded-xl">View Details &amp; Venue →</button>
+          </div>
+          <!-- Anti-Leak Google AI Protected Box -->
+          <div id="job-7" data-nosnippet class="hidden mt-4 p-4 bg-slate-50 border border-slate-200 rounded-xl text-xs space-y-2">
+            <div class="ad-placeholder border border-dashed border-slate-300 rounded p-3 text-center text-slate-400">[ Adsterra 300x250 Banner Slot ]</div>
+            <p><strong>Venue:</strong> Rajiv Gandhi Infotech Park, Hinjawadi Phase 3, Pune</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8: HCLTech -->
+      <div class="job-card bg-white rounded-2xl border border-slate-200 p-5 shadow-2xs hover:shadow-md transition flex flex-col justify-between" data-search="hcltech graduate engineer trainee get noida">
+        <div>
+          <div class="flex items-start justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-emerald-500 text-white flex items-center justify-center font-bold text-lg">H</div>
+              <div>
+                <h3 class="font-bold text-slate-900 text-sm">HCLTech <i class="fa-solid fa-circle-check text-sky-500 text-xs"></i></h3>
+                <span class="text-[10px] font-bold uppercase text-sky-700 bg-sky-50 px-2 py-0.5 rounded border border-sky-200">Fresh Opening</span>
+              </div>
+            </div>
+          </div>
+          <h4 class="text-base font-bold text-slate-900 mt-3 leading-snug">Graduate Engineer Trainee (GET) - 2026 Batch</h4>
+          <div class="mt-3 space-y-1 text-xs text-slate-500 font-medium">
+            <p>📍 Noida • Sector 126</p><p>💼 0-1 Yr (Freshers)</p><p class="text-[#2563eb] font-semibold">📅 Apply by: 7 Nov 2026</p>
+          </div>
+        </div>
+        <div class="mt-5 pt-3 border-t border-slate-100">
+          <div class="flex items-center justify-between">
+            <span class="px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-700 font-bold text-xs border border-emerald-200">₹4.0 - ₹6.5 LPA</span>
+            <button onclick="unlockDetails('job-8')" class="bg-[#2563eb] hover:bg-[#1d4ed8] text-white text-xs font-bold px-4 py-2 rounded-xl">View Details &amp; Venue →</button>
+          </div>
+          <!-- Anti-Leak Google AI Protected Box -->
+          <div id="job-8" data-nosnippet class="hidden mt-4 p-4 bg-slate-50 border border-slate-200 rounded-xl text-xs space-y-2">
+            <div class="ad-placeholder border border-dashed border-slate-300 rounded p-3 text-center text-slate-400">[ Adsterra 300x250 Banner Slot ]</div>
+            <p><strong>Venue:</strong> HCL Campus, Plot No. 3A, Sector 126, Noida Expressway</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9: Concentrix -->
+      <div class="job-card bg-white rounded-2xl border border-slate-200 p-5 shadow-2xs hover:shadow-md transition flex flex-col justify-between" data-search="concentrix technical support non-voice gurgaon">
+        <div>
+          <div class="flex items-start justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-teal-600 text-white flex items-center justify-center font-bold text-lg">C</div>
+              <div>
+                <h3 class="font-bold text-slate-900 text-sm">Concentrix <i class="fa-solid fa-circle-check text-sky-500 text-xs"></i></h3>
+                <span class="text-[10px] font-bold uppercase text-teal-700 bg-teal-50 px-2 py-0.5 rounded border border-teal-200">Walk-In Drive</span>
+              </div>
+            </div>
+          </div>
+          <h4 class="text-base font-bold text-slate-900 mt-3 leading-snug">Technical Support Advisor (Non Voice)</h4>
+          <div class="mt-3 space-y-1 text-xs text-slate-500 font-medium">
+            <p>📍 Gurgaon • Sector 39</p><p>💼 0-2 Yrs</p><p class="text-[#2563eb] font-semibold">📅 Walk-in: 29 Oct 2026</p>
+          </div>
+        </div>
+        <div class="mt-5 pt-3 border-t border-slate-100">
+          <div class="flex items-center justify-between">
+            <span class="px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-700 font-bold text-xs border border-emerald-200">₹2.7 - ₹3.8 LPA</span>
+            <button onclick="unlockDetails('job-9')" class="bg-[#2563eb] hover:bg-[#1d4ed8] text-white text-xs font-bold px-4 py-2 rounded-xl">View Details &amp; Venue →</button>
+          </div>
+          <!-- Anti-Leak Google AI Protected Box -->
+          <div id="job-9" data-nosnippet class="hidden mt-4 p-4 bg-slate-50 border border-slate-200 rounded-xl text-xs space-y-2">
+            <div class="ad-placeholder border border-dashed border-slate-300 rounded p-3 text-center text-slate-400">[ Adsterra 300x250 Banner Slot ]</div>
+            <p><strong>Venue:</strong> Candor TechSpace, Sector 39, Gurgaon</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 10: Wipro BPS -->
+      <div class="job-card bg-white rounded-2xl border border-slate-200 p-5 shadow-2xs hover:shadow-md transition flex flex-col justify-between" data-search="wipro bps domestic voice delhi ncr okhla">
+        <div>
+          <div class="flex items-start justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-teal-700 text-white flex items-center justify-center font-bold text-xs">WB</div>
+              <div>
+                <h3 class="font-bold text-slate-900 text-sm">Wipro BPS <i class="fa-solid fa-circle-check text-sky-500 text-xs"></i></h3>
+                <span class="text-[10px] font-bold uppercase text-teal-700 bg-teal-50 px-2 py-0.5 rounded border border-teal-200">Walk-In Drive</span>
+              </div>
+            </div>
+            <span class="text-[10px] font-extrabold text-rose-600 bg-rose-50 border border-rose-200 px-2 py-0.5 rounded-full">URGENT</span>
+          </div>
+          <h4 class="text-base font-bold text-slate-900 mt-3 leading-snug">Customer Support - Domestic Voice</h4>
+          <div class="mt-3 space-y-1 text-xs text-slate-500 font-medium">
+            <p>📍 Delhi-NCR • Okhla Phase 3</p><p>💼 0-1 Yr (Freshers)</p><p class="text-[#2563eb] font-semibold">📅 Walk-in: 24 Oct 2026</p>
+          </div>
+        </div>
+        <div class="mt-5 pt-3 border-t border-slate-100">
+          <div class="flex items-center justify-between">
+            <span class="px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-700 font-bold text-xs border border-emerald-200">₹2.2 - ₹3.0 LPA</span>
+            <button onclick="unlockDetails('job-10')" class="bg-[#2563eb] hover:bg-[#1d4ed8] text-white text-xs font-bold px-4 py-2 rounded-xl">View Details &amp; Venue →</button>
+          </div>
+          <!-- Anti-Leak Google AI Protected Box -->
+          <div id="job-10" data-nosnippet class="hidden mt-4 p-4 bg-slate-50 border border-slate-200 rounded-xl text-xs space-y-2">
+            <div class="ad-placeholder border border-dashed border-slate-300 rounded p-3 text-center text-slate-400">[ Adsterra 300x250 Banner Slot ]</div>
+            <p><strong>Venue:</strong> A-26/4, Mohan Estate, Near Okhla Phase 3, New Delhi</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+          </main>
+
+    <!-- SAFETY ADVISORY -->
+  <section id="safety" class="max-w-7xl mx-auto px-4 pb-12 w-full">
+    <div class="bg-[#fcf8f0] border border-[#f3e6cb] rounded-2xl p-5 text-xs text-amber-900 leading-relaxed shadow-2xs">
+      <div class="flex items-center gap-2 font-bold text-amber-950 mb-1.5">
+        <i class="fa-solid fa-shield-halved text-amber-600 text-sm"></i> Official Safety Advisory
+      </div>
+      <p>
+        <strong>Direct Hire Hub never asks for registration, training, laptop-deposit or document-verification fees.</strong> 
+        Genuine direct employers — Wipro, Genpact, Teleperformance, TELUS Digital — <span class="underline font-bold">never demand money</span> at any stage of hiring. Report fraud at cybercrime.gov.in or your local police station.
+      </p>
+    </div>
+  </section>
+
+  <!-- DARK FOOTER -->
+  <footer id="footer" class="bg-[#050b14] text-white border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <div class="flex flex-col mb-3">
+            <span class="text-lg font-black text-[#38bdf8] tracking-tight">Direct Hire Hub</span>
+            <span class="text-[8px] font-bold tracking-widest text-slate-400 uppercase mt-0.5">YOUR CAREER, OUR MISSION</span>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">Verified walk-in drives and fresh openings across India — with real-time alerts, zero middleman fee.</p>
+        </div>
+        <div>
+          <h5 class="text-xs font-bold uppercase tracking-wider text-slate-300 mb-3">Explore</h5>
+          <ul class="text-xs text-slate-400 space-y-2 font-medium">
+            <li><a href="#openings" class="hover:text-white">Latest Jobs</a></li>
+            <li><a href="#openings" class="hover:text-white">Walk-In Drives</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="text-xs font-bold uppercase tracking-wider text-slate-300 mb-3">Legal</h5>
+          <ul class="text-xs text-slate-400 space-y-2 font-medium">
+            <li><a href="#" class="hover:text-white">Disclaimer</a></li>
+            <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="text-xs font-bold uppercase tracking-wider text-slate-300 mb-3">Company</h5>
+          <ul class="text-xs text-slate-400 space-y-2 font-medium">
+            <li><a href="#" class="hover:text-white">About Us</a></li>
+            <li><a href="#" class="hover:text-white">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-12 pt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 gap-2">
+        <p>© 2026 Direct Hire Hub — directhirehub.in — free for job seekers, always.</p>
+        <p>Never pay any consultancy, registration or training fee.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT LOGIC -->
+  <script>
+    // Paste Adsterra Direct Link inside quotes below:
+    const ADSTERRA_DIRECT_LINK = ""; 
+
+    function toggleSidebar(show) {
+      const drawer = document.getElementById('sideDrawer');
+      const overlay = document.getElementById('drawerOverlay');
+      if (show) {
+        drawer.classList.remove('translate-x-full');
+        overlay.classList.remove('opacity-0', 'pointer-events-none');
+        document.body.classList.add('overflow-hidden');
       } else {
-        box.style.display = 'block';
+        drawer.classList.add('translate-x-full');
+        overlay.classList.add('opacity-0', 'pointer-events-none');
+        document.body.classList.remove('overflow-hidden');
       }
     }
 
-    loadJobs();
+    function unlockDetails(id) {
+      if (ADSTERRA_DIRECT_LINK) { window.open(ADSTERRA_DIRECT_LINK, '_blank'); }
+      const el = document.getElementById(id);
+      if (el) { el.classList.toggle('hidden'); }
+    }
+
+    function filterJobs() {
+      const q = document.getElementById('searchInput').value.toLowerCase().trim();
+      const city = document.getElementById('cityFilter').value.toLowerCase().trim();
+      const cards = document.querySelectorAll('.job-card');
+      cards.forEach(c => {
+        const text = c.getAttribute('data-search') || '';
+        c.style.display = (!q || text.includes(q)) && (!city || text.includes(city)) ? 'flex' : 'none';
+      });
+    }
+
+    function quickFilter(type) {
+      document.getElementById('searchInput').value = type;
+      filterJobs();
+    }
+
+    function filterByCity(cityName) {
+      document.getElementById('cityFilter').value = cityName;
+      filterJobs();
+    }
   </script>
 </body>
 </html>
